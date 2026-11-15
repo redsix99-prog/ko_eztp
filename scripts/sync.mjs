@@ -64,9 +64,21 @@ const db=read('attractions.json');
 let matched=0,missed=[];
 for(const it of db.items){
   try{
-    const body=await call(ENG,'searchKeyword2',{keyword:it.name.en,numOfRows:10,pageNo:1});
-    const want=norm(it.name.en);
-    const hit=items(body).find(x=>{const t=norm(x.title);return t&&(t.includes(want)||want.includes(t));});
+    // 같은 이름의 상점·식당이 먼저 나오는 일이 있어, 먼저 '관광지(76)'로 좁혀 검색하고 점수로 가장 알맞은 항목만 고릅니다.
+    // 점수: 한글 이름 포함 +3, 영문 이름 완전 일치 +3, 영문 이름 앞부분 일치 +2, 영문 이름 포함(길이 비슷) +1
+    const want=norm(it.name.en),koName=String(it.name.ko||'').replace(/\(.*\)/,'').replace(/\s+/g,'');
+    const score=x=>{
+      const title=String(x.title||'');
+      const en=norm(title.replace(/\(.*$/,'').replace(/\[.*?\]/g,''));
+      let s=0;
+      if(koName&&title.replace(/\s+/g,'').includes(koName))s+=3;
+      if(en===want)s+=3;else if(en.length>=4&&(en.startsWith(want)||want.startsWith(en)))s+=2;else if(en.includes(want)&&en.length<=want.length+10)s+=1;
+      return s;
+    };
+    const pick=(list,min)=>list.map(x=>({x,s:score(x)})).filter(o=>o.s>=min).sort((a,b)=>b.s-a.s)[0];
+    let found=pick(items(await call(ENG,'searchKeyword2',{keyword:it.name.en,contentTypeId:76,numOfRows:20,pageNo:1})),2);
+    if(!found)found=pick(items(await call(ENG,'searchKeyword2',{keyword:it.name.en,numOfRows:20,pageNo:1})),3);
+    const hit=found&&found.x;
     if(!hit){missed.push(it.id);continue;}
     let overview='';
     try{const d=items(await call(ENG,'detailCommon2',{contentId:hit.contentid}))[0]||{};overview=clean(d.overview).slice(0,600);}catch(e){}
