@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="google-adsense-account" content="ca-pub-5580189283913928"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="사이트 내용에 대한 문의와 오류 제보 방법을 안내합니다."/>
+  <title>문의하기 | 코리아 이지트립</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header"><div class="wrap">
+  <a class="brand" href="index.html"><span class="brand-name">코리아 <b>이지트립</b></span><span class="brand-sub">Korea Easy Trip</span></a>
+  <nav class="links" id="navigation" aria-label="주 메뉴"><a href="index.html#themes">테마별 장소</a><a href="index.html#destinations">서울 밖 여행</a><a href="index.html#itineraries">추천 코스</a><a href="news.html">관광 뉴스</a><a href="index.html#start">여행 준비</a><a href="index.html#experiences">체험·예약</a><a href="index.html#plan">일정 만들기</a></nav>
+  <button class="nav-toggle" id="menuButton" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+  <a class="btn" href="index.html#plan" style="padding:10px 14px;font-size:14px">내 여행 만들기</a>
+</div></header>
+<main><section class="section"><div class="wrap narrow" id="doc"><h1 class="r-h2">문의하기</h1><p class="muted">최종 수정일 2026년 11월 15일</p><h2 class="info-h">문의 방법</h2><p class="lead info-p">사이트 내용에 대한 문의, 오류 제보, 수정 요청은 GitHub 이슈로 남겨 주세요. 링크: <a href="https://github.com/redsix99-prog/ko_eztp/issues" target="_blank" rel="noopener noreferrer">https://github.com/redsix99-prog/ko_eztp/issues</a> (GitHub 계정이 필요합니다.)</p><h2 class="info-h">오류를 제보할 때 알려 주시면 좋은 정보</h2><p class="lead info-p">문제가 있는 페이지 주소, 틀린 내용과 올바른 내용, 근거가 되는 공식 자료 링크를 함께 적어 주시면 확인이 빨라집니다.</p><h2 class="info-h">답변 안내</h2><p class="lead info-p">개인이 운영하는 사이트라 모든 문의에 즉시 답변하기는 어렵습니다. 확인한 오류는 가능한 한 빨리 수정하겠습니다. 이 사이트는 예약이나 결제를 직접 처리하지 않으므로, 예약·환불·분실물 같은 문제는 해당 서비스 업체에 직접 문의해 주세요.</p><h2 class="info-h">개인정보</h2><p class="lead info-p">문의 과정에서 여권 번호나 결제 정보 같은 민감한 정보는 적지 마세요.</p></div></section></main>
+<footer class="footer"><div class="wrap"><div class="footgrid"><div><h3>코리아 이지트립</h3><p>한국 여행을 현지인처럼. 호기심 많은 여행자를 위한 독립 여행 정보 사이트입니다.</p></div><div><h3>바로가기</h3><a href="index.html#start">여행 준비</a><a href="index.html#destinations">서울 밖 여행</a><a href="news.html">관광 뉴스</a><a href="index.html#plan">일정 만들기</a></div><div><h3>공식 링크</h3><a href="https://english.visitkorea.or.kr/" target="_blank" rel="noopener noreferrer">한국관광공사 ↗</a><a href="https://www.k-eta.go.kr/" target="_blank" rel="noopener noreferrer">K-ETA 공식 사이트 ↗</a></div></div>
+<div class="footbottom">© 2026 코리아 이지트립</div></div></footer>
+<script src="i18n-dict.js"></script>
+<script src="i18n.js"></script>
+<script>
+(function(){'use strict';
+const $=s=>document.querySelector(s);
+$('#menuButton').addEventListener('click',()=>{const o=$('#navigation').classList.toggle('open');$('#menuButton').setAttribute('aria-expanded',String(o));});
+const D={"en":{"title":"Contact","sections":[["How to contact us","For questions about the site, error reports or correction requests, please open an issue on GitHub: https://github.com/redsix99-prog/ko_eztp/issues (a GitHub account is required)."],["What to include in an error report","Please include the page address, what is wrong and what is correct, and a link to an official source. This helps us check faster."],["About replies","This is an individually run site, so we may not be able to answer every message right away. We will correct confirmed errors as soon as possible. The site does not handle bookings or payments, so for reservations, refunds or lost items, please contact the relevant service directly."],["Privacy","Please do not post sensitive information such as passport numbers or payment details when contacting us."]]}};
+const UP={ko:'최종 수정일 2026년 11월 15일',en:'Last updated: November 15, 2026',ja:'最終更新日：2026年11月15日',zh:'最后更新：2026年11月15日'};
+const RESET={ko:'광고 쿠키 동의 다시 설정',en:'Reset ad-cookie consent',ja:'広告Cookieの同意を再設定',zh:'重新设置广告Cookie同意'};
+const box=$('#doc');const orig=box.innerHTML;const hasReset=false;
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const link=s=>esc(s).replace(/(https?:\/\/[^\s)]+)/g,'<a href="$1" target="_blank" rel="noopener noreferrer">$1</a>');
+function bind(){const b=document.getElementById('reset');if(b)b.addEventListener('click',()=>{try{localStorage.removeItem('kt-ads-consent');}catch(e){}location.href='index.html';});}
+function draw(){
+  const L=I18N.lang;
+  if(L==='ko'){box.innerHTML=orig;document.title="문의하기 | 코리아 이지트립";bind();return;}
+  const d=D[L]||D.en;
+  box.innerHTML='<h1 class="r-h2">'+esc(d.title)+'</h1><p class="muted">'+UP[L]+'</p>'+d.sections.map(s=>'<h2 class="info-h">'+esc(s[0])+'</h2><p class="lead info-p">'+link(s[1])+'</p>').join('')+(hasReset?'<p style="margin-top:28px"><button class="btn btn-outline" type="button" id="reset">'+RESET[L]+'</button></p>':'');
+  document.title=d.title+' | Korea Easy Trip';bind();
+}
+I18N.onChange(draw);bind();
+I18N.start();
+})();
+</script>
+<script src="ads.js"></script>
+</body></html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://koeztp.pages.dev/sitemap.xml

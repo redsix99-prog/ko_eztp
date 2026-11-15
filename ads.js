@@ -8,22 +8,25 @@
 const ADS={client:'ca-pub-5580189283913928',slot:''};   // ← 여기만 채우면 됩니다. 예: client:'ca-pub-1234567890123456', slot:'1234567890'
 const KEY='kt-ads-consent';
 const TX={
- ko:{label:'광고',msg:'이 사이트는 구글 애드센스 광고를 표시하며, 광고 제공을 위해 쿠키가 사용될 수 있습니다. 광고 쿠키 사용에 동의하시겠어요?',yes:'동의',no:'거부',more:'개인정보 처리방침',privacy:'개인정보 처리방침'},
- en:{label:'Advertisement',msg:'This site shows Google AdSense ads, which may use cookies. Do you agree to the use of advertising cookies?',yes:'Agree',no:'Decline',more:'Privacy policy',privacy:'Privacy policy'},
- ja:{label:'広告',msg:'このサイトではGoogleアドセンス広告を表示し、広告配信のためにCookieが使われる場合があります。広告用Cookieの使用に同意しますか？',yes:'同意する',no:'拒否する',more:'プライバシーポリシー',privacy:'プライバシーポリシー'},
- zh:{label:'广告',msg:'本网站展示Google AdSense广告，广告投放可能会使用Cookie。您是否同意使用广告Cookie？',yes:'同意',no:'拒绝',more:'隐私政策',privacy:'隐私政策'}
+ ko:{label:'광고',msg:'이 사이트는 구글 애드센스 광고를 표시하며, 광고 제공을 위해 쿠키가 사용될 수 있습니다. 광고 쿠키 사용에 동의하시겠어요?',yes:'동의',no:'거부',more:'개인정보 처리방침',privacy:'개인정보 처리방침',guides:'가이드 글',about:'사이트 소개',contact:'문의하기',terms:'이용약관'},
+ en:{label:'Advertisement',msg:'This site shows Google AdSense ads, which may use cookies. Do you agree to the use of advertising cookies?',yes:'Agree',no:'Decline',more:'Privacy policy',privacy:'Privacy policy',guides:'Guides',about:'About',contact:'Contact',terms:'Terms of use'},
+ ja:{label:'広告',msg:'このサイトではGoogleアドセンス広告を表示し、広告配信のためにCookieが使われる場合があります。広告用Cookieの使用に同意しますか？',yes:'同意する',no:'拒否する',more:'プライバシーポリシー',privacy:'プライバシーポリシー',guides:'ガイド記事',about:'サイトについて',contact:'お問い合わせ',terms:'利用規約'},
+ zh:{label:'广告',msg:'本网站展示Google AdSense广告，广告投放可能会使用Cookie。您是否同意使用广告Cookie？',yes:'同意',no:'拒绝',more:'隐私政策',privacy:'隐私政策',guides:'指南文章',about:'关于本站',contact:'联系我们',terms:'使用条款'}
 };
 const L=()=>TX[(window.I18N&&I18N.lang)||'ko']||TX.ko;
 const active=/^ca-pub-\d{10,20}$/.test(ADS.client);
 function getConsent(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
 function setConsent(v){try{localStorage.setItem(KEY,v);}catch(e){}}
 
-/* 푸터에 개인정보 처리방침 링크 */
+/* 푸터 링크: 가이드·소개·문의·개인정보·이용약관 */
 function footerLink(){
   const col=document.querySelector('.footer .footgrid > div:nth-child(2)');if(!col)return;
-  let a=col.querySelector('a[data-privacy]');
-  if(!a){a=document.createElement('a');a.setAttribute('data-privacy','1');a.href='privacy.html';col.appendChild(a);}
-  a.textContent=L().privacy;
+  const t=L(),base=location.pathname.indexOf('/guides')>-1?'../':'';
+  [['guides','guides/index.html',t.guides],['about','about.html',t.about],['contact','contact.html',t.contact],['privacy','privacy.html',t.privacy],['terms','terms.html',t.terms]].forEach(x=>{
+    let a=col.querySelector('a[data-f="'+x[0]+'"]');
+    if(!a){a=document.createElement('a');a.setAttribute('data-f',x[0]);col.appendChild(a);}
+    a.href=base+x[1];a.textContent=x[2];
+  });
 }
 
 /* 광고 영역 */
