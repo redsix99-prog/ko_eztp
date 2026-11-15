@@ -116,23 +116,28 @@ console.log('관광지 연계: '+matched+'/'+db.items.length+'건'+(missed.lengt
 try{
   const w=await findWindow(28);if(!w)throw new Error('최근 130일 안에 방문자 데이터가 없습니다.');
   const {start,end}=w;const ymd=ymdOf;
-  const sums=new Map();let rows=0;
+  // 광역 지자체 코드 → 영문 이름 (행정구역 개편 전·후 코드 모두 포함)
+  const EN={'11':'Seoul','26':'Busan','27':'Daegu','28':'Incheon','29':'Gwangju','30':'Daejeon','31':'Ulsan','36':'Sejong','41':'Gyeonggi','42':'Gangwon','51':'Gangwon','43':'Chungbuk','44':'Chungnam','45':'Jeonbuk','52':'Jeonbuk','46':'Jeonnam','47':'Gyeongbuk','48':'Gyeongnam','50':'Jeju'};
+  const sums=new Map();const days=new Set();let rows=0;
   for(let page=1;page<=40;page++){
     const body=await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(start),endYmd:ymd(end),numOfRows:1000,pageNo:page});
     const list=items(body);if(!list.length)break;
     for(const r of list){
       rows++;
-      if(String(r.touDivCd)!=='3')continue;            // 3 = 외국인
-      const name=clean(r.areaNm||r.signguNm);const n=Number(r.touNum);
+      if(String(r.touDivCd)!=='3')continue;            // 1 현지인, 2 외지인, 3 외국인
+      const code=String(r.areaCode||'');const name=EN[code]||clean(r.areaNm);const n=Number(r.touNum);
       if(!name||!Number.isFinite(n))continue;
+      if(r.baseYmd)days.add(String(r.baseYmd));
       sums.set(name,(sums.get(name)||0)+n);
     }
     if(list.length<1000)break;await sleep(250);
   }
   const arr=[...sums.entries()].map(([region,visitors])=>({region,visitors:Math.round(visitors)})).sort((a,b)=>b.visitors-a.visitors).slice(0,10);
   if(!arr.length)throw new Error('외국인 방문자 행을 찾지 못했습니다 (조회 '+rows+'행). --probe 로 응답 구조를 확인하세요.');
-  save('stats.json',{status:'ok',updated:new Date().toISOString().slice(0,10),period:ymd(start)+'-'+ymd(end),
-    note:'Foreign visitors by region, summed over the period (daily unique visitors, mobile-data based). Source: Korea Tourism Organization open data.',
+  const dl=[...days].sort();const first=dl[0]||ymd(start),last=dl[dl.length-1]||ymd(end);
+  const fmt=y=>y.slice(0,4)+'-'+y.slice(4,6)+'-'+y.slice(6,8);
+  save('stats.json',{status:'ok',updated:new Date().toISOString().slice(0,10),period:fmt(first)+' to '+fmt(last)+' ('+(dl.length||'?')+' days of data)',
+    note:'Foreign visitors by region: the sum of daily unique visitor counts over the period shown (mobile-data based; a visitor staying three days counts three times). Source: Korea Tourism Organization open data.',
     sources:[{name:'Korea Tourism Data Lab',url:'https://datalab.visitkorea.or.kr/'},{name:'Korea Tourism Organization (Visit Korea)',url:'https://english.visitkorea.or.kr/'}],
     foreignVisitorsByRegion:arr});
   console.log('통계 갱신: 상위 '+arr.length+'개 지역');
@@ -143,7 +148,7 @@ try{
     const top=arr.slice(0,3).map(x=>x.region).join(', ');
     tr.items.unshift({id,date:new Date().toISOString().slice(0,10),tag:'Official data',status:'draft',auto:true,
       title:'Where international visitors went in the last four weeks',
-      summary:'According to Korea Tourism Organization data, the regions with the most international visitors over the period '+ymd(start)+'–'+ymd(end)+' were '+top+'. Figures are daily unique visitors based on mobile data.',
+      summary:'According to Korea Tourism Organization data, the regions with the most international visitors over the period '+fmt(first)+' to '+fmt(last)+' were '+top+'. Figures are daily unique visitors based on mobile data.',
       related:[],source:{name:'Korea Tourism Data Lab',url:'https://datalab.visitkorea.or.kr/'}});
     save('trends.json',tr);console.log('트렌드 초안 추가: '+id+' (draft)');
   }
