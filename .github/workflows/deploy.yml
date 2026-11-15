@@ -31,5 +31,6 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          # 계정 ID는 비밀 값이 아닌 식별 번호라서 파일에 직접 적습니다.
+          accountId: 7ae0afaa04fe3439643d1898e53e835b
           command: pages deploy dist --project-name=koeztp --branch=main
