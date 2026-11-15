@@ -75,10 +75,12 @@ if(PROBE){
 const db=read('attractions.json');
 let matched=0,missed=[];
 for(const it of db.items){
+  if(it.tourapiSkip){it.tourapi=null;it.source='curated';missed.push(it.id+'(제외)');continue;}   // 공식 데이터에 같은 대상이 없어 연결하지 않는 항목
   try{
     // 같은 이름의 상점·식당이 먼저 나오는 일이 있어, 먼저 '관광지(76)'로 좁혀 검색하고 점수로 가장 알맞은 항목만 고릅니다.
     // 점수: 한글 이름 포함 +3, 영문 이름 완전 일치 +3, 영문 이름 앞부분 일치 +2, 영문 이름 포함(길이 비슷) +1
-    const want=norm(it.name.en),koName=String(it.name.ko||'').replace(/\(.*\)/,'').replace(/\s+/g,'');
+    const kw=String(it.tourapiKeyword||it.name.en).replace(/\(.*?\)/g,'').trim();   // 검색어를 따로 지정할 수 있습니다(tourapiKeyword)
+    const want=norm(kw),koName=String(it.name.ko||'').replace(/\(.*\)/,'').replace(/\s+/g,'');
     const score=x=>{
       const title=String(x.title||'');
       const en=norm(title.replace(/\(.*$/,'').replace(/\[.*?\]/g,''));
@@ -88,10 +90,10 @@ for(const it of db.items){
       return s;
     };
     const pick=(list,min)=>list.map(x=>({x,s:score(x)})).filter(o=>o.s>=min).sort((a,b)=>b.s-a.s)[0];
-    let found=pick(items(await call(ENG,'searchKeyword2',{keyword:it.name.en,contentTypeId:76,numOfRows:20,pageNo:1})),2);
-    if(!found)found=pick(items(await call(ENG,'searchKeyword2',{keyword:it.name.en,numOfRows:20,pageNo:1})),3);
+    let found=pick(items(await call(ENG,'searchKeyword2',{keyword:kw,contentTypeId:76,numOfRows:20,pageNo:1})),2);
+    if(!found)found=pick(items(await call(ENG,'searchKeyword2',{keyword:kw,numOfRows:20,pageNo:1})),3);
     const hit=found&&found.x;
-    if(!hit){missed.push(it.id);continue;}
+    if(!hit){it.tourapi=null;it.source='curated';missed.push(it.id);continue;}
     let overview='';
     try{const d=items(await call(ENG,'detailCommon2',{contentId:hit.contentid}))[0]||{};overview=clean(d.overview).slice(0,600);}catch(e){}
     const img=hit.firstimage||'';
@@ -115,26 +117,37 @@ console.log('관광지 연계: '+matched+'/'+db.items.length+'건'+(missed.lengt
 // 2) 공식 방문 통계: 최근 4주 외국인 방문자 수를 광역지자체별로 합산합니다. (집계 지연을 감안해 4일 전까지)
 try{
   const w=await findWindow(28);if(!w)throw new Error('최근 130일 안에 방문자 데이터가 없습니다.');
-  const {start,end}=w;const ymd=ymdOf;
+  const ymd=ymdOf;
   // 광역 지자체 코드 → 영문 이름 (행정구역 개편 전·후 코드 모두 포함)
   const EN={'11':'Seoul','26':'Busan','27':'Daegu','28':'Incheon','29':'Gwangju','30':'Daejeon','31':'Ulsan','36':'Sejong','41':'Gyeonggi','42':'Gangwon','51':'Gangwon','43':'Chungbuk','44':'Chungnam','45':'Jeonbuk','52':'Jeonbuk','46':'Jeonnam','47':'Gyeongbuk','48':'Gyeongnam','50':'Jeju'};
-  const sums=new Map();const days=new Set();let rows=0;
-  for(let page=1;page<=40;page++){
-    const body=await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(start),endYmd:ymd(end),numOfRows:1000,pageNo:page});
-    const list=items(body);if(!list.length)break;
-    for(const r of list){
-      rows++;
-      if(String(r.touDivCd)!=='3')continue;            // 1 현지인, 2 외지인, 3 외국인
-      const code=String(r.areaCode||'');const name=EN[code]||clean(r.areaNm);const n=Number(r.touNum);
-      if(!name||!Number.isFinite(n))continue;
-      if(r.baseYmd)days.add(String(r.baseYmd));
-      sums.set(name,(sums.get(name)||0)+n);
+  const NAME_EN=[[/전남광주/,'Gwangju & Jeonnam'],[/전북/,'Jeonbuk'],[/강원/,'Gangwon'],[/제주/,'Jeju']];
+  const regionName=r=>{const code=String(r.areaCode||''),ko=clean(r.areaNm);if(EN[code])return EN[code];for(const [re,en] of NAME_EN)if(re.test(ko))return en;return /[가-힣]/.test(ko)?'Region '+code:ko;};
+  async function fetchAll(st,en){
+    const all=[];
+    for(let page=1;page<=40;page++){
+      const list=items(await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(st),endYmd:ymd(en),numOfRows:1000,pageNo:page}));
+      all.push(...list);if(list.length<1000)break;await sleep(250);
     }
-    if(list.length<1000)break;await sleep(250);
+    return all;
+  }
+  let list=await fetchAll(w.start,w.end);
+  // 집계는 며칠 늦게 올라오므로, 찾은 데이터의 가장 최근 날짜를 기준으로 28일을 다시 조회합니다.
+  const latest=list.map(r=>String(r.baseYmd||'')).filter(Boolean).sort().pop();
+  if(latest&&latest<ymd(w.end)){
+    const e2=new Date(latest.slice(0,4)+'-'+latest.slice(4,6)+'-'+latest.slice(6,8)+'T00:00:00Z');
+    list=await fetchAll(new Date(e2-27*864e5),e2);
+  }
+  const sums=new Map();const days=new Set();const rows=list.length;
+  for(const r of list){
+    if(String(r.touDivCd)!=='3')continue;            // 1 현지인, 2 외지인, 3 외국인
+    const name=regionName(r);const n=Number(r.touNum);
+    if(!name||!Number.isFinite(n))continue;
+    if(r.baseYmd)days.add(String(r.baseYmd));
+    sums.set(name,(sums.get(name)||0)+n);
   }
   const arr=[...sums.entries()].map(([region,visitors])=>({region,visitors:Math.round(visitors)})).sort((a,b)=>b.visitors-a.visitors).slice(0,10);
   if(!arr.length)throw new Error('외국인 방문자 행을 찾지 못했습니다 (조회 '+rows+'행). --probe 로 응답 구조를 확인하세요.');
-  const dl=[...days].sort();const first=dl[0]||ymd(start),last=dl[dl.length-1]||ymd(end);
+  const dl=[...days].sort();const first=dl[0]||ymd(w.start),last=dl[dl.length-1]||ymd(w.end);
   const fmt=y=>y.slice(0,4)+'-'+y.slice(4,6)+'-'+y.slice(6,8);
   save('stats.json',{status:'ok',updated:new Date().toISOString().slice(0,10),period:fmt(first)+' to '+fmt(last)+' ('+(dl.length||'?')+' days of data)',
     note:'Foreign visitors by region: the sum of daily unique visitor counts over the period shown (mobile-data based; a visitor staying three days counts three times). Source: Korea Tourism Organization open data.',
@@ -147,7 +160,7 @@ try{
   if(!tr.items.some(x=>x.id===id)){
     const top=arr.slice(0,3).map(x=>x.region).join(', ');
     tr.items.unshift({id,date:new Date().toISOString().slice(0,10),tag:'Official data',status:'draft',auto:true,
-      title:'Where international visitors went in the last four weeks',
+      title:'Where international visitors went: latest official figures',
       summary:'According to Korea Tourism Organization data, the regions with the most international visitors over the period '+fmt(first)+' to '+fmt(last)+' were '+top+'. Figures are daily unique visitors based on mobile data.',
       related:[],source:{name:'Korea Tourism Data Lab',url:'https://datalab.visitkorea.or.kr/'}});
     save('trends.json',tr);console.log('트렌드 초안 추가: '+id+' (draft)');
