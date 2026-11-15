@@ -96,7 +96,8 @@ for(const it of db.items){
     if(!hit){it.tourapi=null;it.source='curated';missed.push(it.id);continue;}
     let overview='';
     try{const d=items(await call(ENG,'detailCommon2',{contentId:hit.contentid}))[0]||{};overview=clean(d.overview).slice(0,600);}catch(e){}
-    const img=hit.firstimage||'';
+    // 공공누리 유형: 1(출처표시)·3(출처표시-변경금지)만 영리 사이트에서 쓸 수 있으므로 그 외 유형의 이미지는 쓰지 않습니다.
+    const lic=String(hit.cpyrhtDivCd||'');const img=(['Type1','Type3'].includes(lic)&&hit.firstimage)||'';
     it.tourapi={
       contentId:String(hit.contentid),
       title:clean(hit.title),
@@ -104,6 +105,7 @@ for(const it of db.items){
       tel:clean(hit.tel),
       image:/^https?:\/\//.test(img)?img.replace(/^http:\/\//,'http://'):'',
       overview,
+      imageLicense:lic,
       syncedAt:new Date().toISOString().slice(0,10)
     };
     it.source='curated+tourapi';matched++;
