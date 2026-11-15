@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="코리아 이지트립 - 한국이 처음인 여행자를 위한 여행 가이드와 일정 만들기 (시안)"/>
+  <meta name="robots" content="noindex, nofollow"/>
+  <title>코리아 이지트립 | 한국 여행, 현지인처럼 (시안)</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header"><div class="wrap">
+  <a class="brand" href="index.html"><span class="brand-name">코리아 <b>이지트립</b></span><span class="brand-sub">Korea Easy Trip</span></a>
+  <nav class="links" id="navigation" aria-label="주 메뉴"><a href="#themes">테마별 장소</a><a href="#destinations">서울 밖 여행</a><a href="#itineraries">추천 코스</a><a href="#newsteaser">관광 뉴스</a><a href="#start">여행 준비</a><a href="#experiences">체험·예약</a><a href="#plan">일정 만들기</a></nav>
+  <button class="nav-toggle" id="menuButton" aria-label="메뉴 열기" aria-expanded="false">☰</button>
+  <a class="btn" href="#plan" style="padding:10px 14px;font-size:14px">내 여행 만들기</a>
+</div></header>
+<main>
+  <section class="hero" id="home" aria-label="한국 여행 소개">
+    <div class="hero-slides" aria-hidden="true">
+      <div class="slide on" style="background-image:url(images/h_modern.jpg)" data-cap="서울 반포대교 달빛무지개분수"></div>
+      <div class="slide" style="background-image:url(images/h_gwangan.jpg)" data-cap="부산 광안대교 야경"></div>
+      <div class="slide" style="background-image:url(images/hero.jpg)" data-cap="서울 광화문"></div>
+    </div>
+    <div class="hero-shade"></div>
+    <div class="wrap hero-inner">
+      <span class="hero-kicker">Korea · 대한민국</span>
+      <h1>전통과 최첨단이<br/>한곳에서 만나는 나라</h1>
+      <p>한강의 야경, 계절이 바뀌는 산과 바다, 600년 된 궁궐, 그리고 K-팝과 K-뷰티까지. 한국의 다양한 얼굴을 한 번에 만나 보세요.</p>
+      <div class="hero-actions"><a href="#plan" class="btn btn-lg">내 여행 일정 만들기 →</a><a href="#themes" class="btn btn-glass btn-lg">한국의 매력 보기</a></div>
+      <div class="hero-foot"><span class="hero-cap" id="heroCap">서울 반포대교 달빛무지개분수</span><div class="hero-dots" role="tablist" aria-label="배경 사진 선택"><button class="on" aria-label="사진 1"></button><button aria-label="사진 2"></button><button aria-label="사진 3"></button></div></div>
+    </div>
+  </section>
+
+  <section class="planner wrap" id="plan" aria-label="여행 일정 만들기"><div class="planner-card">
+    <div class="planner-head"><div><div class="eyebrow">무료 일정 도구</div><h2>나에게 맞는 한국 여행 일정 만들기</h2></div><span class="pill">회원가입 없이 사용</span></div>
+    <div class="form-grid">
+      <div class="field"><label for="place">여행지</label><select id="place"><option value="Seoul">서울</option><option value="Busan">부산</option><option value="Jeju">제주</option></select></div>
+      <div class="field"><label for="days">여행 기간</label><select id="days"><option value="3">3일</option><option value="5" selected>5일</option><option value="7">7일</option></select></div>
+      <div class="field"><label for="interest">관심사</label><select id="interest"><option value="Culture">역사·문화</option><option value="Food">음식·시장</option><option value="K-pop">K-팝·뷰티</option><option value="Nature">자연·풍경</option></select></div>
+      <button class="btn" id="generate" type="button">일정 만들기 →</button>
+    </div>
+    <div class="planner-result" id="plannerResult" aria-live="polite"><h3 id="resultHeading"></h3><div class="muted mini" id="resultDescription"></div><div id="routeLink" style="margin-top:14px"></div><div class="day-list" id="dayCards"></div><button class="btn btn-dark" type="button" id="download">일정 텍스트로 저장</button><div class="mini muted" style="margin-top:11px">참고용 예시 일정입니다. 운영 시간과 교통편은 출발 전 공식 채널에서 꼭 확인하세요.</div></div>
+  </div></section>
+
+  <section id="themes" class="section"><div class="wrap"><div class="section-title"><div><span class="eyebrow">Discover Korea</span><h2>한국을 만나는 다섯 가지 방법</h2><p class="muted">관심 가는 주제를 누르면 추천 장소를 바로 보여 드려요.</p></div></div>
+    <div class="theme-grid">
+      <a href="#spots" class="theme t-wide" data-theme="modern" style="background-image:url(images/t_ddp.jpg)"><div class="theme-text"><span class="theme-no">01</span><h3>세련된 서울</h3><p>남산, 롯데월드타워, 한강 야경</p></div></a>
+      <a href="#spots" class="theme t-wide" data-theme="kpop" style="background-image:url(images/t_kpop.jpg)"><div class="theme-text"><span class="theme-no">02</span><h3>K-팝·K-뷰티</h3><p>명동, 홍대, 성수동</p></div></a>
+      <a href="#spots" class="theme" data-theme="nature" style="background-image:url(images/t_bukhansan.jpg)"><div class="theme-text"><span class="theme-no">03</span><h3>서울 근교 자연</h3><p>북한산에서 남한산성까지</p></div></a>
+      <a href="#spots" class="theme" data-theme="culture" style="background-image:url(images/hanbok.jpg)"><div class="theme-text"><span class="theme-no">04</span><h3>전통 문화</h3><p>궁궐, 한옥, 세계유산</p></div></a>
+      <a href="#spots" class="theme" data-theme="market" style="background-image:url(images/market.jpg)"><div class="theme-text"><span class="theme-no">05</span><h3>시장과 노포</h3><p>광장시장, 종로3가, 을지로</p></div></a>
+    </div></div></section>
+
+  <section id="spots" class="section section-tint" style="scroll-margin-top:80px"><div class="wrap">
+    <div class="section-title"><div><span class="eyebrow">추천 장소</span><h2 id="spotTitle"></h2><p class="muted" id="spotDesc"></p></div><button class="btn btn-dark" type="button" id="spotPlan">이 테마로 일정 만들기 →</button></div>
+    <div class="filters" role="group" aria-label="테마 선택" id="spotTabs"></div>
+    <div class="spot-grid" id="spotGrid"></div>
+  </div></section>
+
+
+
+
+
+
+
+
+  <section id="destinations" class="section"><div class="wrap"><div class="section-title"><div><span class="eyebrow">서울 밖으로</span><h2>서울에서 한 걸음 더, 다른 한국</h2><p class="muted">바다의 도시 부산, 화산섬 제주, 가을 단풍의 설악산까지. 카드를 누르면 지역 가이드가 열립니다.</p></div></div><div class="dest-grid">
+    <a href="region.html?r=busan" class="dest" style="background-image:url(images/h_gwangan.jpg)"><div class="dest-content"><h3>부산</h3><p>광안대교 야경과 바다, 해산물 →</p></div></a>
+    <a href="region.html?r=jeju" class="dest" style="background-image:url(images/jeju.jpg)"><div class="dest-content"><h3>제주</h3><p>성산일출봉과 화산섬 풍경 →</p></div></a>
+    <a href="region.html?r=seorak" class="dest" style="background-image:url(images/h_nature.jpg)"><div class="dest-content"><h3>설악산·속초</h3><p>단풍과 기암절벽, 동해 바다 →</p></div></a>
+  </div></div></section>
+  <section class="section section-tint" id="itineraries"><div class="wrap"><div class="section-title"><div><span class="eyebrow">추천 코스</span><h2>처음 방문한다면, 이렇게</h2><p class="muted">샘플 코스를 보고, 일정 도구에서 입맛대로 바꿔 보세요.</p></div></div>
+    <div class="routes">
+      <article class="route photo-card"><img src="images/palace.jpg" alt="경복궁 근정전" loading="lazy"/><div class="body"><span class="tag">처음 가는 분께</span><h3>서울 3일</h3><p>대표 궁궐과 북촌, 한옥 골목을 걷는 핵심 코스.</p><div class="route-footer"><span>서울</span><button class="btn btn-outline" data-preset="Seoul|3|Culture">코스 보기 →</button></div></div></article>
+      <article class="route photo-card"><img src="images/t_bukhansan.jpg" alt="북한산 인수봉" loading="lazy"/><div class="body"><span class="tag">도심과 자연</span><h3>서울 5일</h3><p>남산, 서울숲, 북한산까지 걷기 좋은 서울 자연 코스.</p><div class="route-footer"><span>서울</span><button class="btn btn-outline" data-preset="Seoul|5|Nature">코스 보기 →</button></div></div></article>
+      <article class="route photo-card"><img src="images/haeundae.jpg" alt="부산 해운대 해수욕장" loading="lazy"/><div class="body"><span class="tag">바다 여행</span><h3>부산 3일</h3><p>바닷가 산책과 광안리 야경, 시장 음식을 즐기는 코스.</p><div class="route-footer"><span>부산</span><button class="btn btn-outline" data-preset="Busan|3|Nature">코스 보기 →</button></div></div></article>
+    </div></div></section>
+  <section class="section" id="newsteaser" style="scroll-margin-top:80px"><div class="wrap"><div class="section-title"><div><span class="eyebrow">관광 뉴스</span><h2>지금 한국에서 일어나는 일</h2><p class="muted">외국인 여행자가 알아두면 좋은 최근 소식 세 가지를 먼저 소개합니다.</p></div><a class="btn btn-outline" href="news.html">뉴스 더 보기 →</a></div>
+    <div class="news-cards" id="homeNews"></div></div></section>
+  <section id="start" class="section section-tint"><div class="wrap"><div class="section-title"><div><span class="eyebrow">여행 준비</span><h2>출발 전에 알아두면 좋은 것들</h2><p class="muted">한국이 처음인 분들이 가장 많이 궁금해하는 내용만 골랐습니다.</p></div></div>
+    <div class="guide-tools"><label class="sr-only" for="guideSearch">가이드 검색</label><input id="guideSearch" class="search" type="search" placeholder="가이드 검색 (예: 공항, 티머니)"/><span class="count" id="guideCount">6개의 가이드</span></div>
+    <div class="guides" id="guides">
+      <article class="guide" data-search="공항 인천 서울 기차 공항철도 버스 택시"><h3>인천공항에서 서울 가는 법</h3><p>공항철도, 리무진버스, 택시 중 내 상황에 맞는 방법을 고르는 요령.</p><small>교통 · 처음 가는 분</small><button class="btn btn-outline learn" data-article="airport">간단 가이드 보기 →</button></article>
+      <article class="guide" data-search="티머니 교통카드 지하철 버스"><h3>티머니와 지하철 이용법</h3><p>교통카드 고르는 법과 지하철 환승 팁.</p><small>교통 · 꿀팁</small><button class="btn btn-outline learn" data-article="tmoney">간단 가이드 보기 →</button></article>
+      <article class="guide" data-search="k-eta 비자 입국 여권 출입국"><h3>비자·입국 체크리스트</h3><p>출발 전에 확인해야 할 공식 안내 모음.</p><small>여행 기본 · 공식 링크</small><button class="btn btn-outline learn" data-article="entry">간단 가이드 보기 →</button></article>
+      <article class="guide" data-search="네이버지도 앱 번역 데이터 유심"><h3>한국 여행 필수 앱</h3><p>지도, 번역, 이동에 도움 되는 앱.</p><small>앱 · 처음 가는 분</small><button class="btn btn-outline learn" data-article="apps">간단 가이드 보기 →</button></article>
+      <article class="guide" data-search="서울 숙소 호텔 홍대 명동 동네"><h3>서울 숙소, 어느 동네가 좋을까</h3><p>관광·쇼핑·밤 문화 중 무엇이 중요한지에 따른 동네 비교.</p><small>숙소 · 계획</small><button class="btn btn-outline learn" data-article="stays">간단 가이드 보기 →</button></article>
+      <article class="guide" data-search="음식 한식 시장 길거리 식당"><h3>처음 먹는 한식 가이드</h3><p>쉬운 메뉴와 주문 요령, 시장 이용 예절.</p><small>음식·문화 · 꿀팁</small><button class="btn btn-outline learn" data-article="food">간단 가이드 보기 →</button></article>
+    </div><div id="noResults" class="empty" style="display:none">일치하는 가이드가 없습니다. “공항”, “음식”, “서울” 같은 단어로 검색해 보세요.</div>
+    <div class="ad">광고 영역 예정 — 이 시안에는 실제 광고가 없습니다</div>
+  </div></section>
+  <section class="book" id="experiences"><div class="wrap"><div class="section-title"><div><span class="eyebrow" style="color:#a8dfca">체험·예약</span><h2>여행을 더 특별하게</h2><p class="muted">정식 운영 시 승인된 제휴 상품으로 연결될 예정입니다. 이 시안에는 제휴 추적이 적용되어 있지 않습니다.</p></div></div>
+  <div class="deals">
+    <div class="deal"><h3>한복 체험·궁궐 사진</h3><p>전통 한복 대여와 사진 촬영 체험을 살펴보세요.</p><a class="btn" href="https://www.creatrip.com/en" target="_blank" rel="noopener noreferrer">제휴 사이트 이동 ↗</a></div>
+    <div class="deal"><h3>입장권·당일 투어</h3><p>인기 관광지 입장권과 가이드 투어를 찾아보세요.</p><a class="btn" href="https://www.klook.com/" target="_blank" rel="noopener noreferrer">제휴 사이트 이동 ↗</a></div>
+    <div class="deal"><h3>K-뷰티 체험</h3><p>외국인 방문객을 위한 뷰티·헤어·스타일링 서비스.</p><a class="btn" href="https://www.creatrip.com/en" target="_blank" rel="noopener noreferrer">제휴 사이트 이동 ↗</a></div>
+  </div><div class="note">시안 안내: 업체, 예약 가능 여부, 가격, 수수료는 제휴 계약 후 확인해야 합니다. 여기 표시된 상품은 콘텐츠 구상일 뿐 검증된 상품이 아닙니다.</div>
+  </div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footgrid"><div><h3>코리아 이지트립</h3><p>한국 여행을 현지인처럼. 호기심 많은 여행자를 위한 독립 여행 정보 사이트입니다.</p><p><strong>시안 안내:</strong> 실제 예약·결제 서비스가 아닌 화면 검토용 시안입니다.</p></div><div><h3>바로가기</h3><a href="#start">여행 준비</a><a href="#destinations">여행지</a><a href="#newsteaser">관광 뉴스</a><a href="#plan">일정 만들기</a></div><div><h3>공식 링크</h3><a href="https://english.visitkorea.or.kr/" target="_blank" rel="noopener noreferrer">한국관광공사 ↗</a><a href="https://www.k-eta.go.kr/" target="_blank" rel="noopener noreferrer">K-ETA 공식 사이트 ↗</a><a href="#experiences">체험 아이디어</a></div></div>
+<div class="footbottom">© 2026 코리아 이지트립 · 시안 · 정식 공개 전에 콘텐츠, 제휴, 개인정보 처리방침, 쿠키 동의 절차를 완비해야 합니다.
+<div class="credits" id="credits"></div></div></div></footer>
+<dialog id="articleDialog" aria-labelledby="articleTitle"><button class="dialog-close" aria-label="닫기" id="closeDialog">×</button><figure class="dlg-photo"><img id="articleImg" src="" alt=""/><figcaption id="articleCredit"></figcaption></figure><div class="dlg-body"><div class="eyebrow" id="articleCat"></div><h2 id="articleTitle"></h2><p class="article-body" id="articleBody"></p><div class="dlg-links-title">공식 정보 바로가기</div><div class="dlg-links" id="articleLinks"></div></div></dialog>
+<script src="news-data.js"></script>
+<script src="i18n-dict.js"></script>
+<script src="i18n-places.js"></script>
+<script src="i18n-data.js"></script>
+<script src="i18n.js"></script>
+<script src="places.js"></script>
+<script>
+(function(){'use strict';
+  const $=s=>document.querySelector(s);
+  const VK=['한국관광공사 (Visit Korea)','https://english.visitkorea.or.kr/'];
+  const articleContent={
+    airport:{cat:'교통 · 처음 가는 분',img:'g_airport',credit:'인천공항 공항철도 승강장 — LERK, CC BY-SA 4.0',title:'인천공항에서 서울 가는 법',body:'가장 흔한 방법은 공항철도, 공항 리무진버스, 택시 세 가지입니다.\n\n1. 도착 터미널과 숙소가 있는 동네를 먼저 확인하세요.\n2. 열차 시간표, 버스 정류장, 요금은 공식 안내에서 최신 정보를 확인하세요.\n3. 입국 심사와 수하물 수령 시간을 넉넉히 잡으세요.',links:[['인천국제공항 공식 사이트','https://www.airport.kr/'],['공항철도(AREX) 공식 사이트','https://www.arex.or.kr/']]},
+    tmoney:{cat:'교통 · 꿀팁',img:'g_tmoney',credit:'서울 지하철 1호선 — Mtattrain, CC BY-SA 4.0',title:'티머니와 지하철 이용법',body:'충전식 교통카드가 있으면 대부분의 대중교통을 편하게 탈 수 있습니다.\n\n1. 카드 구입·충전 방법은 최신 안내를 확인하세요.\n2. 노선도로 환승 구간과 막차 시간을 미리 확인하세요.\n3. 이동 횟수를 생각해 잔액을 넉넉히 충전해 두세요.',links:[['티머니 공식 사이트','https://www.tmoney.co.kr/'],['서울교통공사','https://www.seoulmetro.co.kr/']]},
+    entry:{cat:'여행 기본 · 공식 링크',img:'g_entry',credit:'인천공항 출입국·외국인정책본부 안내 — Vuong Tri Binh, CC BY-SA 4.0',title:'비자·입국 체크리스트',body:'입국 조건은 국적, 방문 목적, 여행 시기에 따라 다릅니다. 최종 판단은 블로그가 아닌 공식 기관 정보를 기준으로 하세요.\n\n1. 여권 유효기간과 비자 여부를 공식 기관에서 확인하세요.\n2. K-ETA가 필요하다면 반드시 공식 사이트를 이용하세요.\n3. 출발 직전에 한 번 더 확인하세요.',links:[['K-ETA 공식 사이트','https://www.k-eta.go.kr/'],['출입국·외국인정책본부','https://www.immigration.go.kr/'],['하이코리아 (외국인 종합 안내)','https://www.hikorea.go.kr/']]},
+    apps:{cat:'앱 · 처음 가는 분',img:'g_apps',credit:'서울 명동 거리 — Dwxn, CC BY-SA 4.0',title:'한국 여행 필수 앱',body:'현지 지도 앱, 번역 앱, 모바일 데이터가 있으면 훨씬 편합니다.\n\n1. 출발 전에 지도 앱을 미리 설치하세요.\n2. 숙소 주소를 한글과 영어로 저장해 두세요.\n3. 오프라인 번역 기능을 확인하세요.',links:[['네이버 지도','https://map.naver.com/'],['카카오맵','https://map.kakao.com/'],VK]},
+    stays:{cat:'숙소 · 계획',img:'g_stays',credit:'서울 홍대 거리 — lumoplank, CC0',title:'서울 숙소, 어느 동네가 좋을까',body:'일정에 맞춰 동네를 고르세요.\n\n1. 관광 중심: 궁궐과 역사 지구 접근성을 비교하세요.\n2. 카페와 젊은 문화: 홍대 일대를 살펴보세요.\n3. 쇼핑과 교통: 명동과 인근 지역을 비교하세요.\n\n숙소 상세, 추가 요금, 접근성, 취소 규정은 최종 예약 사이트에서 확인하세요.',links:[['비짓서울 (서울관광재단)','https://www.visitseoul.net/'],VK]},
+    food:{cat:'음식·문화 · 꿀팁',img:'g_food',credit:'비빔밥 — Andy Li, CC0',title:'처음 먹는 한식 가이드',body:'한식 식사, 시장 간식, 지역 별미를 골고루 드셔 보세요.\n\n1. 알레르기나 식이 제한이 있다면 미리 알리세요.\n2. 가격과 영업시간은 현장에서 확인하세요.\n3. 시장과 식당 예절을 지켜주세요.',links:[VK,['비짓서울 (서울관광재단)','https://www.visitseoul.net/']]}
+  };  window.ARTICLES=articleContent;
+  const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const placeKo={Seoul:'서울',Busan:'부산',Jeju:'제주'},interestKo={Culture:'역사·문화',Food:'음식·시장',"K-pop":'K-팝·뷰티',Nature:'자연·풍경'};
+  let currentItinerary='';
+  function makeItinerary(noScroll){
+    const place=$('#place').value,days=Number($('#days').value),interest=$('#interest').value;
+    const plan=window.PLAN[place][interest];
+    $('#resultHeading').textContent=`${placeKo[place]} ${days}일 추천 일정`;
+    $('#resultDescription').textContent=`테마: ${interestKo[interest]} · 예시 코스이며 실시간 예약·요금 정보가 아닙니다.`;
+    const cards=Array.from({length:days},(_,i)=>({day:i+1,label:plan[i][1],p:window.PLACES[plan[i][0]]}));
+    const fallback=`images/${place.toLowerCase()}.jpg`;
+    const enc=encodeURIComponent;
+    $('#dayCards').innerHTML=cards.map(x=>`<article class="day-card"><div class="day-photo"><img src="${x.p.img||fallback}" alt="${escapeHtml(x.p.name)}" ${x.p.img?'':`data-wiki="${escapeHtml(x.p.wiki||'')}"`} loading="lazy"/><span class="day-badge">${x.day}일차</span><a class="photo-src" data-src-for="${escapeHtml(x.p.wiki||'')}" target="_blank" rel="noopener noreferrer" hidden>사진: 위키백과</a></div><div class="day-text"><h4>${escapeHtml(I18N.lang==='ko'?x.label:x.p.name)}</h4><div class="day-place">📍 ${escapeHtml(x.p.name)}</div><p>${escapeHtml(x.p.intro)}</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=${enc(x.p.map)}" target="_blank" rel="noopener noreferrer">구글지도에서 크게 보기 ↗</a></div><div class="day-map"><iframe title="${escapeHtml(x.p.name)}" src="https://www.google.com/maps?q=${enc(x.p.map)}&hl=${I18N.lang==='zh'?'zh-CN':I18N.lang}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></article>`).join('');
+    const stops=cards.map(x=>x.p.map);
+    let routeHtml='';
+    if(stops.length>1){const route=`https://www.google.com/maps/dir/?api=1&origin=${enc(stops[0])}&destination=${enc(stops[stops.length-1])}`+(stops.length>2?`&waypoints=${stops.slice(1,-1).map(enc).join('%7C')}`:'');routeHtml=`<p style="margin:0 0 14px"><a class="btn btn-outline" href="${route}" target="_blank" rel="noopener noreferrer">전체 장소 구글지도에서 연결해 보기 ↗</a></p>`;}
+    $('#routeLink').innerHTML=routeHtml;
+    loadPhotos(cards.filter(x=>!x.p.img).map(x=>x.p.wiki).filter(Boolean));
+    const T=(k,v)=>I18N.t(k,v);const tr=s=>I18N.tr(s);
+    currentItinerary=`${T('dlHead')}\n${tr(placeKo[place])} · ${tr(days+'일')} · ${tr(interestKo[interest])}\n\n${cards.map(x=>`${T('dayN',{n:x.day})}: ${I18N.lang==='ko'?x.label:x.p.name}\n${T('dlPlace')}${x.p.name}\n${x.p.intro}\n${T('dlMap')}https://www.google.com/maps/search/?api=1&query=${enc(x.p.map)}\n`).join('\n')}\n${T('dlFoot')}\n`;
+    $('#plannerResult').classList.add('show');
+    if(noScroll!==true)$('#plannerResult').scrollIntoView({behavior:'smooth',block:'start'});
+  }
+  // 위키백과에서 장소 사진을 불러옵니다. 실패하면 지역 대표 사진이 그대로 남습니다.
+  const photoCache={};
+  function applyPhotos(){
+    document.querySelectorAll('img[data-wiki]').forEach(img=>{
+      const w=img.dataset.wiki,u=photoCache[w];
+      if(w&&u){img.src=u;const a=img.parentElement.querySelector("a.photo-src");if(a){a.href='https://ko.wikipedia.org/wiki/'+encodeURIComponent(w.replace(/ /g,'_'));a.hidden=false;}}
+    });
+  }
+  async function loadPhotos(titles){
+    const need=[...new Set(titles)].filter(t=>!(t in photoCache));
+    if(need.length){
+      try{
+        const url='https://ko.wikipedia.org/w/api.php?action=query&format=json&origin=*&redirects=1&prop=pageimages&piprop=thumbnail&pithumbsize=640&titles='+encodeURIComponent(need.join('|'));
+        const res=await fetch(url);const data=await res.json();const q=data.query||{};
+        const norm={},red={};(q.normalized||[]).forEach(n=>norm[n.from]=n.to);(q.redirects||[]).forEach(n=>red[n.from]=n.to);
+        const byTitle={};Object.values(q.pages||{}).forEach(p=>{if(p.thumbnail)byTitle[p.title]=p.thumbnail.source;});
+        need.forEach(t=>{let k=t;if(norm[k])k=norm[k];if(red[k])k=red[k];photoCache[t]=byTitle[k]||null;});
+      }catch(e){need.forEach(t=>photoCache[t]=null);}
+    }
+    applyPhotos();
+  }
+  $('#generate').addEventListener('click',()=>makeItinerary());
+  $('#download').addEventListener('click',()=>{if(!currentItinerary)return;const blob=new Blob([currentItinerary],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='korea-easy-trip-itinerary.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),3000);});
+  document.querySelectorAll('[data-preset]').forEach(btn=>btn.addEventListener('click',()=>{const [place,days,interest]=btn.dataset.preset.split('|');$('#place').value=place;$('#days').value=days;$('#interest').value=interest;makeItinerary();}));
+  document.querySelectorAll('[data-place]').forEach(a=>a.addEventListener('click',()=>{$('#place').value=a.dataset.place;}));
+  $('#menuButton').addEventListener('click',()=>{const isOpen=$('#navigation').classList.toggle('open');$('#menuButton').setAttribute('aria-expanded',String(isOpen));});
+  document.querySelectorAll('#navigation a').forEach(a=>a.addEventListener('click',()=>{$('#navigation').classList.remove('open');$('#menuButton').setAttribute('aria-expanded','false');}));
+  $('#guideSearch').addEventListener('input',e=>{let count=0;const q=e.target.value.toLowerCase().trim();document.querySelectorAll('.guide').forEach(card=>{const match=card.textContent.toLowerCase().includes(q)||card.dataset.search.includes(q);card.style.display=match?'flex':'none';if(match)count++;});$('#guideCount').textContent=count+'개의 가이드';$('#noResults').style.display=count?'none':'block';});
+  document.querySelectorAll('[data-article]').forEach(btn=>btn.addEventListener('click',()=>{const d=articleContent[btn.dataset.article];$('#articleTitle').textContent=d.title;$('#articleCat').textContent=d.cat;$('#articleBody').textContent=d.body;const im=$('#articleImg');im.src='images/'+d.img+'.jpg';im.alt=d.title;$('#articleCredit').textContent=I18N.t('photo')+d.credit;$('#articleLinks').innerHTML=d.links.map(l=>`<a class="dlg-link" href="${escapeHtml(l[1])}" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(l[0])}</span><span aria-hidden="true">↗</span></a>`).join('');$('#articleDialog').showModal();}));
+  $('#closeDialog').addEventListener('click',()=>$('#articleDialog').close());
+  $('#articleDialog').addEventListener('click',e=>{if(e.target===$('#articleDialog'))$('#articleDialog').close();});
+  // 지역 페이지에서 넘어온 일정 요청 (?preset=Busan|3|Nature)
+  (function(){const v=new URLSearchParams(location.search).get('preset');if(!v)return;const [pl,dy,it]=v.split('|');if(templatesOk(pl,it)){$('#place').value=pl;$('#days').value=dy;$('#interest').value=it;setTimeout(makeItinerary,100);}function templatesOk(a,b){return window.PLAN&&window.PLAN[a]&&window.PLAN[a][b];}})();
+  // 첫 화면 배경 슬라이드
+  (function(){
+    const slides=[...document.querySelectorAll('.hero-slides .slide')],dots=[...document.querySelectorAll('.hero-dots button')],cap=$('#heroCap');
+    if(!slides.length)return;let cur=0,timer=null;
+    function show(n){cur=(n+slides.length)%slides.length;slides.forEach((s,i)=>s.classList.toggle('on',i===cur));dots.forEach((d,i)=>d.classList.toggle('on',i===cur));cap.textContent=slides[cur].dataset.cap;}
+    function start(){stop();if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;timer=setInterval(()=>show(cur+1),6500);}
+    function stop(){if(timer){clearInterval(timer);timer=null;}}
+    dots.forEach((d,i)=>d.addEventListener('click',()=>{show(i);start();}));
+    start();
+  })();
+  // 테마별 추천 장소
+  (function(){
+    const T=window.THEMES,P=window.PLACES;let cur='modern';const enc=encodeURIComponent;
+    const tabs=$('#spotTabs');tabs.innerHTML=Object.keys(T).map(k=>`<button class="chip" type="button" data-t="${k}" aria-pressed="false">${escapeHtml(T[k].label)}</button>`).join('');
+    function render(k){
+      cur=k;const t=T[k];
+      tabs.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.t===k)));
+      $('#spotTitle').textContent=t.label;$('#spotDesc').textContent=t.desc;
+      $('#spotGrid').innerHTML=t.ids.map(id=>{const p=P[id];const src=p.img||t.fb;return `<article class="spot"><div class="day-photo"><img src="${src}" alt="${escapeHtml(p.name)}" ${p.img?'':`data-wiki="${escapeHtml(p.wiki||'')}"`} loading="lazy"/><a class="photo-src" target="_blank" rel="noopener noreferrer" hidden>사진: 위키백과</a></div><div class="spot-body"><h3>${escapeHtml(p.name)}</h3><p>${escapeHtml(p.intro)}</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=${enc(p.map)}" target="_blank" rel="noopener noreferrer">구글지도에서 위치 보기 ↗</a></div></article>`;}).join('');
+      loadPhotos(t.ids.map(id=>P[id]).filter(p=>!p.img&&p.wiki).map(p=>p.wiki));
+    }
+    tabs.addEventListener('click',e=>{const b=e.target.closest('.chip');if(b)render(b.dataset.t);});
+    document.querySelectorAll('[data-theme]').forEach(a=>a.addEventListener('click',()=>render(a.dataset.theme)));
+    $('#spotPlan').addEventListener('click',()=>{const [place,days,interest]=T[cur].preset.split('|');$('#place').value=place;$('#days').value=days;$('#interest').value=interest;makeItinerary();});
+    window.__renderSpots=()=>render(cur);
+    render('modern');
+  })();
+  // 홈 뉴스 미리보기
+  function renderHomeNews(){if(!window.NEWS)return;$('#homeNews').innerHTML=window.NEWS.slice(0,3).map((n,i)=>`<a class="news-card" href="news.html#n${i}"><div class="news-thumb"><img src="${escapeHtml(n.thumb||'images/hero.jpg')}" alt="" loading="lazy"/><span class="cat ${n.catClass}">${escapeHtml(n.cat)}</span></div><div class="news-body"><div class="meta"><span>${escapeHtml(n.date)}</span></div><h3>${escapeHtml(n.title)}</h3><p>${escapeHtml(n.summary)}</p><span class="text-link">자세히 보기 →</span></div></a>`).join('');}
+  renderHomeNews();
+  I18N.onChange(()=>{if(window.__renderSpots)window.__renderSpots();renderHomeNews();I18N.renderCredits($('#credits'));if($('#plannerResult').classList.contains('show'))makeItinerary(true);});
+  I18N.renderCredits($('#credits'));
+  I18N.start();
+})();
+</script>
+</body></html>

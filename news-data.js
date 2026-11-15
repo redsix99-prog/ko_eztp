@@ -1,0 +1,42 @@
+// 관광 뉴스 데이터 — 2026-11-15 기준으로 정리. 새 소식은 이 배열 맨 앞에 추가하세요.
+// 외국인 여행자가 궁금해할 소식 위주로 골랐고, 요약은 기사 내용을 바탕으로 직접 작성했습니다.
+// type: entry(입국·비자) / benefit(쇼핑·혜택) / event(축제·체험) / trend(방한 동향)
+window.NEWS_UPDATED='2026년 11월 15일';
+window.NEWS=[
+ {date:'2026.11.14 ~ 20',cat:'축제·체험',catClass:'event',type:'event',featured:true,img:'images/t_kpop.jpg',thumb:'images/t_kpop.jpg',
+  title:'서울여행주간 개막 — K-팝 댄스, K-푸드, 뷰티 체험을 한 주 동안',
+  summary:'서울시가 외국인 관광객을 위해 11월 14일부터 20일까지 ‘서울여행주간’을 엽니다. 동대문디자인플라자(DDP), 북촌, 용산 등에서 K-팝 춤 배우기, K-푸드 쿠킹 클래스, 뷰티·전통공예 체험이 진행되고, 마지막 날 20일에는 DDP 어울림광장에서 K-팝 랜덤플레이댄스와 태권도 특별공연이 열립니다. 체험 프로그램은 사전 신청 후 선착순으로 운영됐으니, 남은 자리와 현장 참여 가능 여부는 공식 누리집에서 확인하세요.',
+  sources:[['뉴스핌','https://www.newspim.com/news/view/20261103000289'],['서울경제','https://m.sedaily.com/article/20109908']]},
+ {date:'2026.12.23 ~ 2027.02.13',cat:'쇼핑·혜택',catClass:'policy',type:'benefit',thumb:'images/t_myeongdong.jpg',
+  title:'코리아그랜드세일, 겨울 비수기에 쇼핑·K-컬처 체험 할인',
+  summary:'기업 모집 공고에 따르면 다음 코리아그랜드세일은 12월 23일부터 2027년 2월 13일까지로 잡혀 있습니다. 쇼핑 기획전과 K-컬처 체험, 웰컴센터·팝업부스가 마련되고, 외국인 결제 앱과 연계해 최대 15% 상당의 즉시 할인·환급 혜택도 예고됐습니다. 보도마다 기간과 혜택 내용이 조금씩 달라 확정 일정과 조건은 공식 누리집에서 꼭 확인해야 합니다.',
+  sources:[['코리아그랜드세일 공식 공고','https://recruit.koreagrandsale.co.kr/'],['The Korea Post','http://www.koreapost.com/news/articleView.html?idxno=47082']]},
+ {date:'2026년 말까지',cat:'입국·비자',catClass:'policy',type:'entry',thumb:'images/g_entry.jpg',
+  title:'K-ETA 한시 면제, 올해 12월 31일까지 — 내년 이후는 아직 미정',
+  summary:'법무부는 K-ETA(전자여행허가) 한시 면제를 2026년 12월 31일까지 연장했습니다. 이미 면제 대상이던 국가의 국민에게만 적용됩니다. 면제 대상자도 원하면 K-ETA를 신청할 수 있고, 이 경우 수수료가 붙습니다. 2027년 이후 다시 의무화할지는 공식 발표가 없으니, 내년 초 입국 예정이라면 출발 전에 공식 사이트를 확인하세요.',
+  sources:[['외교부 공지','https://www.mofa.go.kr/ca-en/brd/m_5231/view.do?seq=761797'],['EY Tax News','https://taxnews.ey.com/news/2026-0101-korea-extends-temporary-electronic-travel-authorization-exemption-until-31-december-2026']]},
+ {date:'~ 2026.12.31',cat:'입국·비자',catClass:'policy',type:'entry',
+  title:'중국 단체관광객 무비자 입국, 올해 말까지 연장',
+  summary:'법무부는 중국인 단체관광객의 무비자 입국 허용 기간을 2026년 12월 31일까지 늘렸습니다. 중국이 한국인에게 적용하는 무비자 기간과 같게 맞춘 조치입니다. 3인 이상 단체가 지정 전담여행사를 통해 입국해야 하는 등 조건이 있고, 2027년 이후 연장 여부는 아직 알려지지 않았습니다.',
+  sources:[['여행신문','https://www.traveltimes.co.kr/news/articleView.html?idxno=416057'],['주칭다오총영사관 공지','https://www.mofa.go.kr/cn-qingdao-ko/brd/m_24477/view.do?seq=1357024']]},
+ {date:'2026.11.12',cat:'방한 동향',catClass:'',type:'trend',
+  title:'방한 외국인 관광객, 사상 처음 2,000만 명 돌파',
+  summary:'문화체육관광부는 11월 12일 올해 방한 외국인 관광객이 처음으로 2,000만 명을 넘어섰다고 밝혔습니다. 2012년 1,000만 명을 기록한 지 14년 만입니다. 11일까지 잠정 집계 1,997만 명에 일평균 방문객 수를 더해 추산한 수치이며, 문체부는 연말 2,300만 명 달성도 가능하다고 내다봤습니다.',
+  sources:[['뉴스핌','https://www.newspim.com/news/view/20261112000795'],['한국경제','https://www.hankyung.com/article/202611122693g'],['경향신문','https://www.khan.co.kr/article/202611121623001/']]},
+ {date:'2026.11.12',cat:'방한 동향',catClass:'',type:'trend',
+  title:'서울 밖으로 향하는 여행자 늘었다 — 지방 공항 입국 37% 증가',
+  summary:'비수도권 공항으로 입국한 외국인은 324만 명으로 작년 같은 기간보다 37.4% 늘었고, 전체 방한객의 19.0%를 차지했습니다. 부산·제주 등 지방 여행에 대한 관심이 커지고 있다는 뜻입니다. 같은 기간 외국인 카드 소비는 1~9월 15조 9,416억 원으로 47.7% 늘었습니다.',
+  sources:[['한국경제','https://www.hankyung.com/article/202611122693g'],['뉴스핌','https://www.newspim.com/news/view/20261112000795']]},
+ {date:'2026.11.20 ~ 22',cat:'쇼핑·혜택',catClass:'policy',type:'benefit',
+  title:'2026 대한민국 관광기념품 박람회, 서울 DDP에서',
+  summary:'문화체육관광부가 주최하고 한국관광공사가 주관하는 관광기념품 박람회가 11월 20일부터 22일까지 동대문디자인플라자(DDP)에서 열립니다. 한국다운 기념품을 한자리에서 구경하고 싶은 여행자에게 좋은 기회입니다.',
+  sources:[['스페셜타임스','https://www.specialtimes.co.kr/news/articleView.html?idxno=485100']]},
+ {date:'2026.09.19 ~ 10.11 (종료)',cat:'축제·체험',catClass:'event',type:'event',
+  title:'서울환대주간 가을 — 공항에서 국가유산 무료 관광패스 증정',
+  summary:'가을 서울환대주간에는 공항에서 선착순으로 나눠 준 ‘디스커버서울패스 헤리티지 에디션’으로 4대 궁궐, 조선왕릉, 종묘 등 국가유산 12곳을 무료로 입장할 수 있었고, 명동에서는 K-팝 공연도 열렸습니다. 이 행사는 끝났지만 비슷한 외국인 환영 프로그램이 이어질 수 있어 방문 시기에 맞는 서울시 안내를 확인해 볼 만합니다.',
+  sources:[['인사이트','https://www.insight.co.kr/news/573718'],['파이낸셜뉴스','https://www.fnnews.com/news/202609151812196599']]},
+ {date:'2026.04.10 ~ 05.05 (종료)',cat:'축제·체험',catClass:'event',type:'event',
+  title:'서울스프링페스티벌, 외국인 참여 117만 명',
+  summary:'올봄 서울스프링페스티벌에는 외국인 117만여 명이 참여해 전체의 약 17%를 차지했고, 한강 드론쇼와 여의도 물빛광장 공연 같은 야간 콘텐츠가 외국인 사이에서 입소문을 탔다고 합니다. 한강 야경은 계절을 바꿔 가며 서울의 주요 볼거리로 자리 잡는 중입니다.',
+  sources:[['이투데이','https://www.etoday.co.kr/news/view/2585853'],['서울시 축제 포털','https://festival.seoul.go.kr/festival/main/festivalView.do?festacode=347']]}
+];
