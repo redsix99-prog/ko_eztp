@@ -1,11 +1,58 @@
 {
- "status": "pending",
- "updated": null,
- "period": null,
- "note": "Official figures appear here after the first successful sync with the Korea Tourism Organization open data service.",
+ "status": "ok",
+ "updated": "2026-11-15",
+ "period": "2026-09-19 to 2026-10-16 (28 days of data)",
+ "note": "Foreign visitors by region: the sum of daily unique visitor counts over the period shown (mobile-data based; a visitor staying three days counts three times). Source: Korea Tourism Organization open data.",
  "sources": [
-  {"name":"Korea Tourism Data Lab","url":"https://datalab.visitkorea.or.kr/"},
-  {"name":"Korea Tourism Organization (Visit Korea)","url":"https://english.visitkorea.or.kr/"}
+  {
+   "name": "Korea Tourism Data Lab",
+   "url": "https://datalab.visitkorea.or.kr/"
+  },
+  {
+   "name": "Korea Tourism Organization (Visit Korea)",
+   "url": "https://english.visitkorea.or.kr/"
+  }
  ],
- "foreignVisitorsByRegion": []
+ "foreignVisitorsByRegion": [
+  {
+   "region": "Seoul",
+   "visitors": 4009738
+  },
+  {
+   "region": "Incheon",
+   "visitors": 2658883
+  },
+  {
+   "region": "Gyeonggi",
+   "visitors": 1848361
+  },
+  {
+   "region": "Busan",
+   "visitors": 1542073
+  },
+  {
+   "region": "Jeju",
+   "visitors": 1261430
+  },
+  {
+   "region": "Gyeongnam",
+   "visitors": 703040
+  },
+  {
+   "region": "Gwangju & Jeonnam",
+   "visitors": 599543
+  },
+  {
+   "region": "Gyeongbuk",
+   "visitors": 467053
+  },
+  {
+   "region": "Chungnam",
+   "visitors": 376634
+  },
+  {
+   "region": "Chungbuk",
+   "visitors": 280379
+  }
+ ]
 }

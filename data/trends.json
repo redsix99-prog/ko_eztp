@@ -2,45 +2,198 @@
  "updated": "2026-11-15",
  "note": "Editor's trend notes. These are practical observations, not official statistics. Official figures are shown separately in the statistics panel once synced.",
  "items": [
-  {"id":"autumn-foliage","date":"2026-11-15","tag":"Season","status":"approved","auto":false,
-   "title":"Autumn foliage: go early, go on weekdays",
-   "summary":"Mountains such as Seoraksan and Bukhansan draw heavy crowds when the leaves turn, usually from mid-October into early November, later in the south. Weekday mornings and shuttle buses make trails and parking far easier. Check trail notices before you set out.",
-   "related":["seorak","bukhansan","namiseom"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"kbeauty-tax-refund","date":"2026-11-15","tag":"Shopping","status":"approved","auto":false,
-   "title":"K-beauty shopping: ask about tax-free before you pay",
-   "summary":"Many beauty and fashion stores in Myeong-dong and Seongsu offer tourist tax refunds. Bring your passport, keep the receipts, and ask at the counter whether the store refunds on the spot or at an airport kiosk. Minimum amounts and rules can change, so confirm the current conditions.",
-   "related":["myeongdong","seongsu"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"seongsu-popups","date":"2026-11-15","tag":"Neighborhood","status":"approved","auto":false,
-   "title":"Seongsu-dong: the neighborhood of pop-ups",
-   "summary":"Brand pop-up stores and limited-time exhibitions keep changing in Seongsu's converted factories and warehouses. Visit on a weekday morning to avoid queues, and check each event's reservation rules on its own page or social account.",
-   "related":["seongsu","hongdae"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"hangang-night","date":"2026-11-15","tag":"Local life","status":"approved","auto":false,
-   "title":"Han River evenings: picnic, ramyeon and the Banpo fountain",
-   "summary":"Locals head to Han River parks after work to sit by the water, order delivery chicken or cook instant ramyeon in store machines. Banpo's Moonlight Rainbow Fountain runs on a seasonal schedule, so check the official timetable before you plan around it.",
-   "related":["banpo","tower","lotte"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"hanbok-palaces","date":"2026-11-15","tag":"Culture","status":"approved","auto":false,
-   "title":"Palaces in hanbok: what to check first",
-   "summary":"Wearing hanbok is a popular way to visit Gyeongbokgung and Changdeokgung, and palaces have offered admission benefits for hanbok wearers. Confirm the current rules and each palace's weekly closing day (often Monday or Tuesday) before you go.",
-   "related":["gbg","cdg","bukchon"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"jeju-east-west","date":"2026-11-15","tag":"Region","status":"approved","auto":false,
-   "title":"Jeju beyond the classics: coastal cafes and short walks",
-   "summary":"Beyond Seongsan Ilchulbong, travelers are building days around coastal cafes, short forest walks and small harbor restaurants. A rental car makes this easy, but foreign drivers need an international driving permit, and buses reach the main sights.",
-   "related":["seongsan","saryeoni","manjang","udo"],"source":{"name":"Visit Jeju","url":"https://www.visitjeju.net/en/"}},
-  {"id":"busan-night-views","date":"2026-11-15","tag":"Region","status":"approved","auto":false,
-   "title":"Busan after dark: bridge lights, raw fish and seaside walks",
-   "summary":"Gwangalli's bridge lights, the raw-fish centers by the waterside and Haeundae's evening walks make Busan a strong night destination. Large fireworks events are usually announced in advance, so check the festival calendar if your dates are flexible.",
-   "related":["gwangalli","haeundae","jagalchi"],"source":{"name":"Visit Busan","url":"https://www.visitbusan.net/en/"}},
-  {"id":"market-street-food","date":"2026-11-15","tag":"Food","status":"approved","auto":false,
-   "title":"Traditional markets as an easy first food tour",
-   "summary":"Gwangjang Market in Seoul and Jagalchi in Busan let first-time visitors sample many local dishes in one stop. Choose busy stalls, carry some cash, and check price lists first, especially for raw seafood sold by weight.",
-   "related":["gwangjang","jagalchi","abai"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"winter-lights","date":"2026-11-15","tag":"Season","status":"approved","auto":false,
-   "title":"Winter in Korea: light festivals and mountain snow",
-   "summary":"From late autumn, gardens and parks near Seoul hold seasonal light festivals, and mountains such as Seoraksan turn white. Dress in layers, check opening hours, and keep extra time for cold-weather transport delays.",
-   "related":["seorak","namiseom","bukhansan"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}},
-  {"id":"drama-locations","date":"2026-11-15","tag":"K-culture","status":"approved","auto":false,
-   "title":"Following K-drama and film locations",
-   "summary":"Places like Nami Island, Bukchon's hanok lanes and Busan's Huinnyeoul coast are widely known from Korean dramas and films. Visit early, respect that people live in these neighborhoods, and avoid flying drones or shooting in restricted areas.",
-   "related":["namiseom","bukchon","huin"],"source":{"name":"Visit Korea","url":"https://english.visitkorea.or.kr/"}}
+  {
+   "id": "stats-2026-11",
+   "date": "2026-11-15",
+   "tag": "Official data",
+   "status": "draft",
+   "auto": true,
+   "title": "Where international visitors went: latest official figures",
+   "summary": "According to Korea Tourism Organization data, the regions with the most international visitors over the period 2026-09-19 to 2026-10-16 were Seoul, Incheon, Gyeonggi. Figures are daily unique visitors based on mobile data.",
+   "related": [],
+   "source": {
+    "name": "Korea Tourism Data Lab",
+    "url": "https://datalab.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "autumn-foliage",
+   "date": "2026-11-15",
+   "tag": "Season",
+   "status": "approved",
+   "auto": false,
+   "title": "Autumn foliage: go early, go on weekdays",
+   "summary": "Mountains such as Seoraksan and Bukhansan draw heavy crowds when the leaves turn, usually from mid-October into early November, later in the south. Weekday mornings and shuttle buses make trails and parking far easier. Check trail notices before you set out.",
+   "related": [
+    "seorak",
+    "bukhansan",
+    "namiseom"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "kbeauty-tax-refund",
+   "date": "2026-11-15",
+   "tag": "Shopping",
+   "status": "approved",
+   "auto": false,
+   "title": "K-beauty shopping: ask about tax-free before you pay",
+   "summary": "Many beauty and fashion stores in Myeong-dong and Seongsu offer tourist tax refunds. Bring your passport, keep the receipts, and ask at the counter whether the store refunds on the spot or at an airport kiosk. Minimum amounts and rules can change, so confirm the current conditions.",
+   "related": [
+    "myeongdong",
+    "seongsu"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "seongsu-popups",
+   "date": "2026-11-15",
+   "tag": "Neighborhood",
+   "status": "approved",
+   "auto": false,
+   "title": "Seongsu-dong: the neighborhood of pop-ups",
+   "summary": "Brand pop-up stores and limited-time exhibitions keep changing in Seongsu's converted factories and warehouses. Visit on a weekday morning to avoid queues, and check each event's reservation rules on its own page or social account.",
+   "related": [
+    "seongsu",
+    "hongdae"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "hangang-night",
+   "date": "2026-11-15",
+   "tag": "Local life",
+   "status": "approved",
+   "auto": false,
+   "title": "Han River evenings: picnic, ramyeon and the Banpo fountain",
+   "summary": "Locals head to Han River parks after work to sit by the water, order delivery chicken or cook instant ramyeon in store machines. Banpo's Moonlight Rainbow Fountain runs on a seasonal schedule, so check the official timetable before you plan around it.",
+   "related": [
+    "banpo",
+    "tower",
+    "lotte"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "hanbok-palaces",
+   "date": "2026-11-15",
+   "tag": "Culture",
+   "status": "approved",
+   "auto": false,
+   "title": "Palaces in hanbok: what to check first",
+   "summary": "Wearing hanbok is a popular way to visit Gyeongbokgung and Changdeokgung, and palaces have offered admission benefits for hanbok wearers. Confirm the current rules and each palace's weekly closing day (often Monday or Tuesday) before you go.",
+   "related": [
+    "gbg",
+    "cdg",
+    "bukchon"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "jeju-east-west",
+   "date": "2026-11-15",
+   "tag": "Region",
+   "status": "approved",
+   "auto": false,
+   "title": "Jeju beyond the classics: coastal cafes and short walks",
+   "summary": "Beyond Seongsan Ilchulbong, travelers are building days around coastal cafes, short forest walks and small harbor restaurants. A rental car makes this easy, but foreign drivers need an international driving permit, and buses reach the main sights.",
+   "related": [
+    "seongsan",
+    "saryeoni",
+    "manjang",
+    "udo"
+   ],
+   "source": {
+    "name": "Visit Jeju",
+    "url": "https://www.visitjeju.net/en/"
+   }
+  },
+  {
+   "id": "busan-night-views",
+   "date": "2026-11-15",
+   "tag": "Region",
+   "status": "approved",
+   "auto": false,
+   "title": "Busan after dark: bridge lights, raw fish and seaside walks",
+   "summary": "Gwangalli's bridge lights, the raw-fish centers by the waterside and Haeundae's evening walks make Busan a strong night destination. Large fireworks events are usually announced in advance, so check the festival calendar if your dates are flexible.",
+   "related": [
+    "gwangalli",
+    "haeundae",
+    "jagalchi"
+   ],
+   "source": {
+    "name": "Visit Busan",
+    "url": "https://www.visitbusan.net/en/"
+   }
+  },
+  {
+   "id": "market-street-food",
+   "date": "2026-11-15",
+   "tag": "Food",
+   "status": "approved",
+   "auto": false,
+   "title": "Traditional markets as an easy first food tour",
+   "summary": "Gwangjang Market in Seoul and Jagalchi in Busan let first-time visitors sample many local dishes in one stop. Choose busy stalls, carry some cash, and check price lists first, especially for raw seafood sold by weight.",
+   "related": [
+    "gwangjang",
+    "jagalchi",
+    "abai"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "winter-lights",
+   "date": "2026-11-15",
+   "tag": "Season",
+   "status": "approved",
+   "auto": false,
+   "title": "Winter in Korea: light festivals and mountain snow",
+   "summary": "From late autumn, gardens and parks near Seoul hold seasonal light festivals, and mountains such as Seoraksan turn white. Dress in layers, check opening hours, and keep extra time for cold-weather transport delays.",
+   "related": [
+    "seorak",
+    "namiseom",
+    "bukhansan"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  },
+  {
+   "id": "drama-locations",
+   "date": "2026-11-15",
+   "tag": "K-culture",
+   "status": "approved",
+   "auto": false,
+   "title": "Following K-drama and film locations",
+   "summary": "Places like Nami Island, Bukchon's hanok lanes and Busan's Huinnyeoul coast are widely known from Korean dramas and films. Visit early, respect that people live in these neighborhoods, and avoid flying drones or shooting in restricted areas.",
+   "related": [
+    "namiseom",
+    "bukchon",
+    "huin"
+   ],
+   "source": {
+    "name": "Visit Korea",
+    "url": "https://english.visitkorea.or.kr/"
+   }
+  }
  ]
 }
