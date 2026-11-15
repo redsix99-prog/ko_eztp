@@ -182,6 +182,8 @@ function detect(){
   return 'en';
 }
 function setLang(l,silent){
+  // 언어별 정적 페이지(가이드 글)에서는 해당 언어의 주소로 이동합니다.
+  if(window.I18N_NAV&&window.I18N_PAGE_LANG&&l!==window.I18N_PAGE_LANG&&window.I18N_NAV[l]){try{localStorage.setItem('kt-lang',l);}catch(e){}location.href=window.I18N_NAV[l];return;}
   LANG=l;document.documentElement.lang=l==='zh'?'zh-CN':l;document.documentElement.setAttribute('data-lang',l);
   try{localStorage.setItem('kt-lang',l);}catch(e){}
   const sel=document.querySelector('#langSwitch select');if(sel)sel.value=l;
@@ -190,7 +192,18 @@ function setLang(l,silent){
   translateAll();
 }
 function start(){
-  LANG=detect();mountSwitcher();observe();
+  const PL=window.I18N_PAGE_LANG,NAV=window.I18N_NAV;
+  if(PL){
+    // 한국어 글 페이지: 방문자가 명시적으로 고른 언어(?lang= 또는 저장된 선택)가 있으면 그 언어의 같은 글로 이동합니다.
+    // 검색 로봇처럼 선택한 적이 없는 방문자는 이동시키지 않습니다.
+    if(PL==='ko'&&NAV){
+      let want=null;try{want=new URLSearchParams(location.search).get('lang');}catch(e){}
+      if(!want){try{want=localStorage.getItem('kt-lang');}catch(e){}}
+      if(want&&want!=='ko'&&NAV[want]){location.replace(NAV[want]);return;}
+    }
+    LANG=PL;try{localStorage.setItem('kt-lang',PL);}catch(e){}
+  }else{LANG=detect();}
+  mountSwitcher();observe();
   document.documentElement.lang=LANG==='zh'?'zh-CN':LANG;document.documentElement.setAttribute('data-lang',LANG);
   const sel=document.querySelector('#langSwitch select');if(sel)sel.value=LANG;
   applyData();
