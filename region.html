@@ -46,6 +46,7 @@
     const R=window.REGIONS[key]||null;
     if(!R){document.title=t('notFound');$('#app').innerHTML='<section class="section"><div class="wrap"><h1>'+t('notFound')+'</h1><p class="muted">'+t('notFoundSub')+'</p>'+chips()+'</div></section>';return;}
     document.title=t('regionTitle',{name:R.name});
+    let cn=document.querySelector('link[rel=canonical]');if(!cn){cn=document.createElement('link');cn.rel='canonical';document.head.appendChild(cn);}cn.href='https://korea-easytrip.com/region?r='+encodeURIComponent(key);
     const planBtn=R.preset?`<a class="btn btn-lg" href="index.html?preset=${enc(R.preset)}#plan">${esc(t('planBtn',{name:R.name}))}</a>`:`<a class="btn btn-lg" href="index.html#plan">${esc(t('planSeoul'))}</a>`;
     $('#app').innerHTML=`
     <section class="region-hero" style="background-image:url(${R.hero})"><div class="region-shade"></div><div class="wrap region-inner"><a class="back" href="index.html#destinations">${esc(t('back'))}</a><span class="hero-kicker">${esc(R.eng)}</span><h1>${esc(R.name)}</h1><p>${esc(R.tagline)}</p></div></section>
