@@ -15,8 +15,17 @@
    "localTip": "A cafe in an old Seochon bookstore, good for a quiet rest. Check official notices for hanbok admission perks.",
    "map": "경복궁 서울",
    "wiki": "경복궁",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264337",
+    "title": "Gyeongbokgung Palace (경복궁)",
+    "addr": "161 Sajik-ro, Jongno-gu, Seoul",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/98/3487598_image2_1.jpg",
+    "overview": "Gyeongbokgung Palace was built in 1395 as the official palace of the Joseon dynasty by Yi Seong-gye, the future King Taejo and founder of the new regime. Gyeongbokgung Palace is commonly referred to as the Northern Palace because of its location to the north, comparied to Changdeokgung Palace in the east and Gyeonghuigung Palace in the west. Gyeongbokgung Palace is arguably the most beautiful and is the largest of all five palaces. Many Joseon kings were crowned here. The premises were once destroyed by fire during the Imjin War (1592-1598). However, all of the palace buildings were later rest",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "bukchon",
@@ -31,8 +40,17 @@
    "localTip": "A bakery cafe in a hanok near Anguk Stn that locals like too. Bukchon is a residential area, so keep your voice down.",
    "map": "북촌한옥마을 서울",
    "wiki": "북촌 한옥마을",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "561382",
+    "title": "Bukchon Hanok Village (북촌한옥마을)",
+    "addr": "37 Gyedong-gil, Jongno-gu, Seoul",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/04/3304404_image2_1.jpg",
+    "overview": "Surrounded by Gyeongbokgung Palace, Changdeokgung Palace and Jongmyo Shrine, Bukchon Hanok Village is home to hundreds of traditional houses, called hanok, that date back to the Joseon dynasty. The name Bukchon, which literally translates to \"northern village,\" came about as the neighborhood lies north of two significant Seoul landmarks, Cheonggyecheon Stream and Jongno. Today, many of these hanoks operate as cultural centers, guesthouses, restaurants and tea houses, providing visitors with an opportunity to experience, learn and immerse themselves in traditional Korean culture. As Bukchon Han",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "cdg",
@@ -47,8 +65,17 @@
    "localTip": "Ikseon-dong has cafes and restaurants in converted hanok. It is quiet by day and crowded in the evening.",
    "map": "창덕궁 서울",
    "wiki": "창덕궁",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264348",
+    "title": "Changdeokgung Palace Complex [UNESCO World Heritage Site] (창덕궁과 후원 [유네스코 세계유산])",
+    "addr": "99 Yulgok-ro, Jongno-gu, Seoul",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/03/3092503_image2_1.jpg",
+    "overview": "Changdeokgung Palace was the second royal villa built following the construction of Gyeongbokgung Palace in 1405. It was the principal palace for many kings of the Joseon dynasty, and is the most well-preserved of the five remaining royal Joseon palaces. The palace grounds are comprised of a public palace area, a royal family residence building, and the rear garden. Known as a place of rest for the kings, the rear garden boasts a gigantic tree that is over 300 years old, a small pond and a pavilion. The palace gained importance starting from the time of Seongjong, the 9th king of Joseon, when ",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "insadong",
@@ -63,8 +90,17 @@
    "localTip": "A traditional tea house in Insadong, good for ssanghwacha or jujube tea with hangwa sweets. Check the location and hours in a map app.",
    "map": "인사동 서울",
    "wiki": "인사동",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "3075115",
+    "title": "Insadong Cultural Street (인사동 문화의 거리)",
+    "addr": "Insa-dong, Jongno-gu, Seoul Metropolitan City",
+    "tel": "",
+    "image": "http://tong.visitkorea.or.kr/cms/resource/53/3074553_image2_1.jpg",
+    "overview": "Insadong Cultural Street is a popular tourist destination for visitors from all around the world, thanks to its numerous art galleries, restaurants serving Korean table d&rsquo;hote, traditional teahouses, and street vendors lining the streets. Its most recognizable feature is the use of Hangeul (Korean script) in storefronts, which allows the visitors to really see just what makes this place so special. Unlike the nearby Ikseon-dong Hanok Street, Insadong Cultural Street has larger streets with wider stores, so it is much easier to traverse. On evenings and weekends, one can find buskers perf",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "gwangjang",
@@ -79,8 +115,17 @@
    "localTip": "A cafe in an old herbal medicine shop in Euljiro 3-ga (about 15 minutes on foot from Gwangjang). Lunch lines are long, so go early.",
    "map": "광장시장 서울",
    "wiki": "광장시장",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "273761",
+    "title": "Gwangjang Market (광장시장)",
+    "addr": "88, Changgyeonggung-ro, Jongno-gu, Seoul",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/81/2668981_image2_1.jpg",
+    "overview": "Gwangjang Market was the first permanent market in Korea and continues to thrive as a popular tourist destination today. The name Gwangjang means \"to gather from afar and keep altogether.\" The market began as a small trading center that brought in goods from nearby regions, but has now grown into a large wholesale market selling a variety of goods, including upholstery, imported goods, groceries, dried fish, traditional goods, and more. The most popular section of the market is the food street connected to the East Gate, North Gate 2, and South Gate 1. The food street caters to a wide range of",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "myeongdong",
@@ -112,8 +157,17 @@
    "localTip": "Small cafes sit in the Gwanghui-dong alleys across from DDP. The fashion malls stay open late and some wholesale markets open in the early hours.",
    "map": "동대문디자인플라자 서울",
    "wiki": "동대문 디자인 플라자",
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "2475097",
+    "title": "Dongdaemun Design Plaza (동대문디자인플라자 (DDP))",
+    "addr": "281 Eulji-ro, Jung-gu, Seoul",
+    "tel": "",
+    "image": "",
+    "overview": "Dongdaemun Design Plaza (DDP) has a meaning of Dream, Design, and Play. It holds various exhibitions, fashion shows, forums, conferences, and other domestic and international events. The building complex is divided into sections, which are named Allimteo, Beaumteo, Sallimteo, DDP Design Museum, Design Market & Eoullim Plaza, and Dongdaemun History & Culture Park. Designed by world-renowned architect Zaha Hadid, the building's exterior attracts the attention of many photographers with its delicate curves and bold shapes.",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "Dongdaemun Design Plaza"
   },
   {
@@ -129,8 +183,17 @@
    "localTip": "Songridan-gil (around Seokchon Stn, Line 8) is lined with independent cafes that locals like.",
    "map": "롯데월드타워 서울",
    "wiki": "롯데월드타워",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "2003918",
+    "title": "Lotte World Tower & Mall (롯데월드타워&롯데월드몰)",
+    "addr": "300 Olympic-ro, Songpa-gu, Seoul",
+    "tel": "",
+    "image": "",
+    "overview": "Lotte World Tower was designed with a conceptual motif inspired by Korean ceramics and writing brushes. With 123 floors total, the tower is the fifth tallest building in the world, standing at 555 meters. The tower contains galleries, cafés, and a luxury hotel, in addition to a skywalk and an observation deck. It is one of the best spots to appreciate the breathtaking view of Seoul's vibrant city lights. Lotte World Mall, located next to the tower, features Avenuel, a complex of luxury department stores. The multi-leveled mall draws in many visitors as one of the top shopping attractions in Se",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "seongsu",
@@ -145,8 +208,17 @@
    "localTip": "A spacious gallery-style cafe in an old warehouse that represents Seongsu well. Weekend afternoons are crowded.",
    "map": "성수동 카페거리 서울",
    "wiki": "성수동",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "2946681",
+    "title": "Seongsu-dong Cafe Street (성수동 카페거리)",
+    "addr": "Seongsu-dong, Seongdong-gu, Seoul",
+    "tel": "",
+    "image": "",
+    "overview": "Yeonmujang-gil in Seongsu-dong, known for old factories and a shoe workshop street, has been reborn as a place of trendy cafes and culture. The energy of car repair shops, printing factories, and handmade shoes street still exist today but, as global restaurant brands, select shops, and cafes have set up amidst busily operating factories, an atmosphere unique to Seongsu-dong has been created. \"Daerim Warehouse\" led to the change in the Seongsu-dong streets and can be said to be the originator of all warehouse-style cafes that are popular throughout Cafe Street today. The red-brick structure, a",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "hongdae",
@@ -161,8 +233,17 @@
    "localTip": "A roastery cafe in a former shoe factory in Hapjeong, with an atmosphere locals enjoy.",
    "map": "홍대입구 서울",
    "wiki": null,
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "1326972",
+    "title": "Hongdae (Hongik University Street) (홍대)",
+    "addr": "20 Hongik-ro, Mapo-gu, Seoul",
+    "tel": "",
+    "image": "",
+    "overview": "Hongdae is a neighborhood known for its youthful ambience, with shops selling everything from clothing and cosmetics to living goods and books, as well as unique cafés and restaurants. The streets are also filled with buskers and dance performances, making a walk here quite entertaining. Special streets such as ateliers’ street (lined with private institutions for art students preparing for university entrance exams), Picasso’s Street, and Club Street are also must-go places for anyone hoping to fully experience the Hongdae area.",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "Hongdae"
   },
   {
@@ -178,8 +259,17 @@
    "localTip": "The Haebangchon alleys below Namsan have small cafes with views, ideal for a rest after your visit.",
    "map": "N서울타워 서울",
    "wiki": "YTN서울타워",
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264550",
+    "title": "N Seoul Tower (남산서울타워)",
+    "addr": "105 Namsangongwon-gil, Yongsan-gu, Seoul",
+    "tel": "",
+    "image": "",
+    "overview": "Namsan Seoul Tower was the first multipurpose tower to be established in Korea, effectively incorporating a sightseeing observatory into a broadcasting tower. For the past 40 years, Namsan Seoul Tower has served as an iconic landmark of Korea and a representative tourist attraction. The tower's observatory offers an unobstructed view of the whole city, allowing it to become one of the all-time favorite attractions of Seoul citizens as well as domestic and international tourists. Featured in many dramas and reality shows, it is also a fan-favorite destination. Another highlight of the tower is ",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "N Seoul Tower"
   },
   {
@@ -195,8 +285,17 @@
    "localTip": "Seorae Village near the station has quiet cafes and bakeries. Check the fountain schedule for the season.",
    "map": "반포대교 달빛무지개분수 서울",
    "wiki": null,
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "1013338",
+    "title": "Banpo Hangang Park (반포한강공원)",
+    "addr": "40 Sinbanpo-ro 11-gil, Seocho-gu, Seoul",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/73/2933473_image2_1.bmp",
+    "overview": "Banpo Hangang Park is located on the southern side of the river centering on Banpo Bridge (Jamsu Bridge) between Hamnam Bridge (upstream) and Dongjak Bridge (downstream). The Rainbow Fountain built on both sides of Banpo Bridge was registered in The Guinness Book of Records in 2008 as the longest bridge fountain in the world with a total length of 1,140 meters. At night, over 200 lights create a fantastic view of a beautiful rainbow. In addition, the park is equipped with sports facilities including bubble playground, in-line skating track, soccer field, and basketball court. You may also enjo",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "Banpo Hangang Park"
   },
   {
@@ -212,8 +311,17 @@
    "localTip": "Cafes and restaurants cluster at the Ui-dong entrance for after the hike. Bring hiking shoes, water, and finish before sunset.",
    "map": "북한산 서울",
    "wiki": "북한산",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "1747593",
+    "title": "Bukhansan National Park (Seoul District) (북한산국립공원(서울))",
+    "addr": "262 Bogungmun-ro, Seongbuk-gu, Seoul",
+    "tel": "",
+    "image": "http://tong.visitkorea.or.kr/cms/resource/45/2526645_image2_1.jpg",
+    "overview": "Bukhansan Mountain was officially designated as a national park in 1983. Bukhansan National Park covers both Bukhansan and Dobongsan Mountains, and spans a total area of 80.699 ㎢. At the top of Bukhansan Mountain are Baegundae Terrace (835.6 m), Insubong Peak (810.5 m) and Mangyeongdae Terrace (799.5 m), which gave the mountain the nickname \"Samgaksan\" or the \"three-horned mountain.\" The mountain had other names: Sambongsan (mountain with three peaks), Hwasan (flower mountain), and Buaak (mountain shaped like a person giving a baby a piggyback ride). The current name, Bukhansan, was given afte",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "namiseom",
@@ -228,8 +336,17 @@
    "localTip": "There are cafes near the metasequoia lane on the island. Check official notices for ferry times and tickets.",
    "map": "남이섬 춘천",
    "wiki": "남이섬",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264244",
+    "title": "Nami Island (남이섬)",
+    "addr": "1 Namiseom-gil, Namsan-myeon, Chuncheon-si, Gangwon-do",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/30/3576830_image2_1.jpg",
+    "overview": "Nami Island, with the concept of \"Fairy Tale Village and Song Village,\" provides various cultural events, concerts, exhibitions, and more to give children dreams and hopes, couples' love and memories, and artists a space for creativity. Tourists can enjoy facilities including Song Museum, Picture Book Playground, MICE Center, and various activities such as Charity Train, Story Tour Bus, Bicycle, etc. Restaurants provide delicious food with carefully selected local ingredients and Hotel Jeonggwanru has themed accommodations. ◎ Travel information discovering the charm of Hallyu - Drama “Namiseom",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "gwangalli",
@@ -244,8 +361,17 @@
    "localTip": "Locals buy sashimi at the raw-fish center beside Millak Waterside Park and eat it on the steps. Prices vary by shop, so confirm weight and price first.",
    "map": "광안리해수욕장 부산",
    "wiki": "광안리해수욕장",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264250",
+    "title": "Gwangalli Beach (광안리해수욕장)",
+    "addr": "219 Gwanganhaebyeon-ro, Suyeong-gu, Busan",
+    "tel": "",
+    "image": "http://tong.visitkorea.or.kr/cms/resource/45/3311245_image2_1.jpg",
+    "overview": "Located to the west of Haeundae Beach, Gwangalli Beach is 1.4 kilometers long and 25~110 meters wide, and is famous for its fine sand. The area underwent a water purification process, which led the ecosystem to flourish in the nearby river waters. In addition to the beachfront, the Gwangalli area is filled with delicious restaurants and romantic cafes, as well as stores selling famous fashion brands. The area has plenty to offer, but many people come in the evening to take in the bright lights of Gwangandaegyo Bridge, stretching across the horizon.",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "haeundae",
@@ -260,8 +386,17 @@
    "localTip": "Haeundae Market near the station has street snacks, gukbap and seafood at local prices. Restaurants on the beachfront often charge tourist prices, so go one block inland.",
    "map": "해운대해수욕장 부산",
    "wiki": "해운대해수욕장",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264155",
+    "title": "Haeundae Beach (해운대해수욕장)",
+    "addr": "264 Haeundaehaebyeon-ro, Haeundae-gu, Busan",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/67/2612467_image2_1.jpg",
+    "overview": "Haeundae Beach is the most famous beach in Busan. The white sand beach is roughly 1.5 kilometers long, over a 30- to 50-meter wide area, creating a beautiful coastline before a shallow bay, making it perfect for swimming.People flock to Haeundae Beach every summer. All kinds of accommodations from luxury hotels to private guesthouses have developed in the area around the beach, making this the perfect summer vacation spot. Haeundae Beach is also famous for various cultural events and festivals held throughout the year. Other facilities in the area include Dongbaekseom Island, Busan Aquarium, a",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "gamcheon",
@@ -276,8 +411,17 @@
    "localTip": "Alleys inside the village have cafes and restaurants with views. People live here, so walk quietly, and wear comfortable shoes for the slopes and stairs.",
    "map": "감천문화마을 부산",
    "wiki": "감천문화마을",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "1998211",
+    "title": "Busan Gamcheon Culture Village (부산 감천문화마을)",
+    "addr": "203 Gamnae 2-ro, Saha-gu, Busan",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/91/3365491_image2_1.jpg",
+    "overview": "Gamcheon Culture Villiage was formed by refugees of the Korean war who built their houses in staircase-fashion on the foothills of a coastal mountain. The many alleys that cut through this community are vibrantly decorated with murals and sculptures created by the residents. Today, it is a popular attraction in Busan visited by a number of tourists every year.",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "jagalchi",
@@ -292,8 +436,17 @@
    "localTip": "The usual method is to choose fish from the tanks on the first floor and eat at a second-floor restaurant for a table-setting fee. Check the price list and fee first, and politely decline pushy touts.",
    "map": "자갈치시장 부산",
    "wiki": "자갈치시장",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "2382544",
+    "title": "Jagalchi Market (부산 자갈치시장)",
+    "addr": "52 Jagalchihaean-ro, Jung-gu, Busan",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/13/2941313_image2_1.bmp",
+    "overview": "Jagalchi Market, located on the seaside road in Busan's Jung-gu, is one of the largest seafood markets in Korea, selling both live and dried fish. After the Korean War, the market solidified itself as a fish market. Most of the people who sell fish are women, so the vendors here are called Jagalchi Ajumeoni, \"ajumeoni\" meaning middle-aged or married woman in Korean. This market represents Busan and is famous throughout the country. Visitors can eat fresh raw fish right at the market. Even nowadays visitors can see women selling mackerel, sea squirts (ascidians) and other seafood on wooden boxe",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "huin",
@@ -308,8 +461,17 @@
    "localTip": "Ssiat hotteok at BIFF Square in Nampo-dong is a Busan-style pancake filled with seeds and peanuts. People live in the Huinnyeoul alleys, so avoid loud voices and drones.",
    "map": "흰여울문화마을 부산",
    "wiki": "흰여울문화마을",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "2835497",
+    "title": "Huinnyeoul Culture Village (흰여울문화마을)",
+    "addr": "Yeongseon-dong 4(sa)-ga, Yeongdo-gu, Busan",
+    "tel": "",
+    "image": "http://tong.visitkorea.or.kr/cms/resource/74/3495874_image2_1.jpg",
+    "overview": "Huinnyeoul Cultural Village is a cultural community village. Huinnyeoul-gil, a representative original downtown area of ​​Busan, was named for its meandering stream that resembles the appearance of white snowfall at the foot of Bongnaesan Mountain. In December 2011, old houses was remodeled and reborned as a unique culture and art village that exudes the energy of Yeongdo.",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "taejongdae",
@@ -324,8 +486,17 @@
    "localTip": "Stalls near the entrance serve seafood caught by haenyeo divers. Prices are often market price, so ask before ordering.",
    "map": "태종대 부산",
    "wiki": "태종대",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264167",
+    "title": "Taejongdae Cliffed Coast [National Geopark] (태종대 (부산 국가지질공원))",
+    "addr": "24 Jeonmang-ro, Yeongdo-gu, Busan",
+    "tel": "",
+    "image": "",
+    "overview": "Taejongdae Cliffed Coast was formed by many layers of rock being forced together beneath a lake during the Cretaceous period, and then worn away over time by the sea. The coast features many geological formations, including sea caves and uniquely shaped rocks. Visitors can enjoy walking on the forested paths, or take the train course to easily access Taejongdae Observatory and Yeongdo Coastal Culture Space.",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "seongsan",
@@ -340,8 +511,17 @@
    "localTip": "At a haenyeo house in Seongsan you can try Jeju dishes like abalone porridge, sea urchin seaweed soup and mulhoe. Ingredients vary by season.",
    "map": "성산일출봉 제주",
    "wiki": "성산일출봉",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264207",
+    "title": "Seongsan Ilchulbong Tuff Cone [UNESCO World Heritage] (성산일출봉 [유네스코 세계문화유산])",
+    "addr": "284-12 Ilchul-ro, Seogwipo-si, Jeju-do",
+    "tel": "",
+    "image": "",
+    "overview": "Seongsan Ilchulbong Tuff Cone rose 180 meters above sea level due to a magma flow under the sea over 5,000 years ago. It was originally a separate island, but a build-up of sand and soil has connected it to the main island. A large crater, formed by the hot lava mixing with cold ocean water, is located at the top of Seongsan Ilchulbong Tuff Cone. The crater is about 600 meters in diameter and 90 meters deep. It has been featured in films, and was originally used for agriculture, but has now been given over to a field of silver grass. From the summit, visitors can see Udo Island, as well as tak",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "halla",
@@ -356,8 +536,17 @@
    "localTip": "After the hike, rest over a bowl of gogi guksu (pork noodle soup) in Jeju City. A long-time local noodle shop; lunchtime queues can be long.",
    "map": "한라산 제주",
    "wiki": "한라산",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264172",
+    "title": "Hallasan Mountain (한라산)",
+    "addr": "San 15-1 Topyeong-dong, Seogwipo-si, Jeju-do",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource_photo/41/3460441_image2_1.jpg",
+    "overview": "Hallasan Mountain means \"a mountain high enough to pull down the Milky Way.\" Since ancient times, it was also called Yeongjusan because it was believed to be inhabited by immortals, and it has been regarded as one of Korea's three sacred mountains, along with Geumgangsan and Jirisan Mountains. Furthermore, due to its diverse vegetation distribution, it serves as a treasure trove of flora and fauna of high academic value; it was designated and protected as a Natural Monument in October 1966. Hallasan Mountain, located in the center of Jeju Island—a young volcanic island from the Quaternary peri",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "saryeoni",
@@ -372,8 +561,17 @@
    "localTip": "There are almost no restaurants near the trail, so bring food and water. Around Seongeup Folk Village you can try black pork and gosari haejang-guk.",
    "map": "사려니숲길 제주",
    "wiki": "사려니숲길",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "2476008",
+    "title": "Saryeoni Forest Trail (사려니숲길)",
+    "addr": "Entrance of Bulgeun Oreum, Gasi-ri, Seogwipo-si, Jeju-do",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/90/2618490_image2_1.jpg",
+    "overview": "Saryeoni Forest Trail cuts through the dense Japanese cedar forest growing between Mulchat Oreum and Saryeoni Oreum, starting from the entrance on Regional Road 1112. While the vast majority of the trees growing here are Japanese cedar, visitors can also see Japanese oak, birch, snowbell trees, and cypress trees along this 550-meter-long trail. The forest trail is known as one of Jeju's top 31 hidden attractions, and is well-known as being very protected. It is very popular among tourists who enjoy hiking and the outdoors.",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "manjang",
@@ -388,8 +586,17 @@
    "localTip": "The coastal restaurants in Gimnyeong and Woljeong serve sea urchin seaweed soup and seafood ramyeon. Beach cafes are good for a rest after the cave.",
    "map": "만장굴 제주",
    "wiki": "제주 김녕굴과 만장굴",
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264236",
+    "title": "Manjanggul Lava Tube [National Geopark] (만장굴 (제주도 국가지질공원))",
+    "addr": "182 Manjanggul-gil, Jeju-si, Jeju-do",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/55/3354155_image2_1.jpg",
+    "overview": "Manjanggul Lava Tube, located in Gimnyeong-ri, Jeju, is part of the Geomunoreum Lava Tube system. The lava tube stretches roughly 7,400 meters, with a maximum height of 25 meters and width of 18 meters. These measurements make it one of the largest lava tubes in the world. Manjanggul holds great value for science and conservation studies, having well-maintained formations despite being formed over one hundred thousand years ago. The majority of the cave is closed off, with only 1 kilometer being open to tourists. Within this open section, visitors can see a variety of lava tube and cave topogr",
+    "imageLicense": "Type3",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "Manjanggul"
   },
   {
@@ -405,8 +612,17 @@
    "localTip": "Udo's seafood ramyeon and peanut ice cream are the signature treats. Island restaurants fill up at lunch, so decide on a place soon after landing.",
    "map": "우도 제주",
    "wiki": "우도 (제주특별자치도)",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264182",
+    "title": "Udo Island (우도)",
+    "addr": "1 Samyanggosumul-gil, Udo-myeon, Jeju-si, Jeju-do",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/71/3554771_image2_1.jpg",
+    "overview": "Udo Island has long been called Soseom or Sheseom because its shape resembles a cow lying down. Blessed with natural conditions such as gentle slopes, fertile soil, abundant fishing grounds, and the Eight Scenic Views of Udo Island, it is a representative subsidiary island of Jeju that attracts approximately 2 million tourists annually. You can take a ferry to Udo Island from Seongsan Port or Jongdal Port, and the journey takes about 15 minutes regardless of the departure point. The island is 3.8 km long and 17 km in circumference; while it takes 3 to 4 hours to walk the entire distance withou",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "yongmeori",
@@ -421,8 +637,17 @@
    "localTip": "Entry hours depend on the tide, so check the day's notice. Around Moseulpo Port you can try jarigdom (damselfish) mulhoe and seasonal amberjack.",
    "map": "용머리해안 제주",
    "wiki": "제주 사계리 용머리해안",
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264183",
+    "title": "Yongmeorihaean Coast (용머리해안)",
+    "addr": "28 Sagyenam-ro 216beon-gil, Andeok-myeon, Seogwipo-si, Jeju-do",
+    "tel": "",
+    "image": "https://tong.visitkorea.or.kr/cms/resource/12/3011812_image2_1.jpg",
+    "overview": "Yongmeorihaean Coast is a hydrovolcano rocky shore formed by the accumulation of volcanic debris erupted from three craters under the sea. The coastal cliffs look like a dragon's head ('Yongmeori') due to long periods of sedimentation and erosion. The oddly shaped cliffs created by the waves provide a magnificent scene. The shore platform by the sea serves as a walking trail. Along the road down to the seashore is the Hamel Monument, in remembrance of Hamel who drifted to this place.◎ Travel Information to Discover Hallyu’s Charm - K-Drama \"Alchemy of Souls (2022)\"In Episode 2 of the K-Drama \"",
+    "imageLicense": "Type1",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "Yongmeori"
   },
   {
@@ -438,8 +663,17 @@
    "localTip": "Restaurants serving sanchae bibimbap (mountain-vegetable bibimbap) and tofu dishes line the Sopark entrance, a warm meal after the mountain.",
    "map": "설악산국립공원 강원도",
    "wiki": "설악산",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264211",
+    "title": "Seoraksan National Park (Outer Seorak) (설악산 국립공원 (외설악))",
+    "addr": "1 Daecheongbong-gil, Yangyang-gun, Gangwon-do",
+    "tel": "",
+    "image": "",
+    "overview": "Seoraksan Mountain is renowed for its natural splendors and breathtaking views. It holds the distinction of being Korea's first UNESCO Biosphere Reserve and is also listed on the IUCN Green List. The mountain is divided into Inner Seorak, South Seorak, and Outer Seorak, which includes Daecheongbong peak (1,708 meters above sea level), ranking as the third highest peak in Korea. The area is celebrated for its popular hiking trails, with the sunrise and sunset views from the top being particularly spectacular.",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "ulsan",
@@ -471,8 +705,17 @@
    "localTip": "The temple overlooks the East Sea, so sunrise and sunset are especially good. Be quiet inside the grounds, and cool off with mulhoe at a Naksan Beach restaurant.",
    "map": "낙산사 양양",
    "wiki": "낙산사",
-   "source": "curated",
-   "tourapi": null
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264245",
+    "title": "Naksansa Temple (낙산사)",
+    "addr": "100 Naksansa-ro, Yangyang-gun, Gangwon-do",
+    "tel": "",
+    "image": "",
+    "overview": "This ancient temple was built in the 11th year of King Munmu&rsquo;s reign of Silla (671) by the Buddhist monk Uisang. Naksansa Temple is one of the foremost sights of Yangyang, and one of the most historic sites in the region. Along with Ganghwa&rsquo;s Bomunsa Temple and Namhae&rsquo;s Boriam Hermitage, it is said to be one of the three centers of the cult of Avalokitesvara in Korea. Its handsome view overlooking the East Sea has earned it a spot in the Eight Sights of Gwandong (eight famous sights in Yeongdong region of Gangwon-do), documented throughout the ages in many classic literature ",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   }
   },
   {
    "id": "abai",
@@ -487,8 +730,17 @@
    "localTip": "The village was built by North Korean refugees during the Korean War, and Abai sundae and squid sundae are famous. The Gaetbae ride itself is fun, so try it once.",
    "map": "아바이마을 속초",
    "wiki": "아바이마을",
-   "source": "curated",
-   "tourapi": null,
+   "source": "curated+tourapi",
+   "tourapi": {
+    "contentId": "264439",
+    "title": "Abai Village (아바이 마을)",
+    "addr": "122-1 Cheongho-ro, Sokcho-si, Gangwon-do",
+    "tel": "",
+    "image": "",
+    "overview": "Located in Cheongho-dong, Abai Village bears a history of displaced people’s distress. The village was formed by refugees of the Korean War from North Korea, mainly from Hamgyeong-do Province. The word “abai” is a dialect of Hamgyeong-do that means a friendly old man like a grandfather. Visitors to Abai Village can get a sense of displaced people’s life and story, which fade away into a chapter of history. Although it has lost its original appearance now, old shacks without a gate still remain here and there. Mural paintings on the wall show the sentiment of nostalgia about their hometown and ",
+    "imageLicense": "",
+    "syncedAt": "2026-11-15"
+   },
    "tourapiKeyword": "Abai Village"
   }
  ]
