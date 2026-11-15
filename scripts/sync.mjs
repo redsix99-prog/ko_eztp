@@ -41,19 +41,22 @@ const clean=s=>String(s||'').replace(/<[^>]*>/g,' ').replace(/[<>]/g,'').replace
 const norm=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]/g,'');
 
 if(PROBE){
-  console.log('--- probe: searchKeyword2 ---');
-  const b=await call(ENG,'searchKeyword2',{keyword:'Gyeongbokgung',numOfRows:3,pageNo:1});
-  console.log(JSON.stringify(b).slice(0,1500));
-  const first=items(b)[0];
-  if(first&&first.contentid){
-    console.log('--- probe: detailCommon2 ---');
-    console.log(JSON.stringify(await call(ENG,'detailCommon2',{contentId:first.contentid})).slice(0,1500));
-  }
-  console.log('--- probe: metcoRegnVisitrDDList ---');
-  const e=new Date(Date.now()-4*864e5),s=new Date(e-6*864e5);
+  // 결과를 Annotations(요약 화면)에도 남겨, 로그를 열지 않아도 원인을 볼 수 있게 합니다. 인증키는 가립니다.
+  const mask=t=>String(t).split(KEY).join('***').split(keyParam).join('***');
+  const note=(lv,t)=>console.log('::'+lv+'::'+mask(t).replace(/\r?\n/g,' ').slice(0,900));
   const ymd=d=>d.toISOString().slice(0,10).replace(/-/g,'');
-  console.log(JSON.stringify(await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(s),endYmd:ymd(e),numOfRows:5,pageNo:1})).slice(0,1500));
-  process.exit(0);
+  const e=new Date(Date.now()-4*864e5),s0=new Date(e-6*864e5);
+  const steps=[
+    ['searchKeyword2',async()=>{const b=await call(ENG,'searchKeyword2',{keyword:'Gyeongbokgung',numOfRows:3,pageNo:1});globalThis.__first=items(b)[0];return JSON.stringify(b);}],
+    ['detailCommon2',async()=>{const f=globalThis.__first;if(!f||!f.contentid)throw new Error('searchKeyword2 결과가 비어 있어 건너뜁니다');return JSON.stringify(await call(ENG,'detailCommon2',{contentId:f.contentid}));}],
+    ['metcoRegnVisitrDDList',async()=>JSON.stringify(await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(s0),endYmd:ymd(e),numOfRows:5,pageNo:1}))]
+  ];
+  let failed=0;
+  for(const [name,fn] of steps){
+    try{const out=await fn();console.log('--- '+name+' OK ---\n'+mask(out).slice(0,1500));note('notice',name+' OK: '+out.slice(0,700));}
+    catch(err){failed++;console.log('--- '+name+' FAIL ---\n'+mask(err.message));note('error',name+' FAIL: '+err.message);}
+  }
+  process.exit(failed?1:0);
 }
 
 // 1) 관광지 30건: 영문 서비스에서 같은 장소를 찾아 공식 정보(주소·전화·이미지·영문 개요)를 덧붙입니다.
