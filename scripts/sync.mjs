@@ -38,6 +38,18 @@ async function call(base,op,params){
 }
 const items=body=>{const it=body&&body.items&&body.items.item;return !it?[]:Array.isArray(it)?it:[it];};
 const clean=s=>String(s||'').replace(/<[^>]*>/g,' ').replace(/[<>]/g,'').replace(/\s+/g,' ').trim();
+const ymdOf=d=>d.toISOString().slice(0,10).replace(/-/g,'');
+// 집계가 올라오기까지 시간이 걸리므로, 데이터가 실제로 있는 가장 최근 28일 구간을 찾습니다.
+async function findWindow(span,log){
+  for(const lag of [4,10,20,35,50,70,100,130]){
+    const end=new Date(Date.now()-lag*864e5),start=new Date(end-(span-1)*864e5);
+    const body=await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymdOf(start),endYmd:ymdOf(end),numOfRows:5,pageNo:1});
+    const n=items(body).length;
+    if(log)log(`기간 ${ymdOf(start)}~${ymdOf(end)}: ${n?'데이터 있음':'데이터 없음'} (totalCount=${body.totalCount})`+(n?' 샘플='+JSON.stringify(items(body).slice(0,2)):''));
+    if(n)return {start,end,lag};
+  }
+  return null;
+}
 const norm=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]/g,'');
 
 if(PROBE){
@@ -49,7 +61,7 @@ if(PROBE){
   const steps=[
     ['searchKeyword2',async()=>{const b=await call(ENG,'searchKeyword2',{keyword:'Gyeongbokgung',numOfRows:3,pageNo:1});globalThis.__first=items(b)[0];return JSON.stringify(b);}],
     ['detailCommon2',async()=>{const f=globalThis.__first;if(!f||!f.contentid)throw new Error('searchKeyword2 결과가 비어 있어 건너뜁니다');return JSON.stringify(await call(ENG,'detailCommon2',{contentId:f.contentid}));}],
-    ['metcoRegnVisitrDDList',async()=>JSON.stringify(await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(s0),endYmd:ymd(e),numOfRows:5,pageNo:1}))]
+    ['metcoRegnVisitrDDList',async()=>{const lines=[];const w=await findWindow(28,l=>lines.push(l));if(!w)throw new Error('130일 전까지 데이터가 없습니다: '+lines.join(' | '));return lines.join(' | ');}]
   ];
   let failed=0;
   for(const [name,fn] of steps){
@@ -102,8 +114,8 @@ console.log('관광지 연계: '+matched+'/'+db.items.length+'건'+(missed.lengt
 
 // 2) 공식 방문 통계: 최근 4주 외국인 방문자 수를 광역지자체별로 합산합니다. (집계 지연을 감안해 4일 전까지)
 try{
-  const end=new Date(Date.now()-4*864e5),start=new Date(end-27*864e5);
-  const ymd=d=>d.toISOString().slice(0,10).replace(/-/g,'');
+  const w=await findWindow(28);if(!w)throw new Error('최근 130일 안에 방문자 데이터가 없습니다.');
+  const {start,end}=w;const ymd=ymdOf;
   const sums=new Map();let rows=0;
   for(let page=1;page<=40;page++){
     const body=await call(LAB,'metcoRegnVisitrDDList',{startYmd:ymd(start),endYmd:ymd(end),numOfRows:1000,pageNo:page});
