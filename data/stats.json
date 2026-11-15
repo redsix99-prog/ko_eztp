@@ -1,0 +1,11 @@
+{
+ "status": "pending",
+ "updated": null,
+ "period": null,
+ "note": "Official figures appear here after the first successful sync with the Korea Tourism Organization open data service.",
+ "sources": [
+  {"name":"Korea Tourism Data Lab","url":"https://datalab.visitkorea.or.kr/"},
+  {"name":"Korea Tourism Organization (Visit Korea)","url":"https://english.visitkorea.or.kr/"}
+ ],
+ "foreignVisitorsByRegion": []
+}

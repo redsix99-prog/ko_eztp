@@ -1,0 +1,68 @@
+name: Sync tourism data (needs admin approval)
+
+# 매주 월요일 오전 6시(한국 시간)에 한국관광공사 API로 관광지 정보와 방문 통계를 갱신합니다.
+# 결과는 사이트에 바로 올라가지 않고 "Pull Request"로 만들어집니다.
+# 관리자가 변경 내용을 확인하고 Merge 버튼을 눌러야 main에 반영되고, 그때 자동 배포됩니다.
+on:
+  schedule:
+    - cron: '0 21 * * 0'
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: 'API 응답 구조만 확인 (파일은 바꾸지 않음)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-data
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Probe API responses
+        if: ${{ inputs.probe }}
+        env:
+          TOURAPI_KEY: ${{ secrets.TOURAPI_KEY }}
+        run: node scripts/sync.mjs --probe
+
+      - name: Sync data
+        if: ${{ !inputs.probe }}
+        env:
+          TOURAPI_KEY: ${{ secrets.TOURAPI_KEY }}
+        run: node scripts/sync.mjs
+
+      - name: Validate data
+        if: ${{ !inputs.probe }}
+        run: node scripts/validate.mjs
+
+      - name: Open approval pull request
+        if: ${{ !inputs.probe }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data-sync
+          add-paths: data/
+          commit-message: "한국관광공사 데이터 동기화 (승인 대기)"
+          committer: "Korea Easy Trip Bot <noreply@users.noreply.github.com>"
+          author: "Korea Easy Trip Bot <noreply@users.noreply.github.com>"
+          title: "[승인 요청] 관광 데이터 동기화"
+          body: |
+            한국관광공사 공개 API로 갱신한 관광지 정보와 방문 통계입니다.
+
+            **승인 방법**
+            1. `Files changed`에서 바뀐 내용을 확인합니다.
+            2. 자동 생성된 트렌드 글(`"status": "draft"`)은 게시하려면 `"approved"`로 직접 수정하세요. draft는 사이트에 보이지 않습니다.
+            3. 문제가 없으면 **Merge pull request**를 누릅니다. 병합되는 즉시 자동 배포됩니다.
+            4. 게시하지 않으려면 **Close pull request**를 누르세요.
+          delete-branch: true

@@ -46,6 +46,18 @@ img{display:block;max-width:100%}
 .spot-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .spot-body h3{margin:0;font-size:19px;letter-spacing:-.02em}
 .spot-body p{margin:0;font-size:14px;color:#465365;flex:1}
+.trend-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.trend{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px}
+.trend h3{margin:8px 0 6px;font-size:18px;letter-spacing:-.02em}
+.trend p{margin:0 0 8px;font-size:14px;color:#465365}
+.trend-tag{display:inline-block;font-size:12px;font-weight:700;color:var(--green);background:#e6f2ed;border-radius:99px;padding:3px 10px}
+@media(max-width:700px){.trend-grid{grid-template-columns:1fr}}
+.stat-box{background:#fff;border:1px solid var(--border);border-radius:14px;padding:20px}
+.bars{list-style:none;margin:12px 0;padding:0;display:grid;gap:8px}
+.bars li{display:grid;grid-template-columns:110px 1fr 90px;align-items:center;gap:10px;font-size:14px}
+.bar{background:#e8eeeb;border-radius:6px;height:12px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green)}
+.bar-num{text-align:right;font-variant-numeric:tabular-nums}
 .ltips{border:1px solid var(--border);border-radius:10px;background:#f6f8f7;font-size:13.5px}
 .ltips summary{cursor:pointer;padding:9px 12px;font-weight:700;color:var(--green);list-style:none}
 .ltips summary::-webkit-details-marker{display:none}

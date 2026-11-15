@@ -8,7 +8,7 @@
 const ADS={client:'ca-pub-5580189283913928',slot:''};   // ← 여기만 채우면 됩니다. 예: client:'ca-pub-1234567890123456', slot:'1234567890'
 const KEY='kt-ads-consent';
 // 페이지 깊이에 따른 상대 경로 (루트 /, 한국어 글 /guides/, 언어별 글 /en/guides/)
-const BASE=(function(){const p=location.pathname;if(/^\/(en|ja|zh)\/guides/.test(p))return '../../';if(/^\/guides/.test(p))return '../';return '';})();
+const BASE=(function(){const p=location.pathname;if(/^\/(en|ja|zh)\/guides/.test(p))return '../../';if(/^\/guides/.test(p))return '../';if(/^\/(en|ja|zh)\/?$/.test(p)||/^\/(en|ja|zh)\/index/.test(p))return '../';return '';})();
 const TX={
  ko:{label:'광고',msg:'이 사이트는 구글 애드센스 광고를 표시하며, 광고 제공을 위해 쿠키가 사용될 수 있습니다. 광고 쿠키 사용에 동의하시겠어요?',yes:'동의',no:'거부',more:'개인정보 처리방침',privacy:'개인정보 처리방침',guides:'가이드 글',about:'사이트 소개',contact:'문의하기',terms:'이용약관'},
  en:{label:'Advertisement',msg:'This site shows Google AdSense ads, which may use cookies. Do you agree to the use of advertising cookies?',yes:'Agree',no:'Decline',more:'Privacy policy',privacy:'Privacy policy',guides:'Guides',about:'About',contact:'Contact',terms:'Terms of use'},

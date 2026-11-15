@@ -1,0 +1,486 @@
+{
+ "updated": "2026-11-15",
+ "count": 30,
+ "items": [
+  {
+   "id": "gbg",
+   "region": "Seoul",
+   "category": "heritage",
+   "name": {
+    "en": "Gyeongbokgung Palace",
+    "ko": "경복궁"
+   },
+   "summary": "Built in 1395 as the main royal palace of the Joseon dynasty. Walking the axis from Gwanghwamun to Geunjeongjeon and Gyeonghoeru shows the scale of the old capital. Check official notices for hanbok-wearing perks.",
+   "access": "Exit 5 of Gyeongbokgung Stn (Line 3) leads toward the Gwanghwamun gate. You can also walk from Gwanghwamun Stn (Line 5), Exit 2.",
+   "localTip": "A cafe in an old Seochon bookstore, good for a quiet rest. Check official notices for hanbok admission perks.",
+   "map": "경복궁 서울",
+   "wiki": "경복궁",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "bukchon",
+   "region": "Seoul",
+   "category": "heritage",
+   "name": {
+    "en": "Bukchon Hanok Village",
+    "ko": "북촌 한옥마을"
+   },
+   "summary": "Traditional hanok houses cluster on the slope between Gyeongbokgung and Changdeokgung. People live here, so walk quietly. The view of tiled roofs and the city is the classic photo spot.",
+   "access": "Leave Anguk Stn (Line 3) by Exit 2 and walk about 10 minutes along Bukchon-ro. There are slopes, so wear comfortable shoes.",
+   "localTip": "A bakery cafe in a hanok near Anguk Stn that locals like too. Bukchon is a residential area, so keep your voice down.",
+   "map": "북촌한옥마을 서울",
+   "wiki": "북촌 한옥마을",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "cdg",
+   "region": "Seoul",
+   "category": "heritage",
+   "name": {
+    "en": "Changdeokgung Palace",
+    "ko": "창덕궁"
+   },
+   "summary": "A UNESCO World Heritage palace whose buildings follow the natural terrain. The rear garden (Huwon) is visited by timed tours, so check the details in advance.",
+   "access": "Walk about 5–10 minutes from Anguk Stn (Line 3), Exit 3, to Donhwamun gate. The Secret Garden is a guided, timed visit, so check times and booking. Closed Mondays.",
+   "localTip": "Ikseon-dong has cafes and restaurants in converted hanok. It is quiet by day and crowded in the evening.",
+   "map": "창덕궁 서울",
+   "wiki": "창덕궁",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "insadong",
+   "region": "Seoul",
+   "category": "culture",
+   "name": {
+    "en": "Insadong",
+    "ko": "인사동"
+   },
+   "summary": "A street of traditional craft shops, tea houses and galleries. Follow the Ssamziegil alleys, then rest with traditional tea or hangwa sweets.",
+   "access": "Exit 6 of Anguk Stn (Line 3) leads to the start of Insadong-gil. Jongno 3-ga Stn (Lines 1, 3, 5), Exit 5 is also close.",
+   "localTip": "A traditional tea house in Insadong, good for ssanghwacha or jujube tea with hangwa sweets. Check the location and hours in a map app.",
+   "map": "인사동 서울",
+   "wiki": "인사동",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "gwangjang",
+   "region": "Seoul",
+   "category": "market",
+   "name": {
+    "en": "Gwangjang Market",
+    "ko": "광장시장"
+   },
+   "summary": "One of Seoul's best-known traditional markets, said to have opened in 1905. Famous for bindaetteok, mayak gimbap and yukhoe; lines get long around lunchtime.",
+   "access": "It is about a 3-minute walk from Jongno 5-ga Stn (Line 1), Exits 7 and 8. The market also opens toward Cheonggyecheon for a pleasant walk.",
+   "localTip": "A cafe in an old herbal medicine shop in Euljiro 3-ga (about 15 minutes on foot from Gwangjang). Lunch lines are long, so go early.",
+   "map": "광장시장 서울",
+   "wiki": "광장시장",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "myeongdong",
+   "region": "Seoul",
+   "category": "shopping",
+   "name": {
+    "en": "Myeongdong",
+    "ko": "명동"
+   },
+   "summary": "Seoul's shopping street most visited by international travelers, packed with cosmetics and fashion stores. In the evening, street-food stalls line up and the mood gets livelier.",
+   "access": "Myeong-dong Stn (Line 4), Exit 6 is closest. You can also walk from Euljiro 1-ga Stn (Line 2), Exits 5 and 6.",
+   "localTip": "The main street is crowded, so try the quiet cafes on the alleys behind the cathedral. Bring your passport; many shops offer tax-free shopping.",
+   "map": "명동 서울",
+   "wiki": "명동",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "ddp",
+   "region": "Seoul",
+   "category": "landmark",
+   "name": {
+    "en": "Dongdaemun Design Plaza (DDP)",
+    "ko": "동대문디자인플라자(DDP)"
+   },
+   "summary": "A curvy landmark building that hosts exhibitions and fashion events. Lit up at night, the exterior alone is worth seeing, and the nearby Dongdaemun fashion district is easy to combine.",
+   "access": "Exit 1 of Dongdaemun History & Culture Park Stn (Lines 2, 4, 5) is right in front of DDP.",
+   "localTip": "Small cafes sit in the Gwanghui-dong alleys across from DDP. The fashion malls stay open late and some wholesale markets open in the early hours.",
+   "map": "동대문디자인플라자 서울",
+   "wiki": "동대문 디자인 플라자",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "lotte",
+   "region": "Seoul",
+   "category": "landmark",
+   "name": {
+    "en": "Lotte World Tower",
+    "ko": "롯데월드타워"
+   },
+   "summary": "A 555 m skyscraper whose upper-floor observatory, Seoul Sky, overlooks the Han River and downtown. The view varies a lot with weather and air quality.",
+   "access": "Jamsil Stn (Lines 2 and 8) connects underground to Lotte World Mall. Enter Seoul Sky at the tower entrance.",
+   "localTip": "Songridan-gil (around Seokchon Stn, Line 8) is lined with independent cafes that locals like.",
+   "map": "롯데월드타워 서울",
+   "wiki": "롯데월드타워",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "seongsu",
+   "region": "Seoul",
+   "category": "trend",
+   "name": {
+    "en": "Seongsu-dong",
+    "ko": "성수동"
+   },
+   "summary": "A neighborhood of cafes, select shops and pop-up stores in converted old factories and warehouses. It gets crowded on weekends, so start in the morning.",
+   "access": "Exit 3 of Seongsu Stn (Line 2) is close to the cafe streets; Exit 8 of Ttukseom Stn is also handy. The two stations are one stop apart.",
+   "localTip": "A spacious gallery-style cafe in an old warehouse that represents Seongsu well. Weekend afternoons are crowded.",
+   "map": "성수동 카페거리 서울",
+   "wiki": "성수동",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "hongdae",
+   "region": "Seoul",
+   "category": "trend",
+   "name": {
+    "en": "Hongdae Street",
+    "ko": "홍대 거리"
+   },
+   "summary": "A youth district that grew around an art university, full of busking, indie music clubs and quirky shops. After dark it glows with neon and street snacks.",
+   "access": "Exit 9 of Hongik Univ. Stn (Line 2) leads to the Hongdae Walking Street. The AREX airport railroad takes about 50 minutes from Incheon Airport.",
+   "localTip": "A roastery cafe in a former shoe factory in Hapjeong, with an atmosphere locals enjoy.",
+   "map": "홍대입구 서울",
+   "wiki": null,
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "tower",
+   "region": "Seoul",
+   "category": "landmark",
+   "name": {
+    "en": "N Seoul Tower (Namsan)",
+    "ko": "N서울타워(남산)"
+   },
+   "summary": "On top of Namsan, with views across all of Seoul. Take the cable car or shuttle bus, or walk up the Namsan loop trail if you have time.",
+   "access": "From Myeong-dong Stn (Line 4), Exit 3, it is about a 15-minute uphill walk to the cable car. The Namsan shuttle bus is easier.",
+   "localTip": "The Haebangchon alleys below Namsan have small cafes with views, ideal for a rest after your visit.",
+   "map": "N서울타워 서울",
+   "wiki": "YTN서울타워",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "banpo",
+   "region": "Seoul",
+   "category": "nature",
+   "name": {
+    "en": "Banpo Bridge & Han River night view",
+    "ko": "반포대교·한강 야경"
+   },
+   "summary": "The easiest way to enjoy the Han River at night is Banpo Hangang Park, where the bridge's Moonlight Rainbow Fountain draws rainbows over the river with lights. Show times vary by season, so check Seoul's notices.",
+   "access": "Take Express Bus Terminal Stn (Lines 3, 7, 9) toward Exit 8-1, then walk 10–15 minutes toward Banpo Hangang Park.",
+   "localTip": "Seorae Village near the station has quiet cafes and bakeries. Check the fountain schedule for the season.",
+   "map": "반포대교 달빛무지개분수 서울",
+   "wiki": null,
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "bukhansan",
+   "region": "Seoul",
+   "category": "nature",
+   "name": {
+    "en": "Bukhansan",
+    "ko": "북한산"
+   },
+   "summary": "A national park on Seoul's northern edge, reachable by subway and bus. Baegundae (about 836 m) gives a view of the whole city, and gentler dulle-gil trails fit any fitness level.",
+   "access": "From Bukhansanuii Stn (Ui-Sinseol Line) it is a 10–15 minute walk to the Ui-dong ranger station. Allow about 5–6 hours round trip for Baegundae.",
+   "localTip": "Cafes and restaurants cluster at the Ui-dong entrance for after the hike. Bring hiking shoes, water, and finish before sunset.",
+   "map": "북한산 서울",
+   "wiki": "북한산",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "namiseom",
+   "region": "Gyeonggi",
+   "category": "nature",
+   "name": {
+    "en": "Nami Island",
+    "ko": "남이섬"
+   },
+   "summary": "A small island in the Bukhan River, a popular day trip for its metasequoia avenue and four-season scenery. Known as a K-drama filming location, it draws many international visitors.",
+   "access": "Take the Gyeongchun Line ITX-Cheongchun or local train to Gapyeong Stn, then a taxi (about 10 minutes) to the Nami Island pier. Sangbong to Gapyeong takes about an hour.",
+   "localTip": "There are cafes near the metasequoia lane on the island. Check official notices for ferry times and tickets.",
+   "map": "남이섬 춘천",
+   "wiki": "남이섬",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "gwangalli",
+   "region": "Busan",
+   "category": "coast",
+   "name": {
+    "en": "Gwangalli Beach",
+    "ko": "광안리 해수욕장"
+   },
+   "summary": "A beach facing Gwangan Bridge. The glowing bridge from dusk into the night is its biggest draw.",
+   "access": "From Gwangan Stn (Line 2), Exits 3 and 5, it is about a 10-minute walk to the beach. The road to the sea is straightforward.",
+   "localTip": "Locals buy sashimi at the raw-fish center beside Millak Waterside Park and eat it on the steps. Prices vary by shop, so confirm weight and price first.",
+   "map": "광안리해수욕장 부산",
+   "wiki": "광안리해수욕장",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "haeundae",
+   "region": "Busan",
+   "category": "coast",
+   "name": {
+    "en": "Haeundae Beach",
+    "ko": "해운대 해수욕장"
+   },
+   "summary": "Korea's best-known beach. Even outside summer, its promenade and skyscraper skyline draw crowds all year.",
+   "access": "From Haeundae Stn (Line 2), Exits 3 and 5, the beach is a 5–10 minute walk. The market is near the same station.",
+   "localTip": "Haeundae Market near the station has street snacks, gukbap and seafood at local prices. Restaurants on the beachfront often charge tourist prices, so go one block inland.",
+   "map": "해운대해수욕장 부산",
+   "wiki": "해운대해수욕장",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "gamcheon",
+   "region": "Busan",
+   "category": "culture",
+   "name": {
+    "en": "Gamcheon Culture Village",
+    "ko": "감천문화마을"
+   },
+   "summary": "Colorful houses climb the hillside in terraces. Murals and sculptures fill the alleys, so it is great for a slow walk and photos.",
+   "access": "Take village bus Seo-gu 2 from Toseong Stn (Line 1) (about 15 minutes), or Saha 1 from Goejeong Stn. Check bus numbers and timetables in a map app.",
+   "localTip": "Alleys inside the village have cafes and restaurants with views. People live here, so walk quietly, and wear comfortable shoes for the slopes and stairs.",
+   "map": "감천문화마을 부산",
+   "wiki": "감천문화마을",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "jagalchi",
+   "region": "Busan",
+   "category": "market",
+   "name": {
+    "en": "Jagalchi Market",
+    "ko": "자갈치시장"
+   },
+   "summary": "Busan's signature fish market. You can eat raw fish and grilled seafood right in the market and enjoy the sea view.",
+   "access": "Exit 10 of Jagalchi Stn (Line 1) puts the market in sight. From Nampo Stn it is around a 5-minute walk.",
+   "localTip": "The usual method is to choose fish from the tanks on the first floor and eat at a second-floor restaurant for a table-setting fee. Check the price list and fee first, and politely decline pushy touts.",
+   "map": "자갈치시장 부산",
+   "wiki": "자갈치시장",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "huin",
+   "region": "Busan",
+   "category": "coast",
+   "name": {
+    "en": "Huinnyeoul Culture Village",
+    "ko": "흰여울문화마을"
+   },
+   "summary": "A village on the cliffs of Yeongdo with alleys and small cafes along the sea. It is also known as a film location.",
+   "access": "From Nampo or Jagalchi Stn (Line 1), cross Yeongdo Bridge by bus or taxi to Huinnyeoul Culture Village in about 15 minutes. Check the bus number in a map app.",
+   "localTip": "Ssiat hotteok at BIFF Square in Nampo-dong is a Busan-style pancake filled with seeds and peanuts. People live in the Huinnyeoul alleys, so avoid loud voices and drones.",
+   "map": "흰여울문화마을 부산",
+   "wiki": "흰여울문화마을",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "taejongdae",
+   "region": "Busan",
+   "category": "nature",
+   "name": {
+    "en": "Taejongdae",
+    "ko": "태종대"
+   },
+   "summary": "A cliffside coastal park at the tip of Yeongdo. You can ride the circular train to the viewpoints and lighthouse.",
+   "access": "Buses such as 66 and 88 from Busan Stn or Nampo Stn (Line 1) reach Taejongdae in about 40 minutes. Check routes and timetables in a map app.",
+   "localTip": "Stalls near the entrance serve seafood caught by haenyeo divers. Prices are often market price, so ask before ordering.",
+   "map": "태종대 부산",
+   "wiki": "태종대",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "seongsan",
+   "region": "Jeju",
+   "category": "nature",
+   "name": {
+    "en": "Seongsan Ilchulbong",
+    "ko": "성산일출봉"
+   },
+   "summary": "A peak formed by a volcano that erupted under the sea about 5,000 years ago, and a UNESCO World Heritage Site. Climb the stairs to the top for the crater and sea views.",
+   "access": "It takes about 1 hour 20 minutes by bus east from Jeju Airport or Jeju City, or about 1 hour by rental car. Foreigners need an international driving permit for rental cars, so check in advance.",
+   "localTip": "At a haenyeo house in Seongsan you can try Jeju dishes like abalone porridge, sea urchin seaweed soup and mulhoe. Ingredients vary by season.",
+   "map": "성산일출봉 제주",
+   "wiki": "성산일출봉",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "halla",
+   "region": "Jeju",
+   "category": "nature",
+   "name": {
+    "en": "Hallasan",
+    "ko": "한라산"
+   },
+   "summary": "At 1,947 m, the highest mountain in South Korea. Some trails require advance reservations and the weather changes a lot, so check before you go.",
+   "access": "From Jeju Intercity Bus Terminal or Seogwipo, route buses on the 5·16 Road reach the Seongpanak trailhead in about 40 minutes. Check bus numbers and timetables in a map app.",
+   "localTip": "After the hike, rest over a bowl of gogi guksu (pork noodle soup) in Jeju City. A long-time local noodle shop; lunchtime queues can be long.",
+   "map": "한라산 제주",
+   "wiki": "한라산",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "saryeoni",
+   "region": "Jeju",
+   "category": "nature",
+   "name": {
+    "en": "Saryeoni Forest Trail",
+    "ko": "사려니숲길"
+   },
+   "summary": "A signature Jeju forest trail of towering cedars and broadleaf trees. Clean air and the scent of trees make it a \"healing walk\". Open sections and hours may change by season.",
+   "access": "A rental car from Jeju City (about 40 minutes) is the easiest way. Buses run on the 5·16 Road and Bijarim-ro routes, so check the timetable.",
+   "localTip": "There are almost no restaurants near the trail, so bring food and water. Around Seongeup Folk Village you can try black pork and gosari haejang-guk.",
+   "map": "사려니숲길 제주",
+   "wiki": "사려니숲길",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "manjang",
+   "region": "Jeju",
+   "category": "nature",
+   "name": {
+    "en": "Manjanggul Cave",
+    "ko": "만장굴"
+   },
+   "summary": "A giant lava tube formed by volcanic activity, part of a UNESCO World Heritage Site. It is cool even in midsummer, so bring a jacket; only part of the cave is open.",
+   "access": "About 40 minutes east of Jeju City by rental car (Gimnyeong, Gujwa). By bus, get off at Gimnyeong on the circular east-coast route and walk or take a taxi; check the timetable in a map app.",
+   "localTip": "The coastal restaurants in Gimnyeong and Woljeong serve sea urchin seaweed soup and seafood ramyeon. Beach cafes are good for a rest after the cave.",
+   "map": "만장굴 제주",
+   "wiki": "제주 김녕굴과 만장굴",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "udo",
+   "region": "Jeju",
+   "category": "coast",
+   "name": {
+    "en": "Udo Island",
+    "ko": "우도"
+   },
+   "summary": "A small island reached by ferry from Seongsan Port. Ride a bike or e-scooter around the coast and enjoy snacks like peanut ice cream.",
+   "access": "The ferry from Seongsan Port or Jongdal Port takes about 15 minutes. Bring photo ID such as your passport, and check same-day sailings because strong winds can halt service.",
+   "localTip": "Udo's seafood ramyeon and peanut ice cream are the signature treats. Island restaurants fill up at lunch, so decide on a place soon after landing.",
+   "map": "우도 제주",
+   "wiki": "우도 (제주특별자치도)",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "yongmeori",
+   "region": "Jeju",
+   "category": "coast",
+   "name": {
+    "en": "Yongmeori Coast",
+    "ko": "용머리해안"
+   },
+   "summary": "A coast beneath Sanbangsan where layered sandstone cliffs stretch into the sea like a dragon's head. Access may be restricted by waves and tides, so check first.",
+   "access": "By west-bound bus from Jeju City or Seogwipo, Sanbangsan stop takes about 1 hour 20–30 minutes. By rental car it is around 1 hour from Jeju City.",
+   "localTip": "Entry hours depend on the tide, so check the day's notice. Around Moseulpo Port you can try jarigdom (damselfish) mulhoe and seasonal amberjack.",
+   "map": "용머리해안 제주",
+   "wiki": "제주 사계리 용머리해안",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "seorak",
+   "region": "Gangwon",
+   "category": "nature",
+   "name": {
+    "en": "Seoraksan National Park",
+    "ko": "설악산국립공원"
+   },
+   "summary": "Korea's signature national park, designated in 1970. Its highest peak, Daecheongbong, is 1,708 m, and its autumn colors are said to turn first in the country, so it is busiest in fall. A cable car or short trails already show its rocky scenery.",
+   "access": "An express bus from Seoul (Dong Seoul Terminal) to Sokcho takes about 2.5–3 hours. From Sokcho Intercity Bus Terminal, city buses 7 and 7-1 reach Sorak Sopark in 30–40 minutes.",
+   "localTip": "Restaurants serving sanchae bibimbap (mountain-vegetable bibimbap) and tofu dishes line the Sopark entrance, a warm meal after the mountain.",
+   "map": "설악산국립공원 강원도",
+   "wiki": "설악산",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "ulsan",
+   "region": "Gangwon",
+   "category": "nature",
+   "name": {
+    "en": "Ulsanbawi Rock",
+    "ko": "울산바위"
+   },
+   "summary": "A giant rock peak of about 873 m that rings the edge of Seoraksan like a folding screen. Climb hundreds of steel steps to see Sokcho and the East Sea from the top. It takes time, so start early and check the weather.",
+   "access": "Take bus 7 or 7-1 from Sokcho Intercity Bus Terminal to Sorak Sopark, then start on foot (about 3.8 km one way to Ulsanbawi).",
+   "localTip": "After the hike, buying dakgangjeong at Sokcho Tourist & Fishery Market is the classic course for locals and travelers alike. Always check the weather first.",
+   "map": "울산바위 설악산",
+   "wiki": "설악산 울산바위",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "naksansa",
+   "region": "Gangwon",
+   "category": "heritage",
+   "name": {
+    "en": "Naksansa Temple",
+    "ko": "낙산사"
+   },
+   "summary": "A temple on a cliff facing the East Sea, famous for its seaside Haesu Gwaneum statue and Uisangdae pavilion. Restored after the big 2005 wildfire, it is also known as a sunrise spot.",
+   "access": "From Sokcho Intercity Bus Terminal, a city or express bus toward Yangyang takes about 30 minutes to the Naksansa entrance. Check bus numbers and timetables in a map app.",
+   "localTip": "The temple overlooks the East Sea, so sunrise and sunset are especially good. Be quiet inside the grounds, and cool off with mulhoe at a Naksan Beach restaurant.",
+   "map": "낙산사 양양",
+   "wiki": "낙산사",
+   "source": "curated",
+   "tourapi": null
+  },
+  {
+   "id": "abai",
+   "region": "Gangwon",
+   "category": "culture",
+   "name": {
+    "en": "Abai Village & Gaetbae Ferry",
+    "ko": "아바이마을·갯배"
+   },
+   "summary": "A village settled by refugees from Hamgyeong Province during the Korean War. The gaetbae, a boat pulled along by hand on a steel cable across Cheongchoho Lake, is a Sokcho experience. You can also try Abai sundae, a local specialty.",
+   "access": "A taxi from Sokcho Intercity or Express Bus Terminal takes about 5–10 minutes, and city buses also run there. The Gaetbae ferry pier is the village entrance.",
+   "localTip": "The village was built by North Korean refugees during the Korean War, and Abai sundae and squid sundae are famous. The Gaetbae ride itself is fun, so try it once.",
+   "map": "아바이마을 속초",
+   "wiki": "아바이마을",
+   "source": "curated",
+   "tourapi": null
+  }
+ ]
+}

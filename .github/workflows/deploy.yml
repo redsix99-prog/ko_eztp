@@ -19,12 +19,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 데이터 형식이 틀리면 배포를 멈춥니다.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate data
+        run: node scripts/validate.mjs
+
       - name: Prepare site files
         run: |
           mkdir dist
           rsync -a \
             --exclude '.git' --exclude '.github' --exclude '.gitignore' --exclude '.nojekyll' \
-            --exclude 'PROJECT_SPEC_KO.md' --exclude 'dist' \
+            --exclude 'PROJECT_SPEC_KO.md' --exclude 'dist' --exclude 'scripts' --exclude 'docs' \
             ./ dist/
 
       # JS/CSS는 브라우저와 Cloudflare가 길게 캐시하므로, 배포할 때마다 파일 주소 끝의 버전 값(?v=)을
