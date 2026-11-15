@@ -1,4 +1,4 @@
-:root{--ink:#17263d;--muted:#5f6c7d;--coral:#e4553f;--coral-deep:#c9432f;--cream:#fbf6ec;--green:#167a72;--border:#e8e6e2;--shadow:0 14px 40px rgba(31,43,50,.10)}
+﻿:root{--ink:#17263d;--muted:#5f6c7d;--coral:#e4553f;--coral-deep:#c9432f;--cream:#fbf6ec;--green:#167a72;--border:#e8e6e2;--shadow:0 14px 40px rgba(31,43,50,.10)}
 *{box-sizing:border-box}html{scroll-behavior:smooth}
 body{margin:0;background:#fff;color:var(--ink);font:16px/1.7 'Pretendard','Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;word-break:keep-all}
 a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}
@@ -46,16 +46,16 @@ img{display:block;max-width:100%}
 .spot-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
 .spot-body h3{margin:0;font-size:19px;letter-spacing:-.02em}
 .spot-body p{margin:0;font-size:14px;color:#465365;flex:1}
-.tips{border:1px solid var(--border);border-radius:10px;background:#f6f8f7;font-size:13.5px}
-.tips summary{cursor:pointer;padding:9px 12px;font-weight:700;color:var(--green);list-style:none}
-.tips summary::-webkit-details-marker{display:none}
-.tips summary::after{content:"＋";float:right}
-.tips[open] summary::after{content:"－"}
-.tips dl{margin:0;padding:0 12px 4px}
-.tips dt{font-weight:700;margin-top:8px;color:#1f2a37}
-.tips dd{margin:2px 0 0;color:#465365;line-height:1.55}
-.tips dd a{font-weight:700;color:var(--green);white-space:nowrap}
-.tips-note{margin:6px 12px 10px!important;font-size:12px!important;color:#7a8696!important}
+.ltips{border:1px solid var(--border);border-radius:10px;background:#f6f8f7;font-size:13.5px}
+.ltips summary{cursor:pointer;padding:9px 12px;font-weight:700;color:var(--green);list-style:none}
+.ltips summary::-webkit-details-marker{display:none}
+.ltips summary::after{content:"＋";float:right}
+.ltips[open] summary::after{content:"－"}
+.ltips dl{margin:0;padding:0 12px 4px}
+.ltips dt{font-weight:700;margin-top:8px;color:#1f2a37}
+.ltips dd{margin:2px 0 0;color:#465365;line-height:1.55}
+.ltips dd a{font-weight:700;color:var(--green);white-space:nowrap}
+.ltips-note{margin:6px 12px 10px!important;font-size:12px!important;color:#7a8696!important}
 @media(max-width:1010px){.spot-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.spot-grid{grid-template-columns:1fr}}
 .theme-grid{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:230px;gap:14px}

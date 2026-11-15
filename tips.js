@@ -172,11 +172,128 @@ T('namdaemun','회현동 카페 서울','회현동·서울로7017 인근 카페'
  ['4号線 会賢駅5番出口から徒歩約3分です。ソウル駅からも徒歩10分前後です。','南大門市場でカルグクスやタチウオの煮付け → ソウル路7017の空中散歩道 → ソウル駅 → 必要なら明洞まで歩いて移動（約15分）。','会賢駅とソウル駅の間に小さなカフェがあります。市場は日曜に休む店が多く、営業時間も早めなので午前〜昼に訪れてください。'],
  ['从4号线会贤站5号口步行约3分钟，从首尔站步行约10分钟。','在南大门市场吃刀削面、辣炖带鱼 → 首尔路7017空中步道 → 首尔站 → 需要的话步行约15分钟到明洞。','会贤站和首尔站之间有小咖啡馆。市场里很多店周日休息且开门较早，建议上午到下午前往。']);
 
+/* ===== 부산 · 제주 · 설악산/속초 (맛집 중심) ===== */
+const TF=(...a)=>{T(...a);TIPS[a[0]].food=true;};
+
+TF('gwangalli','민락수변공원 회센터 부산','민락수변공원 회센터 (Millak Raw Fish Center)',
+ ['2호선 광안역 3·5번 출구에서 해변까지 걸어서 약 10분. 해변 앞 도로가 지하철역에서 이어져 길 찾기가 쉽습니다.','낮에 광안리 해변 산책 → 일몰 무렵 해변 카페 → 해가 지면 광안대교 야경 → 민락수변공원에서 회 한 접시.','민락수변공원 옆 회센터에서 회를 사서 공원에 앉아 먹는 것이 현지인의 방식입니다. 가게마다 가격이 다르니 저울 무게와 가격을 꼭 확인하세요.'],
+ ['From Gwangan Stn (Line 2), Exits 3 and 5, it is about a 10-minute walk to the beach. The road to the sea is straightforward.','Daytime beach walk → beachfront cafe at sunset → Gwangandaegyo Bridge night view → raw fish at Millak Waterside Park.','Locals buy sashimi at the raw-fish center beside Millak Waterside Park and eat it on the steps. Prices vary by shop, so confirm weight and price first.'],
+ ['2号線 広安駅3・5番出口から海岸まで徒歩約10分。駅から海へ続く道なので迷いにくいです。','昼は広安里ビーチを散歩 → 夕暮れどきにビーチ沿いのカフェ → 日没後に広安大橋の夜景 → 民楽水辺公園で刺身。','民楽水辺公園の隣にある刺身センターで刺身を買い、公園に座って食べるのが地元流です。店ごとに値段が違うので、重さと価格を必ず確認してください。'],
+ ['从2号线广安站3、5号口步行约10分钟到海边，路线简单易找。','白天在广安里海边散步 → 日落时去海边咖啡馆 → 天黑后欣赏广安大桥夜景 → 在民乐水边公园吃生鱼片。','当地人会在民乐水边公园旁的生鱼片中心买鱼，坐在公园里吃。各家价格不同，请先确认重量和价格。']);
+
+TF('haeundae','해운대시장 부산','해운대시장 먹자골목 (Haeundae Market)',
+ ['2호선 해운대역 3·5번 출구에서 해변까지 걸어서 약 5~10분입니다. 시장도 같은 역 근처에 있습니다.','해운대 해변 → 동백섬 산책로와 누리마루 → 달맞이길 → 청사포(블루라인파크 해변열차는 예약 방식과 운행 구간을 확인).','역 근처 해운대시장에서 길거리 간식과 국밥, 해산물을 현지인 가격으로 즐길 수 있습니다. 해변 앞 식당은 관광객 가격인 경우가 많아 한 블록 안쪽을 추천합니다.'],
+ ['From Haeundae Stn (Line 2), Exits 3 and 5, the beach is a 5–10 minute walk. The market is near the same station.','Haeundae Beach → Dongbaekseom trail and Nurimaru → Dalmaji-gil → Cheongsapo (check booking and operating sections for the Blueline Park beach train).','Haeundae Market near the station has street snacks, gukbap and seafood at local prices. Restaurants on the beachfront often charge tourist prices, so go one block inland.'],
+ ['2号線 海雲台駅3・5番出口からビーチまで徒歩約5〜10分。市場も同じ駅の近くにあります。','海雲台ビーチ → 冬柏島の遊歩道とヌリマル → 月見の道（タルマジギル） → 青沙浦（ブルーラインパークの海岸列車は予約方法と運行区間を確認）。','駅の近くの海雲台市場で、屋台グルメ、クッパ、海鮮を地元価格で楽しめます。ビーチ前の店は観光客向けの値段が多いので、1ブロック奥がおすすめです。'],
+ ['从2号线海云台站3、5号口步行约5~10分钟到海边，市场也在同一个车站附近。','海云台海滩 → 冬柏岛步道和Nurimaru → 望月路 → 青沙浦（蓝线公园海岸列车请确认预约方式和运行区间）。','车站附近的海云台市场可以用当地价格吃到街边小吃、汤饭和海鲜。海滩前的餐厅常常是游客价，建议往里走一个街区。']);
+
+TF('gamcheon','감천문화마을 식당 부산','감천문화마을 골목 식당과 카페',
+ ['1호선 토성역에서 마을버스 서구 2번(약 15분), 또는 괴정역에서 사하 1번을 이용합니다. 버스 번호와 시간표는 지도 앱으로 확인하세요.','감천문화마을 골목과 벽화 → 어린왕자 포토존 → 같은 마을버스로 내려와 자갈치시장에서 저녁.','마을 안 골목에는 전망 좋은 카페와 식당이 있습니다. 주민이 사는 곳이니 조용히 걷고, 비탈과 계단이 많아 편한 신발이 필요합니다.'],
+ ['Take village bus Seo-gu 2 from Toseong Stn (Line 1) (about 15 minutes), or Saha 1 from Goejeong Stn. Check bus numbers and timetables in a map app.','Alleys and murals → Little Prince photo spot → ride the same village bus back and have dinner at Jagalchi Market.','Alleys inside the village have cafes and restaurants with views. People live here, so walk quietly, and wear comfortable shoes for the slopes and stairs.'],
+ ['1号線 土城駅から村バス「西区2番」（約15分）、または槐亭駅から「沙下1番」を利用します。バス番号と時刻表は地図アプリで確認してください。','甘川文化村の路地と壁画 → 星の王子さまのフォトスポット → 同じ村バスで下りて、チャガルチ市場で夕食。','村内の路地には眺めのよいカフェや食堂があります。住民が暮らす場所なので静かに歩き、坂や階段が多いので歩きやすい靴が必要です。'],
+ ['从1号线土城站乘村巴“西区2路”（约15分钟），或从槐亭站乘“沙下1路”，车次和时刻表请用地图应用确认。','甘川文化村小巷与壁画 → 小王子拍照点 → 乘同一村巴下山，在札嘎其市场吃晚餐。','村里的小巷有景观不错的咖啡馆和餐厅。这里有居民居住，请安静行走，坡道和台阶多，需要穿舒适的鞋。']);
+
+TF('jagalchi','자갈치시장 회 식당 부산','자갈치시장 2층 활어회 식당가',
+ ['1호선 자갈치역 10번 출구로 나오면 시장이 바로 보입니다. 남포역에서도 걸어서 5분 안팎입니다.','자갈치시장 → 국제시장 → 부평깡통시장 야시장 → 용두산공원 부산타워. 모두 걸어서 이동할 수 있습니다.','1층 수조에서 직접 고른 생선을 2층 식당에서 상차림비를 내고 먹는 방식이 일반적입니다. 가격표와 상차림비를 먼저 확인하고, 호객이 심하면 정중히 거절하세요.'],
+ ['Exit 10 of Jagalchi Stn (Line 1) puts the market in sight. From Nampo Stn it is around a 5-minute walk.','Jagalchi Market → Gukje Market → Bupyeong Kkangtong night market → Yongdusan Park and Busan Tower, all on foot.','The usual method is to choose fish from the tanks on the first floor and eat at a second-floor restaurant for a table-setting fee. Check the price list and fee first, and politely decline pushy touts.'],
+ ['1号線 チャガルチ駅10番出口を出るとすぐ市場が見えます。南浦駅からも徒歩5分前後です。','チャガルチ市場 → 国際市場 → 富平カントン市場の夜市 → 龍頭山公園とプサンタワー。すべて徒歩で移動できます。','1階の水槽で選んだ魚を、2階の食堂でテーブルセッティング料を払って食べるのが一般的です。値段表とセッティング料を先に確認し、しつこい客引きは丁寧に断りましょう。'],
+ ['从1号线札嘎其站10号口出来就能看到市场，从南浦站步行约5分钟。','札嘎其市场 → 国际市场 → 富平罐头市场夜市 → 龙头山公园和釜山塔，都可步行前往。','常见做法是在一楼水箱挑好鱼，到二楼餐厅付摆桌费后食用。请先确认价目表和摆桌费，遇到强拉客请礼貌拒绝。']);
+
+TF('huin','씨앗호떡 남포동 부산','BIFF광장 씨앗호떡 (Ssiat Hotteok)',
+ ['1호선 남포역·자갈치역에서 영도대교를 건너 흰여울문화마을까지 버스나 택시로 약 15분. 버스 번호는 지도 앱으로 확인하세요.','영도 흰여울 해안 산책로(약 1시간) → 근처 카페에서 바다 보며 휴식 → 남포동으로 돌아와 BIFF광장 먹거리.','남포동 BIFF광장의 씨앗호떡은 해바라기씨·땅콩이 들어간 부산식 호떡입니다. 흰여울 골목은 주민 거주지라 큰 소리와 드론 촬영을 삼가세요.'],
+ ['From Nampo or Jagalchi Stn (Line 1), cross Yeongdo Bridge by bus or taxi to Huinnyeoul Culture Village in about 15 minutes. Check the bus number in a map app.','Huinnyeoul coastal path (about 1 hour) → a seaside cafe → back to Nampo-dong for street food at BIFF Square.','Ssiat hotteok at BIFF Square in Nampo-dong is a Busan-style pancake filled with seeds and peanuts. People live in the Huinnyeoul alleys, so avoid loud voices and drones.'],
+ ['1号線 南浦駅・チャガルチ駅から影島大橋を渡り、白い渦（フィニョウル）文化村までバスかタクシーで約15分。バス番号は地図アプリで確認してください。','影島の白い渦の海岸遊歩道（約1時間） → 近くのカフェで海を眺めて休憩 → 南浦洞に戻ってBIFF広場でグルメ。','南浦洞BIFF広場のシアッホットクは、ひまわりの種やピーナッツが入った釜山式のホットクです。住民が暮らす路地なので、大声やドローン撮影は控えてください。'],
+ ['从1号线南浦站、札嘎其站乘公交或出租车过影岛大桥，约15分钟到白色漩涡文化村，公交车次请用地图应用确认。','影岛白色漩涡海边步道（约1小时） → 附近咖啡馆看海休息 → 回南浦洞在BIFF广场吃小吃。','南浦洞BIFF广场的种子糖饼是加了葵花籽和花生的釜山式糖饼。小巷里有居民居住，请勿大声喧哗或使用无人机。']);
+
+TF('taejongdae','태종대 해녀촌 부산','태종대 해녀촌 해산물 포장마차 (Taejongdae Haenyeo Village)',
+ ['1호선 부산역이나 남포역에서 66번·88번 등 버스로 약 40분 만에 태종대에 닿습니다. 노선과 시간표는 지도 앱으로 확인하세요.','태종대 입구 → 다누비열차(순환열차)나 걸어서 전망대·등대 → 해녀촌에서 해산물 → 영도 흰여울문화마을과 이어서 방문.','입구 근처 해녀촌 포장마차에서 해녀가 잡은 해산물을 먹을 수 있습니다. 가격은 시가인 경우가 많아 주문 전에 물어보세요.'],
+ ['Buses such as 66 and 88 from Busan Stn or Nampo Stn (Line 1) reach Taejongdae in about 40 minutes. Check routes and timetables in a map app.','Entrance → Danubi shuttle train or walk to the observatory and lighthouse → seafood at Haenyeo Village → combine with Huinnyeoul Culture Village.','Stalls near the entrance serve seafood caught by haenyeo divers. Prices are often market price, so ask before ordering.'],
+ ['1号線 釜山駅や南浦駅から66番・88番などのバスで約40分で太宗台に着きます。路線と時刻表は地図アプリで確認してください。','太宗台の入口 → ダヌビ列車（循環列車）か徒歩で展望台・灯台 → 海女村で海鮮 → 影島の白い渦文化村とあわせて訪問。','入口付近の海女村の屋台で、海女がとった海産物を食べられます。値段は時価のことが多いので、注文前に聞いてください。'],
+ ['从1号线釜山站或南浦站乘66路、88路等公交约40分钟到太宗台，线路和时刻表请用地图应用确认。','太宗台入口 → 乘Danubi观光列车或步行到观景台和灯塔 → 在海女村吃海鲜 → 可与影岛白色漩涡文化村一起游览。','入口附近的海女村摊位能吃到海女捕捞的海鲜，价格多为时价，点餐前请先询问。']);
+
+TF('seongsan','성산일출봉 해녀의집 제주','성산일출봉 인근 해녀의집 (Haenyeo House)',
+ ['제주공항·제주시에서 동쪽으로 버스로 약 1시간 20분, 렌터카로 약 1시간입니다. 외국인은 렌터카에 국제운전면허증이 필요하니 미리 확인하세요.','성산일출봉 오르기(약 30~40분) → 성산항에서 배로 우도 → 오후에 섭지코지. 일출 보기는 일출 시각 전 도착이 필수입니다.','성산 해녀의집에서 전복죽, 성게미역국, 물회 같은 제주식을 먹을 수 있습니다. 재료는 시기에 따라 다르니 메뉴를 확인하세요.'],
+ ['It takes about 1 hour 20 minutes by bus east from Jeju Airport or Jeju City, or about 1 hour by rental car. Foreigners need an international driving permit for rental cars, so check in advance.','Climb Seongsan Ilchulbong (30–40 minutes) → ferry from Seongsan Port to Udo → Seopjikoji in the afternoon. For sunrise, arrive before the sunrise time.','At a haenyeo house in Seongsan you can try Jeju dishes like abalone porridge, sea urchin seaweed soup and mulhoe. Ingredients vary by season.'],
+ ['済州空港・済州市から東へバスで約1時間20分、レンタカーで約1時間です。外国人がレンタカーを借りるには国際運転免許証が必要なので、事前に確認してください。','城山日出峰に登る（約30〜40分） → 城山港から船で牛島 → 午後は涉地コジ。日の出を見るなら日の出時刻の前に到着してください。','城山の海女の家では、アワビ粥、ウニわかめスープ、ムルフェなど済州の料理を味わえます。食材は時期により変わるので、メニューを確認してください。'],
+ ['从济州机场、济州市乘公交向东约1小时20分钟，自驾约1小时。外国人租车需要国际驾照，请提前确认。','登城山日出峰（约30~40分钟） → 从城山港乘船去牛岛 → 下午去涉地岬。想看日出须在日出前到达。','在城山的海女之家可以吃到鲍鱼粥、海胆海带汤、冷生鱼片汤等济州料理，食材随季节而变，请确认菜单。']);
+
+TF('halla','삼대국수회관 제주','삼대국수회관 (Samdae Guksu Hoegwan)',
+ ['제주시외버스터미널·서귀포에서 5·16도로 노선버스로 성판악 탐방로 입구까지 약 40분 안팎. 탐방로별 버스 번호와 시간표는 지도 앱으로 확인하세요.','백록담 정상은 사전 예약이 필요하고 성판악 코스 왕복 약 9~10시간입니다. 예약이 어렵다면 영실 코스로 윗세오름까지 왕복 5~6시간 걷는 방법이 있습니다.','하산 후 제주시에서 고기국수를 먹으며 쉬어 가세요. 현지인이 오래 찾는 국수집으로, 점심 시간대에는 줄이 길어질 수 있습니다.'],
+ ['From Jeju Intercity Bus Terminal or Seogwipo, route buses on the 5·16 Road reach the Seongpanak trailhead in about 40 minutes. Check bus numbers and timetables in a map app.','Reaching the Baengnokdam summit requires advance booking, and the Seongpanak route takes about 9–10 hours round trip. If you cannot book, the Yeongsil route to Witseoreum takes 5–6 hours round trip.','After the hike, rest over a bowl of gogi guksu (pork noodle soup) in Jeju City. A long-time local noodle shop; lunchtime queues can be long.'],
+ ['済州市外バスターミナルや西帰浦から、5・16道路経由の路線バスで城板岳登山口まで約40分前後。登山口別のバス番号と時刻表は地図アプリで確認してください。','白鹿潭の頂上は事前予約が必要で、城板岳コースは往復約9〜10時間です。予約が難しければ、霊室コースでウィッセオルムまで往復5〜6時間歩く方法があります。','下山後は済州市でコギクスを食べて休みましょう。地元の人が長く通う麺の店で、昼は行列ができることがあります。'],
+ ['从济州市外巴士客运站或西归浦乘5·16公路的公交，约40分钟到城板岳登山口，各登山口的车次和时刻表请用地图应用确认。','登顶白鹿潭需提前预约，城板岳路线往返约9~10小时。预约不到的话，可走灵室路线到威势岳，往返约5~6小时。','下山后可在济州市吃猪肉面（고기국수）休息。这是当地人常年光顾的面馆，午餐时间可能要排队。']);
+
+TF('saryeoni','성읍민속마을 흑돼지 제주','성읍민속마을 인근 식당가 (흑돼지·고사리해장국)',
+ ['렌터카로 제주시에서 약 40분이 가장 편합니다. 버스는 5·16도로와 비자림로 방면 노선이 있으니 시간표를 확인하세요.','붉은오름 쪽 입구에서 숲길을 걷고(약 1.5~2시간) → 반대편 출구에서 택시로 이동 → 성읍민속마을. 출입구가 서로 멀어서 차량 회수 계획이 필요합니다.','숲길 근처에는 식당이 거의 없어 먹거리와 물을 준비하세요. 성읍민속마을 일대에서는 흑돼지와 고사리해장국을 맛볼 수 있습니다.'],
+ ['A rental car from Jeju City (about 40 minutes) is the easiest way. Buses run on the 5·16 Road and Bijarim-ro routes, so check the timetable.','Walk the forest path from the Bulgeunoreum entrance (1.5–2 hours) → take a taxi from the other exit → Seongeup Folk Village. The two ends are far apart, so plan how to retrieve your car.','There are almost no restaurants near the trail, so bring food and water. Around Seongeup Folk Village you can try black pork and gosari haejang-guk.'],
+ ['済州市からレンタカーで約40分がいちばん楽です。バスは5・16道路や榧子林路方面の路線があるので、時刻表を確認してください。','赤岳（ブルグンオルム）側の入口から森の道を歩き（約1.5〜2時間） → 反対側の出口からタクシーで移動 → 城邑民俗村。出入口が離れているので、車の回収計画が必要です。','森の道の近くには食堂がほとんどないので、食べ物と水を準備してください。城邑民俗村の周辺では、黒豚やワラビの二日酔いスープを味わえます。'],
+ ['从济州市自驾约40分钟最方便；公交有5·16公路和榧子林路方向的线路，请确认时刻表。','从红岳（Bulgeunoreum）一侧入口走森林路（约1.5~2小时） → 在另一出口乘出租车 → 城邑民俗村。两个出口相距较远，需安排取车计划。','林道附近几乎没有餐厅，请自备食物和水。城邑民俗村一带可以吃到黑猪肉和蕨菜醒酒汤。']);
+
+TF('manjang','월정리 해녀 해산물 제주','김녕·월정 해안 식당가 (성게미역국·해물라면)',
+ ['제주시에서 동쪽으로 렌터카 약 40분(구좌읍 김녕리). 버스는 동일주 노선 김녕 정류장에서 내려 도보나 택시로 이동하며, 시간표는 지도 앱으로 확인하세요.','만장굴(개방 구간 약 1km, 왕복 1시간 안팎) → 김녕해수욕장 → 월정리 해변 → 세화 해변. 동굴 안은 서늘하니 겉옷을 챙기세요.','김녕·월정 해안 식당가에서 성게미역국과 해물라면을 맛볼 수 있습니다. 해변 카페도 많아 동굴 관람 뒤 쉬어 가기 좋습니다.'],
+ ['About 40 minutes east of Jeju City by rental car (Gimnyeong, Gujwa). By bus, get off at Gimnyeong on the circular east-coast route and walk or take a taxi; check the timetable in a map app.','Manjanggul (about 1 km open, around 1 hour round trip) → Gimnyeong Beach → Woljeongri Beach → Sehwa Beach. It is cool inside the cave, so bring a jacket.','The coastal restaurants in Gimnyeong and Woljeong serve sea urchin seaweed soup and seafood ramyeon. Beach cafes are good for a rest after the cave.'],
+ ['済州市から東へレンタカーで約40分（旧左邑・金寧里）。バスは東回り路線の金寧バス停で降りて徒歩かタクシーで移動し、時刻表は地図アプリで確認してください。','万丈窟（開放区間約1km、往復1時間前後） → 金寧海水浴場 → 月汀里ビーチ → 細花ビーチ。洞窟内は涼しいので上着を持ってください。','金寧・月汀の海沿いの食堂では、ウニわかめスープや海鮮ラーメンを味わえます。ビーチカフェも多く、洞窟見学のあとの休憩にぴったりです。'],
+ ['从济州市向东自驾约40分钟（旧左邑金宁里）。乘公交的话，在东线环岛路线的金宁站下车，再步行或打车，时刻表请用地图应用确认。','万丈窟（开放区间约1公里，往返约1小时） → 金宁海水浴场 → 月汀里海滩 → 细花海滩。洞内凉爽，请带外套。','金宁、月汀沿海餐厅可以吃到海胆海带汤和海鲜拉面。海边咖啡馆也多，适合参观洞窟后休息。']);
+
+TF('udo','우도 땅콩 아이스크림 제주','우도 해물라면·땅콩 아이스크림 (Udo)',
+ ['성산항 또는 종달항에서 배로 약 15분 걸립니다. 승선 때 여권 같은 신분증이 필요하고, 바람이 강하면 운항이 중단될 수 있으니 당일 운항 여부를 확인하세요.','성산항 → 배로 우도 → 순환버스나 전기자전거로 섬 한 바퀴(약 3~4시간) → 서빈백사·우도봉 → 귀환 배.','우도의 해물라면과 땅콩 아이스크림이 대표 먹거리입니다. 섬 식당은 점심에 붐비니 배에서 내리면 먼저 식사를 정하는 편이 좋습니다.'],
+ ['The ferry from Seongsan Port or Jongdal Port takes about 15 minutes. Bring photo ID such as your passport, and check same-day sailings because strong winds can halt service.','Seongsan Port → ferry to Udo → loop the island by shuttle bus or e-bike (3–4 hours) → Seobin Baeksa and Udobong → return ferry.','Udo\'s seafood ramyeon and peanut ice cream are the signature treats. Island restaurants fill up at lunch, so decide on a place soon after landing.'],
+ ['城山港または終達港から船で約15分です。乗船にはパスポートなどの身分証が必要で、風が強いと運航が止まることがあるので当日の運航を確認してください。','城山港 → 船で牛島 → 循環バスや電動自転車で島を一周（約3〜4時間） → 西浜白沙・牛島峰 → 帰りの船。','牛島の海鮮ラーメンとピーナッツアイスが定番グルメです。島の食堂は昼に混むので、上陸したら早めに食事の店を決めるのがおすすめです。'],
+ ['从城山港或终达港乘船约15分钟。乘船需带护照等身份证件，风大时可能停航，请确认当天班次。','城山港 → 乘船到牛岛 → 乘环岛巴士或电动自行车游岛一圈（约3~4小时） → 西滨白沙、牛岛峰 → 乘船返回。','牛岛的海鲜拉面和花生冰淇淋是代表美食。岛上餐厅午餐时间人多，上岛后建议尽早决定吃饭的地方。']);
+
+TF('yongmeori','모슬포항 자리돔 제주','모슬포항 자리돔 물회·방어 식당가',
+ ['제주시·서귀포에서 서부 방면 버스로 산방산 정류장까지 약 1시간 20분~1시간 30분. 렌터카를 쓰면 제주시에서 약 1시간 안팎입니다.','용머리해안(파도·만조 때 입장 제한) → 산방산 → 송악산 둘레길 → 모슬포항에서 식사. 시간이 되면 마라도 배편도 있습니다.','입장 가능 시간이 물때에 따라 달라지니 당일 안내를 꼭 확인하세요. 모슬포항 일대에서는 자리돔 물회와 계절 방어를 맛볼 수 있습니다.'],
+ ['By west-bound bus from Jeju City or Seogwipo, Sanbangsan stop takes about 1 hour 20–30 minutes. By rental car it is around 1 hour from Jeju City.','Yongmeori Coast (closed during high waves or high tide) → Sanbangsan → Songaksan trail → lunch at Moseulpo Port. A ferry to Marado is also available if you have time.','Entry hours depend on the tide, so check the day\'s notice. Around Moseulpo Port you can try jarigdom (damselfish) mulhoe and seasonal amberjack.'],
+ ['済州市・西帰浦から西方面のバスで山房山バス停まで約1時間20分〜1時間30分。レンタカーなら済州市から約1時間前後です。','龍頭海岸（波が高いときや満潮時は入場制限） → 山房山 → 松岳山の遊歩道 → 慕瑟浦港で食事。時間があれば馬羅島行きの船もあります。','入場できる時間は潮の満ち引きで変わるので、当日の案内を必ず確認してください。慕瑟浦港の周辺では、ジャリドム（スズメダイ）の冷製刺身スープや旬のブリを味わえます。'],
+ ['从济州市、西归浦乘往西部的公交，到山房山站约1小时20~30分钟；自驾从济州市约1小时左右。','龙头海岸（浪大或涨潮时限制入场） → 山房山 → 松岳山环山步道 → 在慕瑟浦港用餐。时间充裕可乘船去马罗岛。','入场时间随潮汐变化，请务必确认当天通知。慕瑟浦港一带可以吃到雀鲷冷汤和当季鰤鱼。']);
+
+TF('seorak','설악동 산채비빔밥 속초','설악산 입구 산채비빔밥·두부 식당가',
+ ['서울 동서울터미널에서 속초행 고속버스로 약 2시간 30분~3시간. 속초 시외버스터미널에서 7번·7-1번 시내버스로 설악산 소공원까지 약 30~40분입니다.','소공원 → 신흥사 → 케이블카로 권금성 전망 → 속초 시내에서 저녁. 단풍철(10월)에는 주말 교통과 주차가 매우 혼잡하니 이른 시간에 출발하세요.','소공원 입구에는 산채비빔밥과 두부 요리 식당이 이어집니다. 산에서 내려온 뒤 따뜻한 한 끼가 좋습니다.'],
+ ['An express bus from Seoul (Dong Seoul Terminal) to Sokcho takes about 2.5–3 hours. From Sokcho Intercity Bus Terminal, city buses 7 and 7-1 reach Sorak Sopark in 30–40 minutes.','Sopark → Sinheungsa → cable car to Gwongeumseong → dinner in Sokcho. In the October foliage season, weekend traffic and parking are very crowded, so leave early.','Restaurants serving sanchae bibimbap (mountain-vegetable bibimbap) and tofu dishes line the Sopark entrance, a warm meal after the mountain.'],
+ ['ソウルの東ソウルターミナルから束草行きの高速バスで約2時間30分〜3時間。束草市外バスターミナルから市内バス7番・7-1番で雪岳山ソゴンウォンまで約30〜40分です。','ソゴンウォン → 神興寺 → ケーブルカーで権金城の展望 → 束草市内で夕食。紅葉の10月は週末の交通と駐車がとても混むので、早めに出発してください。','ソゴンウォンの入口には山菜ビビンバや豆腐料理の食堂が並んでいます。山を下りたあとの温かい食事にぴったりです。'],
+ ['从首尔东首尔客运站乘高速巴士到束草约2小时30分~3小时；从束草市外巴士客运站乘市内公交7路、7-1路约30~40分钟到雪岳山小公园。','小公园 → 神兴寺 → 乘缆车到权金城观景 → 回束草市区吃晚餐。10月红叶季周末交通和停车非常拥堵，请提早出发。','小公园入口有一排山菜拌饭和豆腐料理餐厅，下山后吃一顿热饭正合适。']);
+
+TF('ulsan','속초 닭강정 중앙시장','속초관광수산시장 닭강정 (Chicken Gangjeong)',
+ ['속초 시외버스터미널에서 7번·7-1번 버스로 설악산 소공원까지 간 뒤, 소공원에서 걸어서 출발합니다(울산바위까지 약 3.8km 편도).','소공원 → 신흥사 → 흔들바위 → 울산바위 정상. 왕복 약 4~5시간이고 마지막에 철제 계단이 길게 이어집니다. 해지기 전에 내려오세요.','하산 후 속초 시내 속초관광수산시장에서 닭강정을 포장해 가는 것이 현지인과 여행자의 공식 코스입니다. 날씨 확인은 필수입니다.'],
+ ['Take bus 7 or 7-1 from Sokcho Intercity Bus Terminal to Sorak Sopark, then start on foot (about 3.8 km one way to Ulsanbawi).','Sopark → Sinheungsa → Heundeulbawi → Ulsanbawi summit. About 4–5 hours round trip, ending with a long steel staircase. Come down before dark.','After the hike, buying dakgangjeong at Sokcho Tourist & Fishery Market is the classic course for locals and travelers alike. Always check the weather first.'],
+ ['束草市外バスターミナルから7番・7-1番バスで雪岳山ソゴンウォンまで行き、そこから歩いて出発します（蔚山岩まで片道約3.8km）。','ソゴンウォン → 神興寺 → 揺れ岩 → 蔚山岩の頂上。往復約4〜5時間で、最後に長い鉄の階段が続きます。日没前に下山してください。','下山後は束草の観光水産市場でタッカンジョン（甘辛い韓国風唐揚げ）を持ち帰るのが、地元の人にも旅行者にも定番のコースです。天気の確認は必須です。'],
+ ['从束草市外巴士客运站乘7路或7-1路到雪岳山小公园，再从那里步行出发（到蔚山岩单程约3.8公里）。','小公园 → 神兴寺 → 摇摆岩 → 蔚山岩顶。往返约4~5小时，最后是一段很长的铁梯，请在天黑前下山。','下山后到束草观光水产市场打包鸡肉糖（닭강정）是当地人和游客的经典路线，出发前务必确认天气。']);
+
+TF('sinheung','설악산 입구 식당가 속초','소공원 입구 산채비빔밥 식당가',
+ ['속초 시외버스터미널에서 7번·7-1번 버스로 설악산 소공원(약 30~40분). 소공원에서 신흥사까지는 평지에 가까운 길로 걸어서 약 20~30분입니다.','소공원 → 신흥사(통일대불) → 흔들바위(왕복 약 1~1.5시간) → 하산 후 속초에서 식사. 체력이 부족하면 신흥사까지만 걸어도 좋습니다.','신흥사는 천 년이 넘은 사찰이라 경내에서는 조용히 하고 복장을 단정히 하세요. 입구 식당가에서 산채비빔밥과 도토리묵을 드셔 보세요.'],
+ ['From Sokcho Intercity Bus Terminal, buses 7 and 7-1 reach Sorak Sopark (30–40 minutes). From Sopark to Sinheungsa is a mostly flat 20–30 minute walk.','Sopark → Sinheungsa (Unification Buddha) → Heundeulbawi (1–1.5 hours round trip) → dinner in Sokcho. If you are short on energy, walking only to Sinheungsa is fine.','Sinheungsa is a temple over a thousand years old, so be quiet and dress modestly. Try sanchae bibimbap and acorn jelly at the restaurants at the entrance.'],
+ ['束草市外バスターミナルから7番・7-1番バスで雪岳山ソゴンウォン（約30〜40分）。ソゴンウォンから神興寺までは平坦に近い道で、徒歩約20〜30分です。','ソゴンウォン → 神興寺（統一大仏） → 揺れ岩（往復約1〜1.5時間） → 下山後は束草で食事。体力が足りなければ神興寺まででも十分です。','神興寺は千年以上の歴史を持つ寺なので、境内では静かにし、服装も整えてください。入口の食堂街で山菜ビビンバやどんぐりゼリーをどうぞ。'],
+ ['从束草市外巴士客运站乘7路、7-1路到雪岳山小公园（约30~40分钟），从小公园到神兴寺是接近平路的路，步行约20~30分钟。','小公园 → 神兴寺（统一大佛） → 摇摆岩（往返约1~1.5小时） → 下山后回束草用餐。体力不足的话只走到神兴寺也可以。','神兴寺是有千年以上历史的古寺，寺内请保持安静、着装得体。可以在入口餐馆尝尝山菜拌饭和橡子凉粉。']);
+
+TF('naksansa','낙산해변 물회 양양','낙산해변 물회 식당가 (Naksan Beach)',
+ ['속초 시외버스터미널에서 양양 방면 시내·직행버스로 약 30분(낙산사 입구). 버스 번호와 시간표는 지도 앱으로 확인하세요.','낙산사 → 의상대 → 홍련암(바위 위 암자) → 낙산해변 산책 → 식당가에서 물회.','동해가 한눈에 보이는 사찰이라 일출이나 해 질 무렵이 특히 좋습니다. 사찰이므로 경내에서는 조용히 하고, 낙산해변 물회 식당에서 시원한 식사를 즐기세요.'],
+ ['From Sokcho Intercity Bus Terminal, a city or express bus toward Yangyang takes about 30 minutes to the Naksansa entrance. Check bus numbers and timetables in a map app.','Naksansa → Uisangdae → Hongnyeongam (hermitage on a rock) → stroll Naksan Beach → mulhoe at the restaurants.','The temple overlooks the East Sea, so sunrise and sunset are especially good. Be quiet inside the grounds, and cool off with mulhoe at a Naksan Beach restaurant.'],
+ ['束草市外バスターミナルから襄陽方面の市内バス・直行バスで約30分（洛山寺入口）。バス番号と時刻表は地図アプリで確認してください。','洛山寺 → 義湘台 → 紅蓮庵（岩の上の庵） → 洛山ビーチを散策 → 食堂街でムルフェ。','東海が一望できる寺なので、日の出や夕暮れどきが特におすすめです。寺なので境内では静かにし、洛山ビーチのムルフェの店で涼しく食事をどうぞ。'],
+ ['从束草市外巴士客运站乘去襄阳方向的市内或直达巴士，约30分钟到洛山寺入口，车次和时刻表请用地图应用确认。','洛山寺 → 义湘台 → 红莲庵（岩石上的庵堂） → 洛山海滩散步 → 在餐馆吃冷生鱼片汤。','寺院可俯瞰东海，日出和日落时分尤其好。寺内请保持安静，之后可在洛山海滩餐厅享用清凉的冷汤。']);
+
+TF('abai','아바이순대 속초','아바이마을 아바이순대·오징어순대 식당가',
+ ['속초 시외버스터미널·고속버스터미널에서 택시로 약 5~10분, 시내버스로도 갈 수 있습니다. 갯배 선착장이 마을 입구입니다.','속초관광수산시장 → 갯배(줄을 당겨 건너는 나룻배)로 청초호 건너 아바이마을 → 영금정 일몰 → 속초해변. 모두 시내에서 가깝습니다.','한국전쟁 때 이북에서 내려온 실향민이 만든 마을로, 아바이순대와 오징어순대가 유명합니다. 갯배는 체험 자체가 즐거우니 한 번 타 보세요.'],
+ ['A taxi from Sokcho Intercity or Express Bus Terminal takes about 5–10 minutes, and city buses also run there. The Gaetbae ferry pier is the village entrance.','Sokcho Tourist & Fishery Market → Gaetbae (a pull-rope ferry) across Cheongchoho → Abai Village → sunset at Yeonggeumjeong → Sokcho Beach. All close to downtown.','The village was built by North Korean refugees during the Korean War, and Abai sundae and squid sundae are famous. The Gaetbae ride itself is fun, so try it once.'],
+ ['束草市外・高速バスターミナルからタクシーで約5〜10分、市内バスでも行けます。ゲッペ（渡し舟）の船着場が村の入口です。','束草観光水産市場 → ゲッペ（綱を引いて渡る小舟）で青草湖を渡りアバイ村へ → 瀛金亭の夕日 → 束草ビーチ。どれも市内から近いです。','朝鮮戦争のときに北から南へ来た避難民が作った村で、アバイスンデ（韓国風の腸詰め）とイカスンデが有名です。ゲッペは乗ること自体が楽しいので、一度乗ってみてください。'],
+ ['从束草市外、高速巴士客运站打车约5~10分钟，也可乘市内公交，船渡（Gaetbae）码头就是村子入口。','束草观光水产市场 → 乘拉绳渡船（Gaetbae）过青草湖到阿爸村 → 瀛金亭日落 → 束草海滩，都离市区很近。','这里是韩战时从朝鲜南下的避难民建立的村子，以阿爸血肠和鱿鱼血肠闻名。乘船渡本身就很有趣，不妨体验一次。']);
+
+TF('sokchomkt','만석닭강정 속초','만석닭강정 (Manseok Dakgangjeong)',
+ ['속초 시외버스터미널에서 시내버스나 택시로 약 5~10분. 중앙동 일대 시장 입구는 큰길에서 바로 보입니다.','시장에서 닭강정과 오징어순대 → 갯배로 아바이마을 → 영금정 일몰 → 속초해변에서 마무리. 반나절이면 충분합니다.','속초 닭강정은 달콤매콤한 한국식 닭튀김으로 여행자 선물용으로도 인기입니다. 유명 가게는 포장 줄이 길어 오전이나 늦은 시간에 가는 것이 좋습니다.'],
+ ['Allow 5–10 minutes by city bus or taxi from Sokcho Intercity Bus Terminal. The market entrance in Jungang-dong is easy to spot from the main road.','Dakgangjeong and squid sundae at the market → Gaetbae to Abai Village → Yeonggeumjeong sunset → finish at Sokcho Beach. Half a day is enough.','Sokcho dakgangjeong is sweet-and-spicy Korean fried chicken, popular as a travel souvenir. The famous shops have long takeout lines, so go in the morning or late.'],
+ ['束草市外バスターミナルから市内バスやタクシーで約5〜10分。中央洞一帯の市場の入口は大通りからすぐ見えます。','市場でタッカンジョンとイカスンデ → ゲッペでアバイ村へ → 瀛金亭の夕日 → 束草ビーチで締めくくり。半日で十分です。','束草のタッカンジョンは甘辛い韓国式の唐揚げで、旅行者のお土産にも人気です。有名店はテイクアウトの行列が長いので、午前か遅めの時間がおすすめです。'],
+ ['从束草市外巴士客运站乘市内公交或出租车约5~10分钟，中央洞一带的市场入口从大路上就能看到。','在市场吃鸡肉糖和鱿鱼血肠 → 乘渡船到阿爸村 → 瀛金亭日落 → 束草海滩收尾，半天足够。','束草鸡肉糖是甜辣的韩式炸鸡，也很适合当伴手礼。名店外卖排队很长，建议上午或较晚时间去。']);
+
 const LB={
- ko:{h:'현지인 팁',s:'지하철·이동',c:'추천 코스',f:'현지인 추천 카페',m:'지도에서 보기',n:'영업 여부와 운영 시간은 방문 전에 구글지도에서 확인하세요.'},
- en:{h:'Local tips',s:'Getting there by subway',c:'Suggested course',f:'Cafe locals like',m:'View on map',n:'Please check opening status and hours on Google Maps before you go.'},
- ja:{h:'地元の人のヒント',s:'地下鉄・移動',c:'おすすめコース',f:'地元の人が通うカフェ',m:'地図で見る',n:'営業状況や営業時間は訪問前にGoogleマップで確認してください。'},
- zh:{h:'本地人小贴士',s:'地铁与交通',c:'推荐路线',f:'本地人推荐咖啡馆',m:'在地图上查看',n:'营业状态和时间请在出发前用谷歌地图确认。'}
+ ko:{h:'현지인 팁',s:'지하철·이동',c:'추천 코스',f:'현지인 추천 카페',r:'현지인 추천 맛집',m:'지도에서 보기',n:'영업 여부와 운영 시간은 방문 전에 구글지도에서 확인하세요.'},
+ en:{h:'Local tips',s:'Getting there',c:'Suggested course',f:'Cafe locals like',r:'Where locals eat',m:'View on map',n:'Please check opening status and hours on Google Maps before you go.'},
+ ja:{h:'地元の人のヒント',s:'地下鉄・移動',c:'おすすめコース',f:'地元の人が通うカフェ',r:'地元の人が通うお店',m:'地図で見る',n:'営業状況や営業時間は訪問前にGoogleマップで確認してください。'},
+ zh:{h:'本地人小贴士',s:'地铁与交通',c:'推荐路线',f:'本地人推荐咖啡馆',r:'本地人推荐美食',m:'在地图上查看',n:'营业状态和时间请在出发前用谷歌地图确认。'}
 };
-window.PLACE_TIPS=TIPS;window.TIPS_LABEL=LB;
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+// 카드에 넣을 HTML. lg: ko|en|ja|zh
+function renderTips(id,lg){
+  const x=TIPS[id],L=LB[lg]||LB.ko;if(!x)return '';const v=x[lg]||x.ko;
+  return '<details class="ltips"><summary>'+esc(L.h)+'</summary><dl><dt>🚇 '+esc(L.s)+'</dt><dd>'+esc(v[0])+'</dd><dt>🗺️ '+esc(L.c)+'</dt><dd>'+esc(v[1])+'</dd><dt>'+(x.food?'🍽️ '+esc(L.r):'☕ '+esc(L.f))+'</dt><dd><strong>'+esc(x.cafe)+'</strong><br/>'+esc(v[2])+' <a href="https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.q)+'" target="_blank" rel="noopener noreferrer">'+esc(L.m)+' ↗</a></dd></dl><p class="ltips-note">'+esc(L.n)+'</p></details>';
+}
+window.PLACE_TIPS=TIPS;window.TIPS_LABEL=LB;window.renderTips=renderTips;
 })();
