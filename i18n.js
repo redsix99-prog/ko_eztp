@@ -31,6 +31,9 @@ const K={
  topSpots:{ko:'{name}의 대표 명소',en:'Top sights in {name}',ja:'{name}の代表的な名所',zh:'{name}代表性景点'},
  topSpotsDesc:{ko:'사진을 보고 마음에 드는 곳부터 골라 보세요.',en:'Browse the photos and start with the places you like.',ja:'写真を見て、気になる場所から選んでみましょう。',zh:'看看照片，从喜欢的地方开始选择吧。'},
  tastyTrip:{ko:'맛있는 여행',en:'Tasty travels',ja:'おいしい旅',zh:'美味之旅'},
+ picksTitle:{ko:'추천 맛집',en:'Where to try it',ja:'おすすめの店',zh:'推荐餐厅'},
+ picksMap:{ko:'구글 지도에서 보기',en:'Open in Google Maps',ja:'Googleマップで見る',zh:'在谷歌地图中查看'},
+ picksNote:{ko:'추천 맛집은 광고·협찬 없이 고른 곳입니다. 영업시간·휴무일·가격은 자주 바뀌니 방문 전에 구글 지도에서 확인하세요. 한글 상호를 보여 주면 택시 기사에게 길을 묻기 쉽습니다.',en:'Restaurant picks are independent, not paid or sponsored. Opening hours, closing days and prices change often, so check Google Maps before you go. Showing the Korean name helps when asking a taxi driver.',ja:'おすすめの店は広告・協賛なしで選んでいます。営業時間・定休日・価格はよく変わるので、訪問前にGoogleマップで確認してください。韓国語の店名を見せるとタクシーで伝えやすいです。',zh:'推荐餐厅均为独立挑选，无广告或赞助。营业时间、休息日和价格经常变动，出发前请在谷歌地图上确认。向出租车司机出示韩文店名会更方便。'},
  routeEy:{ko:'추천 동선',en:'Suggested route',ja:'おすすめルート',zh:'推荐路线'},
  routeH:{ko:'{name} 이렇게 다녀 보세요',en:'How to explore {name}',ja:'{name}の巡り方',zh:'{name}这样玩'},
  routeMap:{ko:'구글지도로 이 동선 보기 ↗',en:'View this route in Google Maps ↗',ja:'この動線をGoogleマップで見る ↗',zh:'在谷歌地图中查看此路线 ↗'},
@@ -41,7 +44,7 @@ const K={
  notFoundSub:{ko:'아래에서 지역을 골라 주세요.',en:'Please choose a region below.',ja:'下から地域を選んでください。',zh:'请从下方选择地区。'},
  regionTitle:{ko:'{name} 여행 가이드 | 코리아 이지트립',en:'{name} Travel Guide | Korea Easy Trip',ja:'{name}旅行ガイド | Korea Easy Trip',zh:'{name}旅行指南 | Korea Easy Trip'},
  creditsHead:{ko:'사진 출처(Wikimedia Commons): ',en:'Photo credits (Wikimedia Commons): ',ja:'写真の出典（Wikimedia Commons）：',zh:'图片来源（Wikimedia Commons）：'},
- creditsNote:{ko:'명소 사진은 위키백과 문서의 사진이며 각 사진 아래 링크에서 출처와 라이선스를 확인할 수 있습니다.',en:'Spot photos come from Wikipedia articles; see the link under each photo for its source and license.',ja:'名所の写真はWikipediaの記事のもので、各写真の下のリンクから出典とライセンスを確認できます。',zh:'景点照片取自维基百科条目，可通过每张照片下方的链接查看来源与授权。'},
+ creditsNote:{ko:'명소 사진은 위키백과 문서 또는 위키미디어 공용(Wikimedia Commons)의 사진이며 각 사진 아래 링크에서 출처와 라이선스를 확인할 수 있습니다.',en:'Spot photos come from Wikipedia articles or Wikimedia Commons; see the link under each photo for its source and license.',ja:'名所の写真はWikipediaの記事またはWikimedia Commonsのもので、各写真の下のリンクから出典とライセンスを確認できます。',zh:'景点照片取自维基百科条目或维基共享资源（Wikimedia Commons），可通过每张照片下方的链接查看来源与授权。'},
  lang:{ko:'언어',en:'Language',ja:'言語',zh:'语言'}
 };
 function t(key,vars){const e=K[key];let s=e?(e[LANG]||e.ko):key;if(vars)for(const v in vars)s=s.split('{'+v+'}').join(vars[v]);return s;}
@@ -135,6 +138,7 @@ function applyData(){
 
 /* ---------- 사진 출처 ---------- */
 const CREDITS=[
+ [['눈 내린 경복궁 향원정','Hyangwonjeong Pavilion in the snow','雪の景福宮・香遠亭','雪中的景福宫香远亭'],'Cultural Heritage Administration (국가유산청)','KOGL Type 1'],
  [['광화문','Gwanghwamun','光化門','光化门'],'Huntsmanleader','CC0'],
  [['북촌 한옥마을·경복궁 근정전','Bukchon Hanok Village & Geunjeongjeon Hall','北村韓屋村・景福宮勤政殿','北村韩屋村·景福宫勤政殿'],'Basile Morin','CC BY-SA 4.0'],
  [['감천문화마을','Gamcheon Culture Village','甘川文化村','甘川文化村'],'Bernard Gagnon','CC0'],
@@ -153,10 +157,10 @@ const CREDITS=[
  [['동대문디자인플라자','Dongdaemun Design Plaza','東大門デザインプラザ','东大门设计广场'],'lumoplank','CC0'],
  [['K-팝 무대(2011 한일축제한마당)','K-pop stage (2011 Korea-Japan Festival)','K-POPステージ（2011韓日交流おまつり）','K-POP舞台（2011韩日交流庆典）'],'Korea.net / Korean Culture and Information Service','CC BY-SA 2.0'],
  [['북한산 인수봉','Insubong Peak, Bukhansan','北漢山・仁寿峰','北汉山仁寿峰'],'Jo Hanshin','CC0'],
+ [['베스티(BESTie) 무대 사진','BESTie on stage','BESTieのステージ写真','BESTie舞台照'],'Korea.net / Korean Culture and Information Service (Jeon Han)','CC BY-SA 2.0'],
  [['광안대교 야경','Gwangan Bridge at night','広安大橋の夜景','广安大桥夜景'],'Doo-ho Kim','Public domain'],
  [['홍대 거리 야경','Hongdae street at night','弘大の夜景','弘大夜景'],'Ken Eckert','CC BY-SA 4.0'],
- [['명동 거리','Myeongdong street','明洞の通り','明洞街头'],'Sgroey','CC BY-SA 4.0'],
- [['종로구 야간 거리','Jongno-gu street at night','鍾路区の夜の通り','钟路区夜间街景'],'William Anderson','CC BY-SA 3.0']
+ [['명동 거리','Myeongdong street','明洞の通り','明洞街头'],'Sgroey','CC BY-SA 4.0']
 ];
 function renderCredits(el,extra){
   if(!el)return;const i={ko:0,en:1,ja:2,zh:3}[LANG];

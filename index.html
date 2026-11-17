@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="alternate" hreflang="ko" href="https://korea-easytrip.com/"/>
   <link rel="alternate" hreflang="en" href="https://korea-easytrip.com/en/"/>
   <link rel="alternate" hreflang="x-default" href="https://korea-easytrip.com/"/>
-  <link rel="stylesheet" href="styles.css?v=20261115b"/>
+  <link rel="stylesheet" href="styles.css?v=20261117"/>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -33,7 +33,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <main>
   <section class="hero" id="home" aria-label="한국 여행 소개">
     <div class="hero-slides" aria-hidden="true">
-      <div class="slide on" style="background-image:url(images/h_modern.jpg)" data-cap="서울 반포대교 달빛무지개분수"></div>
+      <div class="slide on" style="background-image:url(images/h_winter.jpg)" data-cap="눈 내린 경복궁 향원정"></div>
+      <div class="slide" style="background-image:url(images/h_modern.jpg)" data-cap="서울 반포대교 달빛무지개분수"></div>
       <div class="slide" style="background-image:url(images/h_gwangan.jpg)" data-cap="부산 광안대교 야경"></div>
       <div class="slide" style="background-image:url(images/hero.jpg)" data-cap="서울 광화문"></div>
     </div>
@@ -43,7 +44,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <h1>전통과 최첨단이<br/>한곳에서 만나는 나라</h1>
       <p>한강의 야경, 계절이 바뀌는 산과 바다, 600년 된 궁궐, 그리고 K-팝과 K-뷰티까지. 한국의 다양한 얼굴을 한 번에 만나 보세요.</p>
       <div class="hero-actions"><a href="#plan" class="btn btn-lg">내 여행 일정 만들기 →</a><a href="#themes" class="btn btn-glass btn-lg">한국의 매력 보기</a></div>
-      <div class="hero-foot"><span class="hero-cap" id="heroCap">서울 반포대교 달빛무지개분수</span><div class="hero-dots" role="tablist" aria-label="배경 사진 선택"><button class="on" aria-label="사진 1"></button><button aria-label="사진 2"></button><button aria-label="사진 3"></button></div></div>
+      <div class="hero-foot"><span class="hero-cap" id="heroCap">눈 내린 경복궁 향원정</span><div class="hero-dots" role="tablist" aria-label="배경 사진 선택"><button class="on" aria-label="사진 1"></button><button aria-label="사진 2"></button><button aria-label="사진 3"></button><button aria-label="사진 4"></button></div></div>
     </div>
   </section>
 
@@ -61,16 +62,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <section id="themes" class="section"><div class="wrap"><div class="section-title"><div><span class="eyebrow">Discover Korea</span><h2>한국을 만나는 다섯 가지 방법</h2><p class="muted">관심 가는 주제를 누르면 추천 장소를 바로 보여 드려요.</p></div></div>
     <div class="theme-grid">
       <a href="#spots" class="theme t-wide" data-theme="modern" style="background-image:url(images/t_ddp.jpg)"><div class="theme-text"><span class="theme-no">01</span><h3>세련된 서울</h3><p>남산, 롯데월드타워, 한강 야경</p></div></a>
-      <a href="#spots" class="theme t-wide" data-theme="kpop" style="background-image:url(images/t_kpop.jpg)"><div class="theme-text"><span class="theme-no">02</span><h3>K-팝·K-뷰티</h3><p>명동, 홍대, 성수동</p></div></a>
+      <a href="#spots" class="theme t-wide" data-theme="kpop" style="background-image:url(images/t_kpop.jpg)"><div class="theme-text"><span class="theme-no">02</span><h3>K-뷰티·K-쇼핑</h3><p>올리브영, 명동, 성수동</p></div></a>
       <a href="#spots" class="theme" data-theme="nature" style="background-image:url(images/t_bukhansan.jpg)"><div class="theme-text"><span class="theme-no">03</span><h3>서울 근교 자연</h3><p>북한산에서 남한산성까지</p></div></a>
       <a href="#spots" class="theme" data-theme="culture" style="background-image:url(images/hanbok.jpg)"><div class="theme-text"><span class="theme-no">04</span><h3>전통 문화</h3><p>궁궐, 한옥, 세계유산</p></div></a>
-      <a href="#spots" class="theme" data-theme="market" style="background-image:url(images/market.jpg)"><div class="theme-text"><span class="theme-no">05</span><h3>시장과 노포</h3><p>광장시장, 종로3가, 을지로</p></div></a>
+      <a href="#spots" class="theme" data-theme="market" style="background-image:url(images/market.jpg)"><div class="theme-text"><span class="theme-no">05</span><h3>음식과 시장</h3><p>광장시장, 남대문, 종로3가 포차</p></div></a>
     </div></div></section>
 
   <section id="spots" class="section section-tint" style="scroll-margin-top:80px"><div class="wrap">
     <div class="section-title"><div><span class="eyebrow">추천 장소</span><h2 id="spotTitle"></h2><p class="muted" id="spotDesc"></p></div><button class="btn btn-dark" type="button" id="spotPlan">이 테마로 일정 만들기 →</button></div>
     <div class="filters" role="group" aria-label="테마 선택" id="spotTabs"></div>
     <div class="spot-grid" id="spotGrid"></div>
+    <div class="theme-guide" id="themeGuide"></div>
   </div></section>
 
 
@@ -93,6 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div></div></section>
   <section class="section" id="newsteaser" style="scroll-margin-top:80px"><div class="wrap"><div class="section-title"><div><span class="eyebrow">관광 뉴스</span><h2>지금 한국에서 일어나는 일</h2><p class="muted">외국인 여행자가 알아두면 좋은 최근 소식 세 가지를 먼저 소개합니다.</p></div><a class="btn btn-outline" href="news.html">뉴스 더 보기 →</a></div>
     <div class="news-cards" id="homeNews"></div></div></section>
+  <section id="airport" class="section" style="scroll-margin-top:80px"><div class="wrap" id="airportBox"></div></section>
   <section id="start" class="section section-tint"><div class="wrap"><div class="section-title"><div><span class="eyebrow">여행 준비</span><h2>출발 전에 알아두면 좋은 것들</h2><p class="muted">한국이 처음인 분들이 가장 많이 궁금해하는 내용만 골랐습니다.</p></div><a class="text-link" href="guides/index.html">모든 가이드 글 보기 →</a></div>
     <div class="guide-tools"><label class="sr-only" for="guideSearch">가이드 검색</label><input id="guideSearch" class="search" type="search" placeholder="가이드 검색 (예: 공항, 티머니)"/><span class="count" id="guideCount">6개의 가이드</span></div>
     <div class="guides" id="guides">
@@ -117,13 +120,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="footbottom">© 2026 코리아 이지트립
 <div class="credits" id="credits"></div></div></div></footer>
 <dialog id="articleDialog" aria-labelledby="articleTitle"><button class="dialog-close" aria-label="닫기" id="closeDialog">×</button><figure class="dlg-photo"><img id="articleImg" src="" alt=""/><figcaption id="articleCredit"></figcaption></figure><div class="dlg-body"><div class="eyebrow" id="articleCat"></div><h2 id="articleTitle"></h2><p class="article-body" id="articleBody"></p><div class="dlg-links-title">공식 정보 바로가기</div><div class="dlg-links" id="articleLinks"></div></div></dialog>
-<script src="news-data.js?v=20261115b"></script>
-<script src="i18n-dict.js?v=20261115b"></script>
-<script src="i18n-places.js?v=20261115b"></script>
-<script src="i18n-data.js?v=20261115b"></script>
-<script src="i18n.js?v=20261115b"></script>
-<script src="places.js?v=20261115b"></script>
-<script src="tips.js?v=20261115b"></script>
+<dialog id="spotDialog" class="spot-dlg" aria-labelledby="spotDlgTitle"><button class="dialog-close" aria-label="닫기" id="closeSpotDialog">×</button><figure class="dlg-photo"><img id="spotDlgImg" src="" alt=""/></figure><div class="dlg-body"><div class="eyebrow" id="spotDlgCat"></div><h2 id="spotDlgTitle"></h2><div id="spotDlgBody"></div><a class="btn btn-outline" id="spotDlgMap" target="_blank" rel="noopener noreferrer" style="margin-top:18px"></a></div></dialog>
+<script src="news-data.js?v=20261117"></script>
+<script src="i18n-dict.js?v=20261117"></script>
+<script src="i18n-places.js?v=20261117"></script>
+<script src="i18n-data.js?v=20261117"></script>
+<script src="i18n.js?v=20261117"></script>
+<script src="places.js?v=20261117"></script>
+<script src="tips.js?v=20261117"></script>
+<script src="guide-data.js?v=20261117"></script>
 <script>
 (function(){'use strict';
   const $=s=>document.querySelector(s);
@@ -147,7 +152,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     const cards=Array.from({length:days},(_,i)=>({day:i+1,label:plan[i][1],p:window.PLACES[plan[i][0]]}));
     const fallback=`images/${place.toLowerCase()}.jpg`;
     const enc=encodeURIComponent;
-    $('#dayCards').innerHTML=cards.map(x=>`<article class="day-card"><div class="day-photo"><img src="${x.p.img||fallback}" alt="${escapeHtml(x.p.name)}" ${x.p.img?'':`data-wiki="${escapeHtml(x.p.wiki||'')}"`} loading="lazy"/><span class="day-badge">${x.day}일차</span><a class="photo-src" data-src-for="${escapeHtml(x.p.wiki||'')}" target="_blank" rel="noopener noreferrer" hidden>사진: 위키백과</a></div><div class="day-text"><h4>${escapeHtml(I18N.lang==='ko'?x.label:x.p.name)}</h4><div class="day-place">📍 ${escapeHtml(x.p.name)}</div><p>${escapeHtml(x.p.intro)}</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=${enc(x.p.map)}" target="_blank" rel="noopener noreferrer">구글지도에서 크게 보기 ↗</a></div><div class="day-map"><iframe title="${escapeHtml(x.p.name)}" src="https://www.google.com/maps?q=${enc(x.p.map)}&hl=${I18N.lang==='zh'?'zh-CN':I18N.lang}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></article>`).join('');
+    $('#dayCards').innerHTML=cards.map(x=>`<article class="day-card"><div class="day-photo"><img src="${x.p.img||fallback}" alt="${escapeHtml(x.p.name)}" ${x.p.img?'':`data-wiki="${escapeHtml(x.p.wiki||'')}"`} loading="lazy"/>${window.photoCredit(x.p)}<span class="day-badge">${x.day}일차</span><a class="photo-src" data-src-for="${escapeHtml(x.p.wiki||'')}" target="_blank" rel="noopener noreferrer" hidden>사진: 위키백과</a></div><div class="day-text"><h4>${escapeHtml(I18N.lang==='ko'?x.label:x.p.name)}</h4><div class="day-place">📍 ${escapeHtml(x.p.name)}</div><p>${escapeHtml(x.p.intro)}</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&query=${enc(x.p.map)}" target="_blank" rel="noopener noreferrer">구글지도에서 크게 보기 ↗</a></div><div class="day-map"><iframe title="${escapeHtml(x.p.name)}" src="https://www.google.com/maps?q=${enc(x.p.map)}&hl=${I18N.lang==='zh'?'zh-CN':I18N.lang}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></article>`).join('');
     const stops=cards.map(x=>x.p.map);
     let routeHtml='';
     if(stops.length>1){const route=`https://www.google.com/maps/dir/?api=1&origin=${enc(stops[0])}&destination=${enc(stops[stops.length-1])}`+(stops.length>2?`&waypoints=${stops.slice(1,-1).map(enc).join('%7C')}`:'');routeHtml=`<p style="margin:0 0 14px"><a class="btn btn-outline" href="${route}" target="_blank" rel="noopener noreferrer">전체 장소 구글지도에서 연결해 보기 ↗</a></p>`;}
@@ -204,14 +209,58 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   // 테마별 추천 장소
   (function(){
     const T=window.THEMES,P=window.PLACES;let cur='modern';const enc=encodeURIComponent;
+    // 장소 상세(모달)와 테마 안내 — 데이터는 guide-data.js (4개 언어)
+    const G=window.GUIDE||{label:{},spots:{},themes:{}},GS=G.spots||{};
+    const lang=()=>(window.I18N&&I18N.lang)||'ko';
+    const L=x=>!x?'':typeof x==='string'?x:(x[lang()]||x.ko);
+    const GL=k=>L(G.label[k]);
+    const mapUrl=q=>'https://www.google.com/maps/search/?api=1&query='+enc(q);
+    const ext=u=>/^https?:/.test(u)?' target="_blank" rel="noopener noreferrer"':'';
+    const cred=c=>c?`<a class="photo-src" href="${escapeHtml(c[2])}" target="_blank" rel="noopener noreferrer" translate="no">© ${escapeHtml(c[0])} · ${escapeHtml(c[1])}</a>`:'';
+    const koName=n=>lang()!=='ko'&&n&&n.ko?` <span class="ko-name" lang="ko" translate="no">${escapeHtml(n.ko)}</span>`:'';
+    function detailHtml(id){
+      const d=GS[id],p=P[id];let h='';
+      if(d.eats)h+=`<h3 class="gd-h">${escapeHtml(GL('eats'))}</h3><ul class="eat-list">${d.eats.map(e=>`<li><a class="eat-name" href="${mapUrl(e.q)}" target="_blank" rel="noopener noreferrer"><b>${escapeHtml(L(e.n))}</b>${koName(e.n)} <span class="map-ico" aria-hidden="true">↗</span></a><div class="eat-meta"><span><em>${escapeHtml(GL('menu'))}</em>${escapeHtml(L(e.menu))}</span><span><em>${escapeHtml(GL('price'))}</em>${escapeHtml(L(e.price))}</span></div><p>${escapeHtml(L(e.d))}</p></li>`).join('')}</ul><p class="mini muted">${escapeHtml(GL('priceNote'))}</p>`;
+      if(d.seasons)h+=`<h3 class="gd-h">${escapeHtml(GL('seasons'))}</h3><div class="season-grid">${d.seasons.map(s=>`<figure class="season"><div class="season-img${s.img?'':' empty'}">${s.img?`<img src="${escapeHtml(s.img)}" alt="${escapeHtml(p.name+' · '+GL(s.s))}" loading="lazy"/>${cred(s.credit)}`:`<span>${escapeHtml(GL('noPhoto'))}</span>`}</div><figcaption><b>${escapeHtml(GL(s.s))}</b>${escapeHtml(L(s.d))}</figcaption></figure>`).join('')}</div>`;
+      if(d.works)h+=`<h3 class="gd-h">${escapeHtml(GL('works'))}</h3><ul class="work-list">${d.works.map(w=>`<li><span class="work-k">${escapeHtml(GL(w.k))}</span><b>${escapeHtml(L(w.t))}</b><p>${escapeHtml(L(w.d))}</p></li>`).join('')}</ul>`;
+      if(d.how)h+=`<h3 class="gd-h">${escapeHtml(GL('how'))}</h3><div class="how-list">${d.how.map(x=>`<div class="how"><b>${escapeHtml(L(x.h))}</b><p>${escapeHtml(L(x.d))}</p></div>`).join('')}</div>`;
+      if(d.gallery)h+=`<h3 class="gd-h">${escapeHtml(GL('gallery'))}</h3><div class="gallery">${d.gallery.map(g=>`<figure><div class="season-img"><img src="${escapeHtml(g.img)}" alt="${escapeHtml(L(g.cap))}" loading="lazy"/>${cred(g.credit)}</div><figcaption>${escapeHtml(L(g.cap))}</figcaption></figure>`).join('')}</div>`;
+      if(d.tip)h+=`<div class="tips gd-tip"><p>${escapeHtml(L(d.tip))}</p></div>`;
+      return h;
+    }
+    function openDetail(id,imgSrc){
+      if(!GS[id])return;const p=P[id];
+      $('#spotDlgTitle').textContent=p.name;$('#spotDlgCat').textContent=T[cur]?T[cur].label:'';
+      const im=$('#spotDlgImg');im.src=imgSrc||p.img||T[cur].fb;im.alt=p.name;
+      $('#spotDlgBody').innerHTML=detailHtml(id);
+      const m=$('#spotDlgMap');m.href=mapUrl(p.map);m.textContent=GL('map').replace(' ↗','')+' · '+p.name+' ↗';
+      const dlg=$('#spotDialog');if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+      dlg.querySelector('.dlg-body').scrollTop=0;
+    }
+    $('#closeSpotDialog').addEventListener('click',()=>$('#spotDialog').close());
+    $('#spotDialog').addEventListener('click',e=>{if(e.target===e.currentTarget)e.currentTarget.close();});
+    $('#spotGrid').addEventListener('click',e=>{if(e.target.closest('a'))return;const b=e.target.closest('[data-detail]');if(!b)return;const card=b.closest('.spot');const img=card&&card.querySelector('.day-photo img');openDetail(b.dataset.detail,img&&img.src);});
+    $('#spotGrid').addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches('.day-photo[data-detail]')){e.preventDefault();e.target.click();}});
+    function guideHtml(k){
+      const secs=(G.themes||{})[k];if(!secs)return '';
+      return `<div class="tg-title"><span class="eyebrow">${escapeHtml(GL('guideTitle'))}</span></div><div class="tg-grid">${secs.map(s=>`<section class="tg-card"><h3>${escapeHtml(L(s.h))}</h3>${s.p?`<p class="tg-p">${escapeHtml(L(s.p))}</p>`:''}<ul class="tg-list">${s.items.map(it=>{const href=it.url||(it.q?mapUrl(it.q):'');return `<li><div class="tg-n">${href?`<a href="${escapeHtml(href)}"${ext(href)}>${escapeHtml(L(it.n))} <span class="map-ico" aria-hidden="true">↗</span></a>`:`<b>${escapeHtml(L(it.n))}</b>`}</div><p>${escapeHtml(L(it.d))}</p></li>`;}).join('')}</ul>${s.link?`<a class="text-link" href="${escapeHtml(s.link[0])}"${ext(s.link[0])}>${escapeHtml(L(s.link[1]))}</a>`:''}</section>`).join('')}</div>`;
+    }
+    // 메인: 인천공항 → 서울 이동 안내
+    function renderAirport(){
+      const A=G.airport,box=$('#airportBox');if(!A||!box)return;
+      box.innerHTML=`<div class="section-title"><div><span class="eyebrow">${escapeHtml(L(A.eyebrow))}</span><h2>${escapeHtml(L(A.title))}</h2><p class="muted">${escapeHtml(L(A.desc))}</p></div></div><div class="air-grid">${A.cards.map(c=>`<article class="air-card"><span class="tag">${escapeHtml(L(c.tag))}</span><h3>${escapeHtml(L(c.h))}</h3><dl>${c.facts.map(f=>`<dt>${escapeHtml(L(f[0]))}</dt><dd>${escapeHtml(L(f[1]))}</dd>`).join('')}</dl><a class="text-link" href="${escapeHtml(c.link[0])}"${ext(c.link[0])}>${escapeHtml(L(c.link[1]))}</a></article>`).join('')}</div><p class="mini muted" style="margin-top:14px">${escapeHtml(L(A.tip))}</p>`;
+    }
+    renderAirport();
+    if(window.I18N)I18N.onChange(renderAirport);
     const tabs=$('#spotTabs');tabs.innerHTML=Object.keys(T).map(k=>`<button class="chip" type="button" data-t="${k}" aria-pressed="false">${escapeHtml(T[k].label)}</button>`).join('');
     function render(k){
       cur=k;const t=T[k];
       tabs.querySelectorAll('.chip').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.t===k)));
       $('#spotTitle').textContent=t.label;$('#spotDesc').textContent=t.desc;
       const lg=(window.I18N&&I18N.lang)||'ko',tipsHtml=id=>window.renderTips?window.renderTips(id,lg):'';
-      $('#spotGrid').innerHTML=t.ids.map(id=>{const p=P[id];const src=p.img||t.fb;return `<article class="spot"><div class="day-photo"><img src="${src}" alt="${escapeHtml(p.name)}" ${p.img?'':`data-wiki="${escapeHtml(p.wiki||'')}"`} loading="lazy"/><a class="photo-src" target="_blank" rel="noopener noreferrer" hidden>사진: 위키백과</a></div><div class="spot-body"><h3>${escapeHtml(p.name)}</h3><p>${escapeHtml(p.intro)}</p>${tipsHtml(id)}<a class="text-link" href="https://www.google.com/maps/search/?api=1&query=${enc(p.map)}" target="_blank" rel="noopener noreferrer">구글지도에서 위치 보기 ↗</a></div></article>`;}).join('');
+      $('#spotGrid').innerHTML=t.ids.map(id=>{const p=P[id];const src=p.img||t.fb,has=!!GS[id];return `<article class="spot"><div class="day-photo${has?' has-detail':''}"${has?` data-detail="${id}" role="button" tabindex="0" aria-label="${escapeHtml(p.name+' · '+GL('more'))}"`:''}><img src="${src}" alt="${escapeHtml(p.name)}" ${p.img?'':`data-wiki="${escapeHtml(p.wiki||'')}"`} loading="lazy"/>${window.photoCredit(p)}<a class="photo-src" target="_blank" rel="noopener noreferrer" hidden>사진: 위키백과</a></div><div class="spot-body"><h3>${escapeHtml(p.name)}</h3><p>${escapeHtml(p.intro)}</p>${has?`<button class="btn btn-outline detail-btn" type="button" data-detail="${id}">${escapeHtml(GL('more'))} →</button>`:''}${tipsHtml(id)}<a class="text-link" href="https://www.google.com/maps/search/?api=1&query=${enc(p.map)}" target="_blank" rel="noopener noreferrer">구글지도에서 위치 보기 ↗</a></div></article>`;}).join('');
       loadPhotos(t.ids.map(id=>P[id]).filter(p=>!p.img&&p.wiki).map(p=>p.wiki));
+      $('#themeGuide').innerHTML=guideHtml(k);
     }
     tabs.addEventListener('click',e=>{const b=e.target.closest('.chip');if(b)render(b.dataset.t);});
     document.querySelectorAll('[data-theme]').forEach(a=>a.addEventListener('click',()=>render(a.dataset.theme)));
@@ -227,5 +276,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   I18N.start();
 })();
 </script>
-<script src="ads.js?v=20261115b"></script>
+<script src="ads.js?v=20261117"></script>
 </body></html>

@@ -247,12 +247,22 @@ dialog::backdrop{background:#101c2d80}
 .food{border:1px solid var(--border);border-radius:14px;padding:20px;background:#fff}
 .food h3{margin:0 0 6px;font-size:18px}
 .food p{margin:0;font-size:14px;color:#465365}
+.food-grid.with-picks{grid-template-columns:repeat(2,1fr)}
+.food .picks{margin-top:14px;padding-top:12px;border-top:1px dashed var(--border)}
+.picks-title{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.02em;color:#1f6b52;background:#e6f3ee;border-radius:999px;padding:3px 10px;margin-bottom:8px}
+.picks ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.picks li a{display:inline-flex;align-items:baseline;flex-wrap:wrap;gap:6px;color:inherit;text-decoration:none;font-size:15px}
+.picks li a b{text-decoration:underline;text-decoration-color:#9fcdbb;text-underline-offset:3px}
+.picks li a:hover b{color:#1f6b52}
+.picks .ko-name{font-size:13px;color:#6b7a8c}
+.picks .map-ico{font-size:12px;color:#1f6b52}
+.picks li p{margin:2px 0 0;font-size:13px}
 .route-list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
 .route-list li{display:grid;grid-template-columns:76px 1fr;gap:16px;background:#fff;border:1px solid var(--border);border-radius:14px;padding:18px 20px}
 .route-list b{color:#fff;background:var(--ink);border-radius:99px;padding:3px 0;text-align:center;font-size:13px;height:fit-content}
 .route-list p{margin:0 0 4px;font-weight:600}
 @media(max-width:1010px){.facts,.food-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:700px){.region-hero{min-height:340px}.facts,.food-grid{grid-template-columns:1fr}.route-list li{grid-template-columns:1fr;gap:8px}.route-list b{width:70px}}
+@media(max-width:700px){.region-hero{min-height:340px}.facts,.food-grid,.food-grid.with-picks{grid-template-columns:1fr}.route-list li{grid-template-columns:1fr;gap:8px}.route-list b{width:70px}}
 /* 언어 전환 */
 .lang-switch{display:flex;align-items:center}
 .lang-switch select{border:1px solid #d5dcd8;background:#fff;color:var(--ink);border-radius:10px;padding:8px 10px;font-size:14px;font-weight:600;cursor:pointer;min-height:40px}
@@ -310,3 +320,56 @@ html:not([data-lang=ko]) .langnote{display:block}
 .altlangs a{color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 .altlangs span{font-weight:700;color:var(--ink)}
 .page-head .altlangs{margin:12px 0 0}
+
+/* ===== 테마 상세 안내 (guide-data.js) ===== */
+.day-photo.has-detail{cursor:pointer}
+.day-photo.has-detail::after{content:'+';position:absolute;left:10px;top:10px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.92);color:#1f6b52;font-weight:800;font-size:20px;line-height:30px;text-align:center;box-shadow:0 2px 8px #0002}
+.day-photo.has-detail:hover img{filter:brightness(1.05)}
+.day-photo.has-detail:focus-visible{outline:3px solid #1f6b52;outline-offset:2px}
+.detail-btn{margin:4px 0 10px;padding:8px 14px;font-size:14px}
+.spot-dlg{max-width:760px}
+.spot-dlg .dlg-body{max-height:68vh}
+.gd-h{font-size:16px;margin:22px 0 10px;color:#1f6b52}
+.gd-h:first-child{margin-top:4px}
+.eat-list,.work-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.eat-list li,.work-list li{border:1px solid var(--border);border-radius:12px;padding:12px 14px;background:#fff}
+.eat-name{color:inherit;text-decoration:none;font-size:16px}
+.eat-name b{text-decoration:underline;text-decoration-color:#9fcdbb;text-underline-offset:3px}
+.eat-meta{display:flex;flex-wrap:wrap;gap:6px 14px;margin:6px 0 4px;font-size:13px}
+.eat-meta em{font-style:normal;font-weight:700;color:#1f6b52;margin-right:6px}
+.eat-list p,.work-list p,.how p{margin:4px 0 0;font-size:14px;color:#465365}
+.ko-name{font-size:13px;color:#6b7a8c}
+.map-ico{font-size:12px;color:#1f6b52}
+.work-k{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#d4553b;border-radius:999px;padding:2px 8px;margin-right:8px;vertical-align:2px}
+.how-list{display:grid;gap:10px}
+.how{background:#f3f9f7;border-radius:12px;padding:12px 14px}
+.season-grid,.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gallery{grid-template-columns:1fr}
+.season,.gallery figure{margin:0}
+.season-img{position:relative;aspect-ratio:3/2;border-radius:10px;overflow:hidden;background:#e4ece9}
+.season-img img{width:100%;height:100%;object-fit:cover;display:block}
+.season-img.empty{display:flex;align-items:center;justify-content:center;padding:12px;text-align:center;font-size:12px;color:#6b7a8c;background:repeating-linear-gradient(45deg,#eef3f1,#eef3f1 10px,#e6edea 10px,#e6edea 20px)}
+.season figcaption,.gallery figcaption{font-size:13px;color:#465365;margin-top:6px}
+.season figcaption b{display:block;color:#1c2733;font-size:14px}
+.gd-tip{margin-top:16px}
+.gd-tip p{margin:0}
+.theme-guide:empty{display:none}
+.theme-guide{margin-top:34px}
+.tg-grid{columns:2;column-gap:16px;margin-top:8px}
+.tg-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:20px 22px;break-inside:avoid;margin-bottom:16px}
+.tg-card h3{margin:0 0 6px;font-size:18px}
+.tg-p{margin:0 0 10px;font-size:14px;color:#5a6878}
+.tg-list{list-style:none;margin:0 0 6px;padding:0;display:grid;gap:10px}
+.tg-list li{padding-top:10px;border-top:1px dashed var(--border)}
+.tg-list li:first-child{border-top:0;padding-top:0}
+.tg-n a{color:#1c2733;font-weight:700;text-decoration:underline;text-decoration-color:#9fcdbb;text-underline-offset:3px}
+.tg-n b{color:#1c2733}
+.tg-list p{margin:3px 0 0;font-size:14px;color:#465365}
+.air-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.air-card{border:1px solid var(--border);border-radius:16px;padding:20px;background:#fff;display:flex;flex-direction:column}
+.air-card h3{margin:8px 0 10px;font-size:17px}
+.air-card dl{margin:0 0 14px;display:grid;gap:6px;flex:1}
+.air-card dt{font-size:12px;font-weight:700;color:#1f6b52}
+.air-card dd{margin:0 0 4px;font-size:14px;color:#465365}
+@media(max-width:1010px){.air-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.tg-grid{columns:1}.air-grid{grid-template-columns:1fr}.season-grid{grid-template-columns:1fr 1fr}.spot-dlg .dlg-body{padding:18px 18px 22px}}

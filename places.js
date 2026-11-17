@@ -126,13 +126,39 @@ add('suwon','수원 화성','수원 화성','수원화성 경기도 수원','조
 add('jongno3ga','종로3가 노포 거리','종로3가역','종로3가역 서울','종로3가 일대는 오래된 식당과 포장마차 골목, 악기 상가인 낙원상가가 모인 서울의 대표 노포 동네입니다. 국밥, 생선구이, 막걸리 한 잔까지 현지인 단골이 오래 찾는 가게가 많습니다. 메뉴판이 한글뿐이거나 현금만 받는 곳도 있으니 번역 앱과 현금을 준비하세요.');
 add('eulji','을지로 골목','을지로','을지로3가역 서울','인쇄소와 조명 가게가 모인 오래된 골목 사이에 노포 식당과 맥주집이 숨어 있어 ‘힙지로’라고도 불립니다. 낡은 간판과 좁은 골목 풍경 자체가 볼거리이고, 저녁이면 노가리 골목 등에 사람들이 모여듭니다.');
 
-P.hongdae.img='images/t_hongdae.jpg';P.myeongdong.img='images/t_myeongdong.jpg';P.jongno3ga.img='images/t_jongno.jpg';
+P.hongdae.img='images/t_hongdae.jpg';P.myeongdong.img='images/t_myeongdong.jpg';
+// 직접 고른 사진 (Wikimedia Commons, 영리 이용·수정이 허용되는 라이선스만 사용). credit: [작가, 라이선스, 원본 파일 주소]
+// CC BY / CC BY-SA는 작가·라이선스 표시가 필요하고, 공공누리 제1유형(KOGL Type 1)은 출처 표시가 필요합니다. 사진 아래 링크로 표시됩니다.
+const CM='https://commons.wikimedia.org/wiki/File:';
+const PHOTO={
+ tower:['Eugene Lim','CC BY 2.0','N_Seoul_Tower_(13952097192).jpg'],
+ ttukseom:['Motoko C. K.','CC BY 4.0','Ttukseom_Hangang_Park_20260416_4.jpg'],
+ seongsu:['CartoonChess','CC BY-SA 4.0','Flowery_cafe_in_Seongsu-dong.jpg'],
+ namiseom:['Giuseppe Milo','CC BY 3.0','Nami_Island_South_Korea_Travel_Photography_(253436459).jpeg'],
+ achim:['ZKang123','CC BY-SA 4.0','The_Garden_of_Morning_Calm_20240701_180936.jpg'],
+ jongno3ga:['S h y numis','CC BY-SA 4.0','Ikseon-dong_익선동_October_1_2020_10.jpg'],
+ eulji:['서울관광재단 (Seoul Tourism Organization)','공공누리 제1유형 (KOGL Type 1)','Night_of_Euljiro_Alley.jpg'],
+ tongin:['Korea.net / 해외문화홍보원','CC BY-SA 2.0','Korea_Tongin_Market_01_(12920987714).jpg'],
+ namdaemun:['Smiley.toerist','CC BY-SA 4.0','Namdaemun_market_in_Seoul_I.jpg'],
+ udo:['제주영상문화산업진흥원','공공누리 제1유형 (KOGL Type 1)','Udo,_Jeju_Province,_South_Korea_02.jpg'],
+ yongmeori:['Sadopaul','CC BY 4.0','Cliff_at_Yongmeori_Beach_(2025-01)_2.jpg'],
+ abai:['Bernard Gagnon','CC0','Ferry_in_Sokcho.jpg'],
+ sokchomkt:['Bernard Gagnon','CC0','Sokcho_Central_Market_02.jpg'],
+ naksansa:['Bernard Gagnon','CC0','Uisangdae_at_Naksansa.jpg']
+};
+for(const id in PHOTO){const c=PHOTO[id];P[id].img='images/p_'+id+'.jpg';P[id].credit=[c[0],c[1],CM+encodeURIComponent(c[2])];}
+// 사진 아래 출처 링크 HTML. 위키백과에서 불러오는 사진은 기존 방식(사진: 위키백과)을 그대로 씁니다.
+window.photoCredit=function(p){
+ if(!p||!p.credit)return '';
+ const e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ return `<a class="photo-src" href="${e(p.credit[2])}" target="_blank" rel="noopener noreferrer" translate="no">© ${e(p.credit[0])} · ${e(p.credit[1])}</a>`;
+};
 const THEMES={
  modern:{label:'세련된 서울',desc:'남산, 롯데월드타워, 한강의 야경까지. 낮보다 밤이 더 빛나는 도시를 만나 보세요.',fb:'images/h_modern.jpg',preset:'Seoul|5|Nature',ids:['tower','lotte','banpo','ttukseom','naksan']},
- kpop:{label:'K-팝·K-뷰티',desc:'외국인 여행자가 가장 많이 찾는 명동, 젊음의 거리 홍대, 팝업과 카페가 모이는 성수동까지.',fb:'images/t_kpop.jpg',preset:'Seoul|3|K-pop',ids:['myeongdong','hongdae','seongsu','ddp','coex']},
+ kpop:{label:'K-뷰티·K-쇼핑',desc:'명동·성수·홍대의 올리브영부터 예산별 추천, 많이 팔리는 화장품, 반나절 쇼핑 동선까지 한 번에.',fb:'images/t_kpop.jpg',preset:'Seoul|3|K-pop',ids:['myeongdong','hongdae','seongsu','ddp','coex']},
  nature:{label:'서울 근교 자연',desc:'지하철로 닿는 북한산부터 당일치기 단풍·성곽·섬 여행까지.',fb:'images/t_bukhansan.jpg',preset:'Seoul|5|Nature',ids:['bukhansan','dobong','namhan','gwanak','namiseom','achim']},
  culture:{label:'전통 문화',desc:'궁궐과 한옥, 세계유산 성곽까지. 한국의 역사를 걸어서 만납니다.',fb:'images/hanbok.jpg',preset:'Seoul|5|Culture',ids:['gbg','bukchon','cdg','insadong','dsg','suwon']},
- market:{label:'시장과 노포',desc:'광장시장, 종로3가, 을지로. 오래된 맛과 골목의 분위기를 즐기는 서울 로컬 코스.',fb:'images/market.jpg',preset:'Seoul|3|Food',ids:['gwangjang','jongno3ga','eulji','tongin','namdaemun']}
+ market:{label:'음식과 시장',desc:'광장시장의 빈대떡부터 종로3가 포차, 남대문 갈치조림까지. 시장 사진을 누르면 맛집·메뉴·가격대를 알려 드려요.',fb:'images/market.jpg',preset:'Seoul|3|Food',ids:['gwangjang','jongno3ga','eulji','tongin','namdaemun']}
 };
 // 서울 일정 도구에도 새 장소 반영
 PLAN.Seoul.Nature=[['tower','남산 전망 산책'],['seoulforest','서울숲 산책'],['bukhansan','북한산 둘레길과 능선'],['naksan','낙산공원 노을과 야경'],['namhan','남한산성 성곽길'],['cheonggye','청계천 따라 걷기'],['olympic','올림픽공원 산책']];

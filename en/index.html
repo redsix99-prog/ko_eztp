@@ -23,7 +23,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta property="og:description" content="30 places with directions and local tips, trend notes and official visitor statistics."/>
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://korea-easytrip.com/en/"/>
-  <link rel="stylesheet" href="../styles.css?v=20261115b"/>
+  <link rel="stylesheet" href="../styles.css?v=20261117"/>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -80,8 +80,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="footbottom">© 2026 Korea Easy Trip</div></div></footer>
 
 <script>window.I18N_PAGE_LANG='en';window.I18N_NAV={"ko":"/","en":"/en/","ja":"/?lang=ja","zh":"/?lang=zh"};</script>
-<script src="../i18n-dict.js?v=20261115b"></script>
-<script src="../i18n.js?v=20261115b"></script>
+<script src="../places.js?v=20261117"></script>
+<script src="../i18n-dict.js?v=20261117"></script>
+<script src="../i18n.js?v=20261117"></script>
 <script>
 (function(){'use strict';
 const $=s=>document.querySelector(s);
@@ -101,8 +102,10 @@ function chips(){
 function card(a){
   const t=a.tourapi,img=t&&t.image?https(t.image):'';
   const ph=photos[a.id];
-  const src=img||(ph&&ph.src)||'../images/hero.jpg';
-  const credit=img?'<a class="photo-src" href="https://english.visitkorea.or.kr/" target="_blank" rel="noopener noreferrer">Photo: Korea Tourism Organization (KOGL)</a>':(ph?`<a class="photo-src" href="${esc(ph.page)}" target="_blank" rel="noopener noreferrer">Photo: Wikipedia</a>`:'');
+  // 직접 고른 사진(places.js)이 있으면 그 사진을 먼저 씁니다.
+  const cp=window.PLACES&&window.PLACES[a.id]&&window.PLACES[a.id].credit?window.PLACES[a.id]:null;
+  const src=cp?'../'+cp.img:(img||(ph&&ph.src)||'../images/hero.jpg');
+  const credit=cp?window.photoCredit(cp):img?'<a class="photo-src" href="https://english.visitkorea.or.kr/" target="_blank" rel="noopener noreferrer">Photo: Korea Tourism Organization (KOGL)</a>':(ph?`<a class="photo-src" href="${esc(ph.page)}" target="_blank" rel="noopener noreferrer">Photo: Wikipedia</a>`:'');
   const summary=a.summary;
   const official=(t&&t.overview&&t.overview.length>60)?`<details class="ltips"><summary>Official description (Korea Tourism Organization)</summary><dl><dd>${esc(t.overview)}</dd></dl><p class="ltips-note">Source: Korea Tourism Organization (TourAPI). Text may be shortened.</p></details>`:'';
   const verified=t?`<p class="mini" style="margin:0;color:#1f6b52"><strong>✓ Checked with KTO data</strong>${t.addr?' · '+esc(t.addr):''}${t.tel?' · '+esc(t.tel):''}</p>`:'';
@@ -157,5 +160,5 @@ $('#q').addEventListener('input',e=>{query=e.target.value;renderPlaces();});
 })();
 })();
 </script>
-<script src="../ads.js?v=20261115b"></script>
+<script src="../ads.js?v=20261117"></script>
 </body></html>
