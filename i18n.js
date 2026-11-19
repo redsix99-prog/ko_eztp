@@ -45,7 +45,10 @@ const K={
  regionTitle:{ko:'{name} 여행 가이드 | 코리아 이지트립',en:'{name} Travel Guide | Korea Easy Trip',ja:'{name}旅行ガイド | Korea Easy Trip',zh:'{name}旅行指南 | Korea Easy Trip'},
  creditsHead:{ko:'사진 출처(Wikimedia Commons): ',en:'Photo credits (Wikimedia Commons): ',ja:'写真の出典（Wikimedia Commons）：',zh:'图片来源（Wikimedia Commons）：'},
  creditsNote:{ko:'명소 사진은 위키백과 문서 또는 위키미디어 공용(Wikimedia Commons)의 사진이며 각 사진 아래 링크에서 출처와 라이선스를 확인할 수 있습니다.',en:'Spot photos come from Wikipedia articles or Wikimedia Commons; see the link under each photo for its source and license.',ja:'名所の写真はWikipediaの記事またはWikimedia Commonsのもので、各写真の下のリンクから出典とライセンスを確認できます。',zh:'景点照片取自维基百科条目或维基共享资源（Wikimedia Commons），可通过每张照片下方的链接查看来源与授权。'},
- lang:{ko:'언어',en:'Language',ja:'言語',zh:'语言'}
+ lang:{ko:'언어',en:'Language',ja:'言語',zh:'语言'},
+ bookTitle:{ko:'이 일정과 어울리는 체험·예약',en:'Experiences that fit this itinerary',ja:'この日程に合う体験・予約',zh:'与此行程相配的体验·预订'},
+ bookBtn:{ko:'둘러보기 ↗',en:'Browse ↗',ja:'見てみる ↗',zh:'查看 ↗'},
+ bookNote:{ko:'참고용 소개이며, 이 사이트는 아직 해당 업체와 제휴 관계가 없고 이 링크로 수수료를 받지 않습니다. 가격·예약 가능 여부는 각 사이트에서 확인하세요.',en:'For reference only. This site has no current affiliate relationship with these providers and earns no commission from these links. Please check price and availability on each site.',ja:'参考情報です。当サイトはこれらの事業者と現在提携関係がなく、本リンクから手数料は発生しません。価格・予約可否は各サイトでご確認ください。',zh:'仅供参考。本网站目前与这些商家没有合作关系，也不会通过这些链接获得任何佣金。价格与是否可预订请以各网站信息为准。'}
 };
 function t(key,vars){const e=K[key];let s=e?(e[LANG]||e.ko):key;if(vars)for(const v in vars)s=s.split('{'+v+'}').join(vars[v]);return s;}
 
