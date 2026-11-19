@@ -7,8 +7,6 @@
 'use strict';
 const ADS={client:'ca-pub-5580189283913928',slot:''};   // ← 여기만 채우면 됩니다. 예: client:'ca-pub-1234567890123456', slot:'1234567890'
 const KEY='kt-ads-consent';
-// 페이지 깊이에 따른 상대 경로 (루트 /, 한국어 글 /guides/, 언어별 글 /en/guides/)
-const BASE=(function(){const p=location.pathname;if(/^\/(en|ja|zh)\/guides/.test(p))return '../../';if(/^\/guides/.test(p))return '../';if(/^\/(en|ja|zh)\/?$/.test(p)||/^\/(en|ja|zh)\/index/.test(p))return '../';return '';})();
 const TX={
  ko:{label:'광고',msg:'이 사이트는 구글 애드센스 광고를 표시하며, 광고 제공을 위해 쿠키가 사용될 수 있습니다. 광고 쿠키 사용에 동의하시겠어요?',yes:'동의',no:'거부',more:'개인정보 처리방침',privacy:'개인정보 처리방침',guides:'가이드 글',about:'사이트 소개',contact:'문의하기',terms:'이용약관'},
  en:{label:'Advertisement',msg:'This site shows Google AdSense ads, which may use cookies. Do you agree to the use of advertising cookies?',yes:'Agree',no:'Decline',more:'Privacy policy',privacy:'Privacy policy',guides:'Guides',about:'About',contact:'Contact',terms:'Terms of use'},
@@ -23,11 +21,11 @@ function setConsent(v){try{localStorage.setItem(KEY,v);}catch(e){}}
 /* 푸터 링크: 가이드·소개·문의·개인정보·이용약관 */
 function footerLink(){
   const col=document.querySelector('.footer .footgrid > div:nth-child(2)');if(!col)return;
-  const t=L(),base=BASE,pl=window.I18N_PAGE_LANG;
-  [['guides',(pl&&pl!=='ko'?pl+'/':'')+'guides/index.html',t.guides],['about','about.html',t.about],['contact','contact.html',t.contact],['privacy','privacy.html',t.privacy],['terms','terms.html',t.terms]].forEach(x=>{
+  const t=L(),pl=window.I18N_PAGE_LANG;
+  [['guides','/'+(pl&&pl!=='ko'?pl+'/':'')+'guides/',t.guides],['about','/about',t.about],['contact','/contact',t.contact],['privacy','/privacy',t.privacy],['terms','/terms',t.terms]].forEach(x=>{
     let a=col.querySelector('a[data-f="'+x[0]+'"]');
     if(!a){a=document.createElement('a');a.setAttribute('data-f',x[0]);col.appendChild(a);}
-    a.href=base+x[1];a.textContent=x[2];
+    a.href=x[1];a.textContent=x[2];
   });
 }
 
@@ -59,7 +57,7 @@ function loadAds(){
 function banner(){
   if(!active||getConsent())return;
   const b=document.createElement('div');b.className='consent';b.setAttribute('role','dialog');b.setAttribute('aria-label','Cookie consent');
-  function draw(){const t=L();b.innerHTML='<p>'+t.msg+' <a href="'+BASE+'privacy.html">'+t.more+'</a></p><div class="consent-btns"><button type="button" class="btn btn-outline" data-v="no">'+t.no+'</button><button type="button" class="btn" data-v="yes">'+t.yes+'</button></div>';}
+  function draw(){const t=L();b.innerHTML='<p>'+t.msg+' <a href="/privacy">'+t.more+'</a></p><div class="consent-btns"><button type="button" class="btn btn-outline" data-v="no">'+t.no+'</button><button type="button" class="btn" data-v="yes">'+t.yes+'</button></div>';}
   draw();
   b.addEventListener('click',e=>{const v=e.target.getAttribute&&e.target.getAttribute('data-v');if(!v)return;setConsent(v);b.remove();if(v==='yes')loadAds();});
   document.body.appendChild(b);

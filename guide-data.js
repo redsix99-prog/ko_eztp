@@ -2392,7 +2392,7 @@ window.GUIDE={
      ]
     ],
     "link": [
-     "guides/airport-to-seoul.html",
+     "/guides/airport-to-seoul",
      {
       "ko": "자세한 비교 글 읽기 →",
       "en": "Read the full comparison →",
