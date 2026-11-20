@@ -4,6 +4,27 @@
  */
 (function(){
 'use strict';
+// 파일을 더블클릭해 file:// 로 직접 열어 테스트할 때, "/news" 같은 루트 기준 clean URL은
+// 실제 서버(배포 환경)에서는 자동으로 news.html로 연결되지만 file:// 에서는 그렇지 않아
+// ERR_FILE_NOT_FOUND가 납니다. 로컬 테스트를 위해 그런 링크를 클릭하면 같은 폴더의 .html 파일로 보내 줍니다.
+if(location.protocol==='file:'){
+ // i18n.js를 불러온 <script src="..."> 경로를 보면 현재 페이지에서 사이트 루트까지 몇 단계(../)인지 알 수 있습니다.
+ const ROOT=(function(){const s=document.currentScript;const src=s&&s.getAttribute('src')||'';const i=src.lastIndexOf('i18n.js');return i>=0?src.slice(0,i):'';})();
+ document.addEventListener('click',function(e){
+  const a=e.target.closest('a[href]');if(!a)return;
+  const href=a.getAttribute('href');
+  if(!href||href.charAt(0)!=='/'||href.charAt(1)==='/')return;
+  e.preventDefault();
+  const hashIdx=href.indexOf('#'),hash=hashIdx>=0?href.slice(hashIdx):'';
+  let main=hashIdx>=0?href.slice(0,hashIdx):href;
+  const qIdx=main.indexOf('?'),query=qIdx>=0?main.slice(qIdx):'';
+  let path=qIdx>=0?main.slice(0,qIdx):main;
+  if(path==='/'||path==='')path='/index';
+  if(path.endsWith('/'))path+='index';
+  if(!/\.[a-z0-9]+$/i.test(path))path+='.html';
+  location.href=ROOT+path.slice(1)+query+hash;
+ },true);
+}
 const LANGS=[['ko','한국어'],['en','English'],['ja','日本語'],['zh','中文']];
 const DICT=window.I18N_DICT||{};
 let LANG='ko';const listeners=[];

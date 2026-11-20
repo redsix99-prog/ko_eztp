@@ -36,6 +36,12 @@ T('naksan','학림다방 서울','학림다방 (Hakrim Dabang)',
  ['4号線 恵化駅2番出口から梨花村を通って洛山公園まで徒歩約15〜20分（上り坂）。','恵化・大学路 → 梨花村の壁画通り → 洛山公園の城郭道 → 夜景 → 城郭沿いに東大門方面へ下りて1・4号線で帰ります。','1956年から続く恵化の老舗の喫茶店です。クラシック音楽と濃いコーヒーで、地元の人や芸術家に愛されています。'],
  ['从4号线惠化站2号口出发，经梨花村步行约15~20分钟（上坡）到达骆山公园。','惠化大学路 → 梨花村壁画小巷 → 骆山公园城郭步道 → 夜景 → 沿城郭下到东大门，乘1、4号线回程。','1956年开业的惠化老牌咖啡馆，古典乐和浓咖啡深受当地人和艺术家喜爱。']);
 
+T('yeouido','여의도 카페 서울','여의도 한강공원 루프탑 카페',
+ ['5호선 여의나루역 3번 출구에서 한강공원까지 걸어서 1~2분입니다. 국회의사당은 9호선 국회의사당역 쪽으로 이동하세요.','더현대서울 쇼핑 → 여의도 한강공원 산책·자전거 → 저녁엔 선착장에서 유람선 또는 노을 감상. 9월 말 불꽃축제 기간에는 교통 통제를 미리 확인하세요.','한강공원 바로 옆에는 전망 좋은 루프탑 카페가 많습니다. 평일 낮에는 직장인이 적어 한적한 편입니다.'],
+ ['From Yeouinaru Stn (Line 5), Exit 3, it is a 1–2 minute walk to Hangang Park. For the National Assembly, head out from National Assembly Stn (Line 9).','Shop at The Hyundai Seoul → walk or bike in Yeouido Hangang Park → catch a river cruise or sunset at the pier in the evening. Check traffic controls ahead of time during the late-September fireworks festival.','Rooftop cafes with good views line the edge of the park. Weekday daytimes are quieter, with fewer office workers around.'],
+ ['5号線 汝矣ナル駅3番出口から漢江公園まで徒歩1〜2分です。国会議事堂へは9号線 国会議事堂駅から向かってください。','ザ・現代ソウルでショッピング → 汝矣島漢江公園を散策・サイクリング → 夕方は船着場で遊覧船や夕焼けを楽しみます。9月末の花火祭りの時期は交通規制を事前に確認してください。','漢江公園のすぐそばには眺めのよいルーフトップカフェが多くあります。平日の日中は会社員が少なく落ち着いています。'],
+ ['从5号线汝矣渡口站3号口步行1~2分钟可到汉江公园。前往国会议事堂请从9号线国会议事堂站出发。','在THE HYUNDAI SEOUL购物 → 在汝矣岛汉江公园散步或骑行 → 傍晚在码头乘游船或赏日落。9月底烟花节期间请提前确认交通管制。','汉江公园旁有不少景观极佳的屋顶咖啡馆。工作日白天上班族较少，比较清静。']);
+
 /* ===== K-팝·K-뷰티 ===== */
 T('myeongdong','명동 카페 서울','명동성당 주변 골목 카페',
  ['4호선 명동역 6번 출구가 가장 가깝습니다. 2호선 을지로입구역 5·6번 출구에서도 걸어올 수 있습니다.','올리브영·화장품 매장 쇼핑 → 명동성당 → 저녁 길거리 음식. 4호선으로 두 정거장이면 동대문역사문화공원역(DDP)입니다.','큰길은 붐비니 명동성당 뒤편 골목으로 들어가면 조용한 카페가 있습니다. 화장품은 여권을 가져가면 현장 면세 혜택을 받을 수 있는 곳이 많습니다.'],
@@ -66,6 +72,12 @@ T('coex','선정릉 카페 서울','선정릉 주변 카페',
  ['Samseong Stn (Line 2), Exits 5 and 6 lead straight into COEX Mall. Bongeunsa Stn (Line 9) is also close.','COEX Mall and Starfield Library → Bongeunsa Temple across the road (about 10 minutes) → walk in Seonjeongneung park.','The Seolleung and Samseong area has plenty of cafes popular with office workers. For quiet, try the alleys beside Seonjeongneung.'],
  ['2号線 三成駅5・6番出口からCOEXモールに直結しており、9号線 奉恩寺駅からも近いです。','COEXモールと星空図書館 → 道を渡って奉恩寺（徒歩約10分） → 宣靖陵の森を散策。','宣陵・三成周辺には会社員がよく使うカフェが多くあります。静かに過ごすなら宣靖陵の横の路地がおすすめです。'],
  ['从2号线三成站5、6号口可直接进入COEX购物中心，9号线奉恩寺站也很近。','COEX商城和星空图书馆 → 过马路到奉恩寺（步行约10分钟） → 在宣靖陵林间散步。','宣陵、三成一带有很多上班族常去的咖啡馆，想安静些可去宣靖陵旁的小巷。']);
+
+T('gangnam','강남역 카페 서울','강남역 11번 출구 뒷골목 카페',
+ ['2호선 강남역 10번 출구가 올리브영 타운과 가장 가깝습니다. 신분당선으로도 환승할 수 있습니다.','올리브영에서 K-뷰티 쇼핑 → 강남역 지하상가 구경 → 11번 출구 뒷골목에서 저녁 → 신논현역 방향으로 이어지는 상권.','11번 출구 뒷골목에는 조용히 쉬어 갈 수 있는 카페가 많습니다. 강남대로 큰길보다 골목 안쪽이 한적합니다.'],
+ ['Exit 10 of Gangnam Stn (Line 2) is closest to the Olive Young town. The Sinbundang Line also connects here.','K-beauty shopping at Olive Young → browse the underground mall → dinner in the alleys behind Exit 11 → the shopping area continues toward Sinnonhyeon Stn.','The alleys behind Exit 11 have plenty of quiet cafes for a break. It is calmer there than on the main Gangnam-daero street.'],
+ ['2号線 江南駅10番出口がオリーブヤングタウンに最も近いです。新盆唐線にも乗り換えられます。','オリーブヤングでK-ビューティーを購入 → 江南駅の地下商店街を見学 → 11番出口の裏路地で夕食 → 新論峴駅方面まで商圏が続きます。','11番出口の裏路地には静かに休めるカフェが多くあります。江南大路の大通りより路地の中のほうが落ち着いています。'],
+ ['地铁2号线江南站10号口离Olive Young Town最近，也可换乘新盆唐线。','在Olive Young购买K-美妆 → 逛江南站地下商街 → 在11号口后巷吃晚餐 → 商圈一直延伸到新论峴站方向。','11号口后巷有不少安静的咖啡馆适合休息，比江南大路主街更清静。']);
 
 /* ===== 서울 근교 자연 ===== */
 T('bukhansan','우이동 카페 서울','우이동 계곡 카페·식당가',
@@ -171,6 +183,12 @@ T('namdaemun','회현동 카페 서울','회현동·서울로7017 인근 카페'
  ['It is about a 3-minute walk from Hoehyeon Stn (Line 4), Exit 5, and roughly 10 minutes on foot from Seoul Station.','Kalguksu and braised hairtail at Namdaemun → Seoullo 7017 skywalk → Seoul Station → walk to Myeong-dong (about 15 minutes) if you like.','Small cafes sit between Hoehyeon Stn and Seoul Station. Many market shops close on Sundays and open early, so visit from morning to afternoon.'],
  ['4号線 会賢駅5番出口から徒歩約3分です。ソウル駅からも徒歩10分前後です。','南大門市場でカルグクスやタチウオの煮付け → ソウル路7017の空中散歩道 → ソウル駅 → 必要なら明洞まで歩いて移動（約15分）。','会賢駅とソウル駅の間に小さなカフェがあります。市場は日曜に休む店が多く、営業時間も早めなので午前〜昼に訪れてください。'],
  ['从4号线会贤站5号口步行约3分钟，从首尔站步行约10分钟。','在南大门市场吃刀削面、辣炖带鱼 → 首尔路7017空中步道 → 首尔站 → 需要的话步行约15分钟到明洞。','会贤站和首尔站之间有小咖啡馆。市场里很多店周日休息且开门较早，建议上午到下午前往。']);
+
+T('noryangjin','노량진수산시장 서울','노량진역 인근 카페',
+ ['1·9호선 노량진역 1번 출구에서 도보 5분이면 시장 입구입니다. 새벽 경매를 보려면 새벽 1~3시경에 가야 합니다.','1층에서 회를 고르고 손질 → 2층 식당에서 상차림비를 내고 식사 → 식사 후 노량진역 앞 컵밥 거리 구경.','노량진역 주변은 수험생 거리로 유명해 분식·컵밥집과 소박한 카페가 섞여 있습니다. 시장과는 다른 분위기를 느낄 수 있습니다.'],
+ ['Exit 1 of Noryangjin Stn (Lines 1, 9) is a 5-minute walk to the market entrance. For the pre-dawn auction, go around 1–3 a.m.','Pick your fish and have it prepped on the first floor → eat upstairs for a small table fee → afterwards, check out the cup-rice (컵밥) street near the station.','Around Noryangjin Stn, known as a study-exam district, casual snack and cup-rice shops mix with simple cafes — a different vibe from the market itself.'],
+ ['1・9号線 鷺梁津駅1番出口から徒歩5分で市場の入口です。未明の競売を見るなら深夜1〜3時頃に行きましょう。','1階で刺身を選んで下処理 → 2階の食堂で席料を払って食事 → 食後は鷺梁津駅前のカップご飯（컵밥）通りを見学。','鷺梁津駅周辺は受験生の街として知られ、軽食やカップご飯の店と素朴なカフェが混在しています。市場とは違う雰囲気を味わえます。'],
+ ['从1、9号线鹭梁津站1号口步行5分钟即到市场入口。想看凌晨拍卖请在凌晨1点至3点左右前往。','一楼挑鱼并现场处理 → 二楼餐厅支付小额佐料费用餐 → 用餐后可逛逛车站前的杯饭（컵밥）街。','鹭梁津站周边以备考生聚集地闻名，小吃店、杯饭店与朴素的咖啡馆交错，能感受到和市场不同的氛围。']);
 
 /* ===== 부산 · 제주 · 설악산/속초 (맛집 중심) ===== */
 const TF=(...a)=>{T(...a);TIPS[a[0]].food=true;};

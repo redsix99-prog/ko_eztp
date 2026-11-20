@@ -537,6 +537,434 @@ window.GUIDE={
     "zh": "位于2、3号线乙支路3街站一带。白天印刷厂和灯具店在营业，走路时请注意不要妨碍作业。"
    }
   },
+  "myeongdong": {
+   "how": [
+    {
+     "h": {
+      "ko": "올리브영·롭스에서 K-뷰티 쇼핑",
+      "en": "Shop K-beauty at Olive Young and Lohb's",
+      "ja": "オリーブヤング・ロブスでK-ビューティーを買う",
+      "zh": "在Olive Young、Lohb's购买K-美妆"
+     },
+     "d": {
+      "ko": "명동 중심가에 올리브영 대형 매장이 여러 곳 있어 스킨케어·색조·마스크팩을 한 번에 비교해 볼 수 있습니다. 매장마다 외국인 전용 즉시 할인이나 쿠폰을 제공하니 입구 안내를 확인하세요.",
+      "en": "Several large Olive Young stores sit in central Myeongdong, letting you compare skincare, makeup and sheet masks in one stop. Many offer instant foreigner-only discounts or coupons — check the signs at the entrance.",
+      "ja": "明洞の中心部にはオリーブヤングの大型店舗が数店あり、スキンケア・コスメ・シートマスクを一度に見比べられます。店舗ごとに外国人限定の即時割引やクーポンがあるので、入口の案内を確認しましょう。",
+      "zh": "明洞市中心有多家Olive Young大型门店，可以一次比较护肤、彩妆和面膜。许多门店为外国游客提供专属即时折扣或优惠券，请留意门口的告示。"
+     }
+    },
+    {
+     "h": {
+      "ko": "길거리 음식과 환전",
+      "en": "Street food and money exchange",
+      "ja": "屋台グルメと両替",
+      "zh": "街头小吃与货币兑换"
+     },
+     "d": {
+      "ko": "저녁이면 계란빵, 회오리감자, 닭강정 같은 노점이 늘어섭니다. 명동 거리 곳곳의 환전소에서 현금을 바꿀 수 있지만 환율은 매번 확인하세요.",
+      "en": "In the evening, stalls selling egg bread, tornado potatoes and fried chicken bites line the streets. Currency exchange booths are scattered throughout Myeongdong, but check the rate each time.",
+      "ja": "夕方になると卵パン、くるくるポテト、ヤンニョムチキンなどの屋台が並びます。明洞の街中には両替所が点在していますが、レートは毎回確認しましょう。",
+      "zh": "傍晚街头会摆满鸡蛋面包、旋风薯片、炸鸡块等小吃摊。明洞街头分布着不少换汇点，但每次都要确认汇率。"
+     }
+    },
+    {
+     "h": {
+      "ko": "즉시 환급(tax refund)",
+      "en": "Instant tax refund",
+      "ja": "即時免税（タックスリファンド）",
+      "zh": "店内即时退税"
+     },
+     "d": {
+      "ko": "일정 금액 이상 구매하면 매장에서 즉시 환급을 받을 수 있는 곳이 많습니다. 여권을 꼭 챙기고, 출국 전 공항 환급 창구 이용 여부를 미리 확인하세요.",
+      "en": "Many shops offer an immediate tax refund once you spend over a set amount. Bring your passport, and check in advance whether you'll also need the airport refund counter before departure.",
+      "ja": "一定額以上購入すると店舗でその場で免税を受けられる店が多いです。パスポートを必ず持参し、出発前に空港の免税カウンターを利用する必要があるか確認しましょう。",
+      "zh": "消费满一定金额后，很多店铺可以当场办理退税。请务必携带护照，并提前确认出境前是否还需在机场退税柜台办理手续。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "명동은 저녁 6~9시가 가장 붐빕니다. 느긋하게 둘러보려면 오전 방문을 추천합니다.",
+    "en": "Myeongdong is busiest from 6 to 9 p.m. For a relaxed visit, go in the morning.",
+    "ja": "明洞は夕方6〜9時が最も混みます。ゆっくり見たい場合は午前中の訪問がおすすめです。",
+    "zh": "明洞在晚上6点到9点最拥挤，如果想悠闲逛逛，建议上午前往。"
+   }
+  },
+  "hongdae": {
+   "how": [
+    {
+     "h": {
+      "ko": "홍대 프리마켓과 버스킹",
+      "en": "Hongdae Free Market and busking",
+      "ja": "弘大フリーマーケットとバスキング",
+      "zh": "弘大自由市场与街头表演"
+     },
+     "d": {
+      "ko": "주말 오후 홍대 놀이터 주변에서 공방이 참여하는 프리마켓과 거리 공연이 열립니다. 요일과 시간은 계절에 따라 바뀌니 현장에서 확인하세요.",
+      "en": "On weekend afternoons, independent craft vendors set up a free market around Hongdae Playground, alongside street performances. Days and times shift with the season, so check on site.",
+      "ja": "週末の午後、弘大プレイグラウンド周辺で工房が出店するフリーマーケットとストリートパフォーマンスが開かれます。曜日や時間は季節によって変わるので現地で確認しましょう。",
+      "zh": "周末下午，弘大游乐场周边会有手工艺摊主摆摊的自由市场，还有街头表演。日期和时间随季节变化，请到现场确认。"
+     }
+    },
+    {
+     "h": {
+      "ko": "로드숍·편집숍 쇼핑",
+      "en": "Beauty shops and boutiques",
+      "ja": "ロードショップ・セレクトショップ巡り",
+      "zh": "路边美妆店与买手店"
+     },
+     "d": {
+      "ko": "올리브영을 비롯한 뷰티 로드숍과 개성 있는 편집숍, 보세 옷가게가 좁은 골목에 밀집해 있어 걸으며 구경하기 좋습니다.",
+      "en": "Beauty chains like Olive Young, plus quirky boutiques and casual clothing shops, pack the narrow alleys — great for a slow walk-and-browse.",
+      "ja": "オリーブヤングなどのビューティーショップや個性的なセレクトショップ、古着・衣料品店が狭い路地に密集し、歩きながら見て回るのに向いています。",
+      "zh": "Olive Young等美妆连锁店，以及风格独特的买手店和平价服饰店密集分布在狭窄小巷里，适合边走边逛。"
+     }
+    },
+    {
+     "h": {
+      "ko": "야간 클럽·인디음악 거리",
+      "en": "Indie clubs after dark",
+      "ja": "夜のクラブ・インディーズ音楽街",
+      "zh": "夜晚独立音乐俱乐部街"
+     },
+     "d": {
+      "ko": "해가 지면 인디 음악 클럽과 바가 모인 골목이 활기를 띱니다. 공연 입장료와 시간은 각 클럽 공식 채널에서 확인하세요.",
+      "en": "After sunset, the alleys packed with indie music clubs and bars come alive. Check each club's own channel for cover charges and show times.",
+      "ja": "日が暮れると、インディーズ音楽クラブやバーが集まる路地が賑わいます。入場料や公演時間は各クラブの公式チャンネルで確認してください。",
+      "zh": "日落后，聚集独立音乐俱乐部和酒吧的小巷开始热闹起来。入场费和演出时间请查看各俱乐部的官方渠道。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "지하철 2호선 홍대입구역 9번 출구로 나오면 번화가 중심으로 바로 이어집니다.",
+    "en": "Exit 9 of Hongik Univ. Station (Line 2) leads straight into the heart of the district.",
+    "ja": "地下鉄2号線弘大入口駅9番出口を出ると、繁華街の中心にすぐつながります。",
+    "zh": "从地铁2号线弘大入口站9号出口出来，即可直达商圈中心。"
+   }
+  },
+  "seongsu": {
+   "how": [
+    {
+     "h": {
+      "ko": "팝업스토어 투어",
+      "en": "Pop-up store hopping",
+      "ja": "ポップアップストア巡り",
+      "zh": "快闪店巡礼"
+     },
+     "d": {
+      "ko": "글로벌 브랜드와 신진 디자이너의 팝업스토어가 수시로 열려, 그 주에 무엇이 열리는지 인스타그램이나 지도 앱 후기로 확인하고 가면 좋습니다.",
+      "en": "Global brands and up-and-coming designers open pop-up stores here all the time — check Instagram or map-app reviews beforehand to see what's on that week.",
+      "ja": "グローバルブランドや新進デザイナーのポップアップストアが随時オープンします。その週に何が開催中か、インスタグラムや地図アプリのレビューで確認してから行くとよいでしょう。",
+      "zh": "国际品牌与新锐设计师的快闪店在这里不断更新，出发前可以先刷Instagram或地图App的点评，看看当周有什么活动。"
+     }
+    },
+    {
+     "h": {
+      "ko": "공장을 고친 카페·편집숍",
+      "en": "Cafes and boutiques in old factories",
+      "ja": "工場を改装したカフェ・セレクトショップ",
+      "zh": "工厂改造的咖啡馆与买手店"
+     },
+     "d": {
+      "ko": "오래된 인쇄소와 신발 공장을 고친 카페, 편집숍이 골목마다 숨어 있습니다. 평일 오전에는 비교적 한산합니다.",
+      "en": "Former printing houses and shoe factories have been converted into cafes and boutiques tucked into the alleys. Weekday mornings are relatively quiet.",
+      "ja": "古い印刷所や靴工場を改装したカフェやセレクトショップが路地ごとに隠れています。平日午前は比較的空いています。",
+      "zh": "旧印刷厂和制鞋厂改造成的咖啡馆和买手店隐藏在各条小巷中，工作日上午相对清静。"
+     }
+    },
+    {
+     "h": {
+      "ko": "서울숲과 함께 묶기",
+      "en": "Pair with Seoul Forest",
+      "ja": "ソウルの森と組み合わせる",
+      "zh": "可与首尔林串联游览"
+     },
+     "d": {
+      "ko": "성수동과 서울숲이 걸어서 이어져 있어 산책 후 카페에 들르는 코스로 묶기 좋습니다.",
+      "en": "Seongsu-dong is within walking distance of Seoul Forest, so a park stroll followed by a cafe stop makes an easy combo.",
+      "ja": "聖水洞とソウルの森は歩いてつながっているので、散歩のあとにカフェへ寄るコースにしやすいです。",
+      "zh": "圣水洞与首尔林步行可达，散步之后顺道去咖啡馆，是很顺的路线组合。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "수요일·주말에는 팝업스토어 입장 대기가 길어질 수 있습니다.",
+    "en": "Wait times for popular pop-ups can get long on Wednesdays and weekends.",
+    "ja": "水曜・週末は人気ポップアップの入場待ちが長くなることがあります。",
+    "zh": "周三和周末，热门快闪店的排队时间可能会比较长。"
+   }
+  },
+  "ddp": {
+   "how": [
+    {
+     "h": {
+      "ko": "전시·패션 행사 확인",
+      "en": "Check exhibitions and fashion events",
+      "ja": "展示・ファッション行事を確認",
+      "zh": "查看展览与时装活动"
+     },
+     "d": {
+      "ko": "DDP에서는 디자인 전시와 패션위크 행사가 자주 열립니다. 방문 전 공식 홈페이지에서 해당 주 전시 일정을 확인하세요.",
+      "en": "DDP regularly hosts design exhibitions and fashion-week events. Check the official website for that week's schedule before you go.",
+      "ja": "DDPではデザイン展示やファッションウィークの行事がよく開かれます。訪問前に公式サイトでその週の展示スケジュールを確認しましょう。",
+      "zh": "DDP经常举办设计展览和时装周活动，出发前请在官网确认当周的展览安排。"
+     }
+    },
+    {
+     "h": {
+      "ko": "동대문 쇼핑타운과 연결",
+      "en": "Linked to Dongdaemun's fashion malls",
+      "ja": "東大門ショッピングタウンと直結",
+      "zh": "与东大门商圈相连"
+     },
+     "d": {
+      "ko": "도매 중심 동대문 패션 상가들이 걸어서 이어져 있어 밤에도 영업하는 매장이 많습니다. 일부 건물은 소매 손님을 받지 않으니 입구 안내를 확인하세요.",
+      "en": "The wholesale-focused Dongdaemun fashion malls are within walking distance, and many stay open overnight. Some buildings don't serve retail customers, so check the signs at the entrance.",
+      "ja": "卸売中心の東大門ファッション商街が歩いてつながっており、夜も営業する店が多いです。一部のビルは小売客を受け付けないので、入口の案内を確認しましょう。",
+      "zh": "以批发为主的东大门时装商城步行可达，不少店铺营业至深夜。部分大楼不接待零售顾客，请留意入口告示。"
+     }
+    },
+    {
+     "h": {
+      "ko": "야경 포인트",
+      "en": "Best for night views",
+      "ja": "夜景の見どころ",
+      "zh": "夜景拍摄点"
+     },
+     "d": {
+      "ko": "건물 외관의 LED 장미 조형물과 곡선 외벽이 조명을 받는 저녁 시간이 사진 찍기 가장 좋습니다.",
+      "en": "Evening is the best time for photos, when the LED rose sculpture and the building's curved facade light up.",
+      "ja": "建物外観のLEDローズの造形と曲線の外壁がライトアップされる夕方が、写真を撮るのに一番きれいです。",
+      "zh": "傍晚建筑外观的LED玫瑰造型和曲线外墙亮灯后，是拍照的最佳时间。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "지하철 2·4·5호선 동대문역사문화공원역과 바로 연결됩니다.",
+    "en": "Directly connected to Dongdaemun History & Culture Park Station (Lines 2, 4, 5).",
+    "ja": "地下鉄2・4・5号線東大門歴史文化公園駅と直結しています。",
+    "zh": "与地铁2、4、5号线东大门历史文化公园站直接相连。"
+   }
+  },
+  "coex": {
+   "how": [
+    {
+     "h": {
+      "ko": "별마당도서관 사진 포인트",
+      "en": "Photo spot: Starfield Library",
+      "ja": "撮影ポイント：ピョルマダン図書館",
+      "zh": "拍照打卡点：星空图书馆"
+     },
+     "d": {
+      "ko": "높이 약 13m에 이르는 서가가 늘어선 별마당도서관은 무료로 들어갈 수 있는 사진 명소입니다. 주말 오후에는 사람이 많습니다.",
+      "en": "Starfield Library's roughly 13-meter-tall bookshelves make it a free, popular photo spot. Weekend afternoons get crowded.",
+      "ja": "高さ約13mの書架が並ぶピョルマダン図書館は、無料で入れる撮影スポットです。週末の午後は混み合います。",
+      "zh": "约13米高的书架排列成行的星空图书馆是免费开放的热门拍照点，周末下午人较多。"
+     }
+    },
+    {
+     "h": {
+      "ko": "코엑스 아쿠아리움·쇼핑",
+      "en": "Aquarium and shopping",
+      "ja": "コエックスアクアリウム・ショッピング",
+      "zh": "COEX水族馆与购物"
+     },
+     "d": {
+      "ko": "지하로 이어진 코엑스몰에는 대형 서점, 아쿠아리움, 멀티플렉스가 모여 있어 비 오는 날에도 즐기기 좋습니다.",
+      "en": "The underground COEX Mall combines a large bookstore, an aquarium and a multiplex cinema, making it a good rainy-day option.",
+      "ja": "地下でつながるコエックスモールには大型書店、アクアリウム、シネマコンプレックスが集まっており、雨の日でも楽しめます。",
+      "zh": "地下相连的COEX商场集合了大型书店、水族馆和多厅影院，即使下雨天也能逛得开心。"
+     }
+    },
+    {
+     "h": {
+      "ko": "전시·컨벤션 일정 확인",
+      "en": "Check the convention calendar",
+      "ja": "展示・コンベンション日程を確認",
+      "zh": "留意展会日程"
+     },
+     "d": {
+      "ko": "코엑스는 대형 박람회와 컨벤션이 자주 열리는 곳이라 행사 기간에는 혼잡할 수 있습니다. 방문 전 일정을 확인하세요.",
+      "en": "COEX frequently hosts large expos and conventions, so it can get crowded during those periods. Check the schedule before visiting.",
+      "ja": "コエックスは大型博覧会やコンベンションがよく開かれる場所なので、開催期間は混雑することがあります。訪問前に日程を確認しましょう。",
+      "zh": "COEX经常举办大型展会和会议，活动期间可能会比较拥挤，出发前请先查看日程。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "지하철 2호선 삼성역과 9호선 봉은사역에서 지하로 바로 연결됩니다.",
+    "en": "Directly connected underground to Samseong Station (Line 2) and Bongeunsa Station (Line 9).",
+    "ja": "地下鉄2号線三成駅、9号線奉恩寺駅と地下で直結しています。",
+    "zh": "与地铁2号线三成站、9号线奉恩寺站地下直接相通。"
+   }
+  },
+  "gangnam": {
+   "how": [
+    {
+     "h": {
+      "ko": "올리브영 강남 타운",
+      "en": "Olive Young Gangnam Town",
+      "ja": "オリーブヤング江南タウン",
+      "zh": "Olive Young 江南Town"
+     },
+     "d": {
+      "ko": "강남역 10번 출구 인근 올리브영 대형 매장은 층별로 스킨케어·색조·향수존이 나뉘어 있고 피부·퍼스널컬러 상담을 받을 수 있습니다.",
+      "en": "Near Exit 10 of Gangnam Station, this large Olive Young store splits skincare, makeup and perfume by floor, and offers skin or personal-color consultations.",
+      "ja": "江南駅10番出口付近の大型オリーブヤング店舗は、フロアごとにスキンケア・コスメ・香水ゾーンが分かれ、肌診断やパーソナルカラー相談も受けられます。",
+      "zh": "江南站10号出口附近的大型Olive Young门店按楼层划分护肤、彩妆和香水区，还可以进行肌肤或个人色彩咨询。"
+     }
+    },
+    {
+     "h": {
+      "ko": "즉시 환급·택스리펀드",
+      "en": "In-store instant refund",
+      "ja": "店内即時免税",
+      "zh": "店内即时退税"
+     },
+     "d": {
+      "ko": "일정 금액 이상 구매 시 매장 내 즉시 환급 서비스를 제공하는 곳이 많습니다. 여권을 챙기고 출국 전 공항 환급 절차도 확인하세요.",
+      "en": "Many shops offer an in-store instant tax refund above a set amount. Bring your passport and check the airport refund process before departure too.",
+      "ja": "一定額以上の購入で店内即時免税サービスを提供する店が多いです。パスポートを持参し、出発前に空港での還付手続きも確認しましょう。",
+      "zh": "消费满一定金额后，许多门店提供店内即时退税服务。请携带护照，并提前了解出境前机场的退税流程。"
+     }
+    },
+    {
+     "h": {
+      "ko": "강남역 지하상가·먹자골목",
+      "en": "Underground mall and dining alleys",
+      "ja": "江南駅地下商店街・飲食街",
+      "zh": "江南站地下商街与美食巷"
+     },
+     "d": {
+      "ko": "역과 바로 이어진 지하상가에서 비 오는 날에도 쇼핑할 수 있고, 강남대로 뒷골목에는 식당과 바가 밀집해 있습니다.",
+      "en": "The underground mall connected to the station makes shopping possible even on rainy days, and the back alleys off Gangnam-daero are packed with restaurants and bars.",
+      "ja": "駅と直結する地下商店街では雨の日でも買い物ができ、江南大路の裏路地には飲食店やバーが密集しています。",
+      "zh": "与车站直接相连的地下商街，雨天也能购物；江南大路后巷则聚集了众多餐厅和酒吧。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "매장 운영시간과 입점 브랜드는 자주 바뀌니 방문 전 확인하는 것이 좋습니다.",
+    "en": "Store hours and the brand lineup change often, so it's worth checking before you go.",
+    "ja": "店舗の営業時間や入店ブランドはよく変わるので、訪問前に確認するのがおすすめです。",
+    "zh": "门店营业时间和入驻品牌经常变动，出发前最好先查一下。"
+   }
+  },
+  "yeouido": {
+   "how": [
+    {
+     "h": {
+      "ko": "여의도 한강공원",
+      "en": "Yeouido Hangang Park",
+      "ja": "汝矣島漢江公園",
+      "zh": "汝矣岛汉江公园"
+     },
+     "d": {
+      "ko": "봄꽃축제, 서울세계불꽃축제 같은 대형 행사가 열리는 한강공원입니다. 자전거 대여소와 편의점이 많아 피크닉하기 편합니다.",
+      "en": "This stretch of Hangang Park hosts major events like the spring flower festival and the Seoul International Fireworks Festival. Bike rentals and convenience stores make it easy to picnic.",
+      "ja": "春の花祭りやソウル世界花火祭りなど大規模な行事が開かれる漢江公園です。レンタサイクルやコンビニが多く、ピクニックに便利です。",
+      "zh": "这片汉江公园会举办春季花节、首尔世界烟花节等大型活动，租车点和便利店众多，野餐十分方便。"
+     }
+    },
+    {
+     "h": {
+      "ko": "더현대서울",
+      "en": "The Hyundai Seoul",
+      "ja": "ザ・現代ソウル",
+      "zh": "THE HYUNDAI SEOUL"
+     },
+     "d": {
+      "ko": "국내 최대 규모 백화점 중 하나로, 실내 정원과 독특한 건축으로도 유명합니다. 명품보다 라이프스타일·디저트 매장이 다양해 구경하는 재미가 있습니다.",
+      "en": "One of Korea's largest department stores, known for its indoor garden and striking architecture. It leans toward lifestyle and dessert brands rather than luxury, so it's fun just to browse.",
+      "ja": "韓国最大級のデパートの一つで、室内庭園と個性的な建築でも有名です。高級ブランドよりライフスタイル・デザート店が充実していて、見て回るだけでも楽しめます。",
+      "zh": "韩国最大的百货商店之一，以室内花园和独特建筑著称。相比奢侈品，这里的生活方式和甜品店铺更为丰富，逛起来很有意思。"
+     }
+    },
+    {
+     "h": {
+      "ko": "63스퀘어와 서울세계불꽃축제",
+      "en": "63 Square and the fireworks festival",
+      "ja": "63スクエアとソウル世界花火祭り",
+      "zh": "63广场与首尔世界烟花节"
+     },
+     "d": {
+      "ko": "63스퀘어 전망대·아쿠아리움을 함께 즐길 수 있고, 가을에 불꽃축제가 열리는 날에는 다리 통제와 인파에 대비해 마포대교·원효대교 쪽 자리를 서둘러 잡는 것이 좋습니다.",
+      "en": "You can combine 63 Square's observatory and aquarium in one visit. On fireworks-festival days in autumn, expect bridge closures and large crowds — grab a spot near Mapo or Wonhyo Bridge early.",
+      "ja": "63スクエアの展望台とアクアリウムを一緒に楽しめます。秋の花火祭りの日は橋の交通規制と人出が多いので、麻浦大橋や元曉大橋付近の場所を早めに確保しましょう。",
+      "zh": "可以一次体验63广场的展望台和水族馆。秋季烟花节当天会有桥梁交通管制和大量人潮，建议提前在麻浦大桥、元晓大桥附近占位。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "지하철 5호선 여의나루역·9호선 국회의사당역에서 가깝습니다. 불꽃축제처럼 큰 행사가 있는 날은 지하철이 매우 혼잡하니 여유 있게 움직이세요.",
+    "en": "Close to Yeouinaru Station (Line 5) and National Assembly Station (Line 9). On big-event days like the fireworks festival, the subway gets extremely crowded, so allow extra time.",
+    "ja": "地下鉄5号線汝矣ナル駅、9号線国会議事堂駅から近いです。花火祭りのような大きな行事がある日は地下鉄が非常に混雑するので、余裕を持って移動しましょう。",
+    "zh": "靠近地铁5号线汝矣渡口站、9号线国会议事堂站。遇到烟花节等大型活动时地铁会非常拥挤，请预留充足时间出行。"
+   }
+  },
+  "noryangjin": {
+   "eats": [
+    {
+     "n": {
+      "ko": "모듬 활어회 포장",
+      "en": "Mixed sashimi to go",
+      "ja": "盛り合わせ活魚刺身の持ち帰り",
+      "zh": "综合活鱼生鱼片打包"
+     },
+     "menu": {
+      "ko": "계절 활어 모듬회 (광어·연어·새우 등)",
+      "en": "Seasonal mixed sashimi platter (flounder, salmon, shrimp, etc.)",
+      "ja": "季節の活魚刺身盛り合わせ（ヒラメ・サーモン・エビなど）",
+      "zh": "时令活鱼刺身拼盘（比目鱼、鲑鱼、虾等）"
+     },
+     "price": {
+      "ko": "2~3인 기준 5만~8만 원대(그날 시세에 따라 다름)",
+      "en": "About ₩50,000–80,000 for 2–3 people (varies with the day's market price)",
+      "ja": "2〜3人分で5万〜8万ウォン台（その日の市況により変動）",
+      "zh": "2~3人份约5万~8万韩元（视当天行情而异）"
+     },
+     "q": "노량진수산시장",
+     "d": {
+      "ko": "원하는 어종을 고르면 즉석에서 손질해 포장해 줍니다. 근처 식당에 가져가면 상차림비(초장값)를 받고 반찬과 자리를 내줍니다.",
+      "en": "Pick the fish you want and they'll clean and pack it on the spot. Bring it to a nearby restaurant, which charges a small \"table fee\" and provides side dishes and seating.",
+      "ja": "好きな魚を選べば、その場で下処理して包んでくれます。近くの食堂に持ち込むと、席料（初장값）を払って副菜と席を用意してもらえます。",
+      "zh": "挑选喜欢的鱼种后，店家会现场处理并打包。带去附近餐厅，支付少量“佐料费”即可获得小菜和座位。"
+     }
+    },
+    {
+     "n": {
+      "ko": "2층 식당가",
+      "en": "Second-floor dining hall",
+      "ja": "2階の食堂街",
+      "zh": "二楼餐饮区"
+     },
+     "menu": {
+      "ko": "회+매운탕 세트",
+      "en": "Sashimi + spicy fish stew set",
+      "ja": "刺身＋ピリ辛魚のスープのセット",
+      "zh": "生鱼片+辣鱼汤套餐"
+     },
+     "price": {
+      "ko": "1인 기준 초장값 2천~3천 원 별도",
+      "en": "About ₩2,000–3,000 extra per person for the table fee",
+      "ja": "1人あたり席料2千〜3千ウォン別途",
+      "zh": "每人另付佐料费约2000~3000韩元"
+     },
+     "q": "노량진수산시장",
+     "d": {
+      "ko": "가져간 회를 바로 먹을 수 있는 상차림 식당이 2층에 모여 있습니다. 가격과 서비스 품질에 대한 후기가 엇갈리니 메뉴판과 가격을 미리 확인하세요.",
+      "en": "Restaurants on the second floor let you eat the sashimi you just bought right away. Reviews on price and service vary, so check the menu board and prices first.",
+      "ja": "買った刺身をすぐに食べられる食堂が2階に集まっています。価格やサービスの評判は店によって差があるので、メニューと価格を先に確認しましょう。",
+      "zh": "二楼聚集着可以让您立刻享用所购生鱼片的餐厅，关于价格和服务的评价不一，建议先查看菜单和价格。"
+     }
+    }
+   ],
+   "tip": {
+    "ko": "지하철 1·9호선 노량진역에서 도보 5분 거리이며, 새벽 1~3시 경매가 가장 활기찹니다. 매주 일요일과 명절 연휴는 휴장이니 방문 전 공식 사이트에서 확인하세요.",
+    "en": "A 5-minute walk from Noryangjin Station (Lines 1, 9); the pre-dawn auction (around 1–3 a.m.) is the liveliest to watch. Closed every Sunday and on major holidays, so check the official site before visiting.",
+    "ja": "地下鉄1・9号線鷺梁津駅から徒歩5分。深夜1〜3時の競売が最も活気があります。毎週日曜と旧正月・秋夕の連休は休場なので、訪問前に公式サイトで確認しましょう。",
+    "zh": "从地铁1、9号线鹭梁津站步行5分钟。凌晨1点至3点的拍卖最为热闹。每周日及春节、中秋连休休市，出发前请查看官方网站确认。"
+   }
+  },
   "gbg": {
    "works": [
     {
@@ -626,6 +1054,74 @@ window.GUIDE={
       "en": "A heist story about antique art and restoration, set in Insadong with its antique shops and galleries.",
       "ja": "古美術品の取引と修復をめぐる物語で、骨董店や画廊が多い仁寺洞が舞台です。",
       "zh": "围绕古董交易与修复的故事，以古董店和画廊林立的仁寺洞为背景。"
+     }
+    }
+   ]
+  },
+  "cdg": {
+   "works": [
+    {
+     "k": "drama",
+     "t": {
+      "ko": "킹덤 (2019~)",
+      "en": "Kingdom (2019– )",
+      "ja": "キングダム（2019〜）",
+      "zh": "王国（2019年起）"
+     },
+     "d": {
+      "ko": "창덕궁 후원(비원) 일대가 넷플릭스 드라마 ‘킹덤’의 주요 촬영지로 알려져 있습니다. 인접한 창경궁과 함께 촬영된 장면도 많습니다.",
+      "en": "Changdeokgung's rear garden (Huwon) is known as a key filming location for the Netflix series \"Kingdom.\" Many scenes were also shot alongside neighboring Changgyeonggung.",
+      "ja": "昌徳宮の後苑（秘苑）一帯は、Netflixドラマ「キングダム」の主要なロケ地として知られています。隣接する昌慶宮と合わせて撮影された場面も多いです。",
+      "zh": "昌德宫后苑（秘苑）一带是Netflix剧集《王国》的主要取景地，许多场景也与邻近的昌庆宫一同拍摄。"
+     }
+    },
+    {
+     "k": "drama",
+     "t": {
+      "ko": "옷소매 붉은 끝동 (2021)",
+      "en": "The Red Sleeve (2021)",
+      "ja": "赤い袖先（2021）",
+      "zh": "红色袖口（2021）"
+     },
+     "d": {
+      "ko": "후원의 연못 부용지에서 여러 장면을 촬영한 것으로 알려져 있습니다. 궁 관람 시 부용지 주변이 대표 포토 포인트입니다.",
+      "en": "Several scenes were reportedly filmed at Buyongji Pond in the rear garden. The area around the pond is a popular photo spot during a palace visit.",
+      "ja": "後苑の池、芙蓉池で複数の場面が撮影されたと伝えられています。宮殿見学時は池の周辺が代表的な撮影スポットです。",
+      "zh": "据悉后苑的芙蓉池拍摄了多个场景，游览时池边一带是热门拍照点。"
+     }
+    }
+   ]
+  },
+  "dsg": {
+   "works": [
+    {
+     "k": "film",
+     "t": {
+      "ko": "덕혜옹주 (2016)",
+      "en": "The Last Princess (2016)",
+      "ja": "徳恵翁主（2016）",
+      "zh": "德惠翁主（2016）"
+     },
+     "d": {
+      "ko": "실제 덕혜옹주가 머물렀던 공간인 덕수궁에서 포스터 촬영이 이뤄졌습니다. 석조전과 중화전 일대가 배경이 되었습니다.",
+      "en": "The poster for this film was shot at Deoksugung, where the real Princess Deokhye once lived, with Seokjojeon and Junghwajeon as the backdrop.",
+      "ja": "実際に徳恵翁主が暮らした徳寿宮でポスター撮影が行われました。石造殿と中和殿一帯が背景になりました。",
+      "zh": "本片海报在德惠翁主实际居住过的德寿宫拍摄，背景为石造殿与中和殿一带。"
+     }
+    },
+    {
+     "k": "drama",
+     "t": {
+      "ko": "도깨비 (2016)",
+      "en": "Guardian: The Lonely and Great God (2016)",
+      "ja": "トッケビ（2016）",
+      "zh": "鬼怪（2016）"
+     },
+     "d": {
+      "ko": "덕수궁 돌담길이 저승사자 사무실 장면과 주요 대화 장면의 배경으로 등장합니다.",
+      "en": "The stone-wall road beside Deoksugung appears as the backdrop for the Grim Reaper's office scenes and key dialogue moments.",
+      "ja": "徳寿宮の石垣道が、死者を導く使者の事務所の場面や重要な会話シーンの背景として登場します。",
+      "zh": "德寿宫石墙路曾作为阴间使者办公室场景及重要对话场面的背景出现。"
      }
     }
    ]
@@ -946,7 +1442,13 @@ window.GUIDE={
       "en": "Snowy granite peaks are spectacular, but trails ice over. Crampons are a must, and start down before 3 p.m. as it gets dark early.",
       "ja": "雪をかぶった岩峰は壮観ですが、道が凍って滑りやすいです。アイゼンは必須で、日が早く暮れるので午後3時前には下山を始めましょう。",
       "zh": "积雪的岩峰十分壮观，但路面结冰湿滑。必须带冰爪，天黑得早，请在下午3点前开始下山。"
-     }
+     },
+     "img": "images/s_bukhansan_wi.jpg",
+     "credit": [
+      "Korea.net / KOCIS",
+      "CC BY-SA 2.0",
+      "https://commons.wikimedia.org/wiki/File:Snow-covered_Bukhansan.jpg"
+     ]
     }
    ]
   },
@@ -989,7 +1491,13 @@ window.GUIDE={
       "en": "Foliage starts right from the path out of Dobongsan Station; it usually peaks in late October.",
       "ja": "道峰山駅から登山口までの道から紅葉が続きます。10月下旬が見頃の年が多いです。",
       "zh": "从道峰山站到登山口的路上就开始有红叶，多数年份10月下旬最盛。"
-     }
+     },
+     "img": "images/s_dobong_au.jpg",
+     "credit": [
+      "Kellnerp",
+      "CC BY-SA 3.0",
+      "https://commons.wikimedia.org/wiki/File:Mount_Dobongsan_peaks_Seoninbong_(708m),_Manjangbong_(718m),_Jaunbong_(740m)_and_Shinseondae_(730m).JPG"
+     ]
     },
     {
      "s": "winter",
@@ -998,7 +1506,13 @@ window.GUIDE={
       "en": "After snow the rock lines stand out beautifully for photos. Rocky ridges are risky in winter, so beginners should stick to valley routes.",
       "ja": "雪の後は岩山の線がくっきりして写真映えします。冬の岩稜は危険なので初心者は渓谷コースを。",
       "zh": "雪后岩山线条分明，很适合拍照。冬季岩脊路段危险，新手请选择溪谷路线。"
-     }
+     },
+     "img": "images/s_dobong_wi.jpg",
+     "credit": [
+      "Kellnerp",
+      "CC BY-SA 3.0",
+      "https://commons.wikimedia.org/wiki/File:Peak_on_Mount_Dobongsan.JPG"
+     ]
     }
    ]
   },
@@ -1011,7 +1525,13 @@ window.GUIDE={
       "en": "Azaleas and cherry blossoms line the walls — the best time to walk them.",
       "ja": "城壁沿いにツツジと桜が咲き、歩くのに最適な季節です。",
       "zh": "城墙沿线杜鹃和樱花盛开，是最适合漫步的时节。"
-     }
+     },
+     "img": "images/s_namhan_sp.jpg",
+     "credit": [
+      "Cho's",
+      "CC BY-SA 3.0",
+      "https://commons.wikimedia.org/wiki/File:Way_to_Namhansanseong_Castle_with_cherry_blossom_-_panoramio.jpg"
+     ]
     },
     {
      "s": "summer",
@@ -1035,7 +1555,13 @@ window.GUIDE={
       "en": "One of the top foliage spots near Seoul, with leaves framing the fortress walls. Weekend buses get crowded.",
       "ja": "ソウル近郊屈指の紅葉スポットで、城壁と紅葉が調和します。週末はバスが混みます。",
       "zh": "首尔近郊屈指可数的赏枫胜地，城墙与红叶相映成趣，周末巴士拥挤。"
-     }
+     },
+     "img": "images/s_namhan_au.jpg",
+     "credit": [
+      "Jocelyndurrey",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:남문_위에서_바라_본_가을전경_(1).jpg"
+     ]
     },
     {
      "s": "winter",
@@ -1054,6 +1580,40 @@ window.GUIDE={
     }
    ]
   },
+  "suwon": {
+   "works": [
+    {
+     "k": "drama",
+     "t": {
+      "ko": "선재 업고 튀어 (2024)",
+      "en": "Lovely Runner (2024)",
+      "ja": "ソンジェ背負って走れ（2024）",
+      "zh": "背着善宰跑（2024）"
+     },
+     "d": {
+      "ko": "화홍문과 방화수류정 일대가 극 중 배경으로 등장해 팬들의 방문이 이어졌습니다.",
+      "en": "Hwahongmun Gate and the Banghwasuryujeong pavilion appear as a backdrop in the show, drawing many fan visits since it aired.",
+      "ja": "華虹門と訪花随柳亭一帯が劇中の背景として登場し、ファンの訪問が続いています。",
+      "zh": "华虹门与访花随柳亭一带曾作为剧中背景出现，吸引不少剧迷前来打卡。"
+     }
+    },
+    {
+     "k": "film",
+     "t": {
+      "ko": "왕의 남자 (2005)",
+      "en": "The King and the Clown (2005)",
+      "ja": "王の男（2005）",
+      "zh": "王的男人（2005）"
+     },
+     "d": {
+      "ko": "화성행궁에서 영화의 명장면을 촬영한 것으로 알려져 있습니다. 성 전체가 화면에 담기고 전통 복원이 충실해 사극 촬영지로 자주 쓰입니다.",
+      "en": "A famous scene from this film was reportedly shot at Hwaseong Haenggung Palace. The faithfully restored fortress, which fits entirely within the frame, is a frequent backdrop for period dramas.",
+      "ja": "華城行宮で映画の名場面が撮影されたと伝えられています。城全体が画面に収まり伝統の復元も忠実なため、時代劇の撮影地としてよく使われます。",
+      "zh": "据悉本片的经典场面曾在华城行宫取景。整座城池可完整入镜，且传统复原考究，常被用作古装剧的取景地。"
+     }
+    }
+   ]
+  },
   "gwanak": {
    "seasons": [
     {
@@ -1063,7 +1623,13 @@ window.GUIDE={
       "en": "In April azaleas and royal azaleas bloom on the lower slopes and the streams start running.",
       "ja": "4月には山裾にツツジが咲き、渓谷に水が流れ始めます。",
       "zh": "4月山脚开满杜鹃，溪谷开始流水。"
-     }
+     },
+     "img": "images/s_gwanak_sp.jpg",
+     "credit": [
+      "lamoix",
+      "CC BY 2.0",
+      "https://commons.wikimedia.org/wiki/File:Gwanak_Mountain.jpg"
+     ]
     },
     {
      "s": "summer",
@@ -1102,7 +1668,13 @@ window.GUIDE={
       "en": "Icy rock is very slippery; winter summit hikes are for experienced hikers only. Crampons can be rented at the Gwanaksan Station hiking center.",
       "ja": "岩が凍るととても滑りやすく、冬の山頂登山は経験者にのみおすすめ。冠岳山駅の登山観光センターでアイゼンを借りられます。",
       "zh": "岩石结冰后极滑，冬季登顶仅建议有经验者。可在冠岳山站登山观光中心租冰爪。"
-     }
+     },
+     "img": "images/s_gwanak_wi.jpg",
+     "credit": [
+      "hojusaram",
+      "CC BY-SA 2.0",
+      "https://commons.wikimedia.org/wiki/File:Seoul.Mountain-Gwanaksan-01.jpg"
+     ]
     }
    ]
   },
@@ -1115,7 +1687,13 @@ window.GUIDE={
       "en": "Cherry blossoms and fresh metasequoia leaves make the island glow.",
       "ja": "桜と新芽のメタセコイア並木がみずみずしい季節。",
       "zh": "樱花与新芽初绽的水杉大道清新怡人。"
-     }
+     },
+     "img": "images/s_nami_sp.jpg",
+     "credit": [
+      "Namc87",
+      "CC BY-SA 3.0",
+      "https://commons.wikimedia.org/wiki/File:Namiseom_1.jpg"
+     ]
     },
     {
      "s": "summer",
@@ -1124,7 +1702,13 @@ window.GUIDE={
       "en": "Riverside paths and shady woods stay pleasant even at midday.",
       "ja": "川沿いの散歩道と森の木陰が涼しく、日中でも歩きやすいです。",
       "zh": "江边步道和林荫凉爽，正午也适合散步。"
-     }
+     },
+     "img": "images/s_nami_su.jpg",
+     "credit": [
+      "Jocelyndurrey",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:남이섬_(45).JPG"
+     ]
     },
     {
      "s": "autumn",
@@ -1133,7 +1717,13 @@ window.GUIDE={
       "en": "Late October to early November, when ginkgo and metasequoia turn gold and rust, is the most popular time.",
       "ja": "イチョウとメタセコイアが黄色や赤に染まる10月末〜11月初めが一番人気です。",
       "zh": "银杏和水杉染成金黄与赭红的10月底至11月初最受欢迎。"
-     }
+     },
+     "img": "images/s_nami_au.jpg",
+     "credit": [
+      "Katsujiro Maekawa",
+      "CC0",
+      "https://commons.wikimedia.org/wiki/File:0012-10-12_(2024-11-12)_*Gapyeong_-_Chuncheon_*Gyeonggi_-_Gangwon.jpg"
+     ]
     },
     {
      "s": "winter",
@@ -1161,7 +1751,13 @@ window.GUIDE={
       "en": "Spring flower festivals with tulips and azaleas run in April–May.",
       "ja": "4〜5月はチューリップやツツジなど春の花のフェスティバルが開かれます。",
       "zh": "4~5月举办郁金香、杜鹃等春花节。"
-     }
+     },
+     "img": "images/s_achim_sp.jpg",
+     "credit": [
+      "阿橋 HQ",
+      "CC BY-SA 2.0",
+      "https://commons.wikimedia.org/wiki/File:短果杜鵑_Rhododendron_brachycarpum_-南韓晨靜樹木園_Garden_of_Morning_Calm,_South_Korea-_(33568960100).jpg"
+     ]
     },
     {
      "s": "summer",
@@ -1185,7 +1781,13 @@ window.GUIDE={
       "en": "Maple leaves and chrysanthemums fill the garden. Take a bus from Gapyeong Station (Gyeongchun Line).",
       "ja": "紅葉と菊が庭園を彩ります。京春線加平駅からバスで移動。",
       "zh": "红叶与菊花装点庭园，从京春线加平站转乘巴士。"
-     }
+     },
+     "img": "images/s_achim_au.jpg",
+     "credit": [
+      "Kwon jung sik",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:대감집의_가을_풍경.jpg"
+     ]
     },
     {
      "s": "winter",
@@ -1194,7 +1796,13 @@ window.GUIDE={
       "en": "On winter nights the whole garden is usually lit up for its lighting festival. Check the official site for dates.",
       "ja": "冬の夜は庭園全体をライトアップするイルミネーションが開かれる年が多いです。期間は公式サイトで確認を。",
       "zh": "冬夜多数年份会举办全园灯光节，具体时间请查看官网。"
-     }
+     },
+     "img": "images/s_achim_wi.jpg",
+     "credit": [
+      "Clément Chevallier",
+      "CC BY-SA 4.0",
+      "https://commons.wikimedia.org/wiki/File:Lake_in_the_Garden_of_Morning_Calm.jpg"
+     ]
     }
    ]
   }
