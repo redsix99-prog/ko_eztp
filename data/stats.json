@@ -1,7 +1,7 @@
 {
  "status": "ok",
- "updated": "2026-11-15",
- "period": "2026-09-19 to 2026-10-16 (28 days of data)",
+ "updated": "2026-11-23",
+ "period": "2026-09-27 to 2026-10-24 (28 days of data)",
  "note": "Foreign visitors by region: the sum of daily unique visitor counts over the period shown (mobile-data based; a visitor staying three days counts three times). Source: Korea Tourism Organization open data.",
  "sources": [
   {
@@ -16,43 +16,43 @@
  "foreignVisitorsByRegion": [
   {
    "region": "Seoul",
-   "visitors": 4009738
+   "visitors": 4353407
   },
   {
    "region": "Incheon",
-   "visitors": 2658883
+   "visitors": 2760247
   },
   {
    "region": "Gyeonggi",
-   "visitors": 1848361
+   "visitors": 2045544
   },
   {
    "region": "Busan",
-   "visitors": 1542073
+   "visitors": 1652002
   },
   {
    "region": "Jeju",
-   "visitors": 1261430
+   "visitors": 1265751
   },
   {
    "region": "Gyeongnam",
-   "visitors": 703040
+   "visitors": 741814
   },
   {
    "region": "Gwangju & Jeonnam",
-   "visitors": 599543
+   "visitors": 642007
   },
   {
    "region": "Gyeongbuk",
-   "visitors": 467053
+   "visitors": 507788
   },
   {
    "region": "Chungnam",
-   "visitors": 376634
+   "visitors": 406868
   },
   {
    "region": "Chungbuk",
-   "visitors": 280379
+   "visitors": 299289
   }
  ]
 }
