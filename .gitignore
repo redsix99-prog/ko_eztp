@@ -1,2 +1,7 @@
 ﻿# 내부 기획 문서는 공개 저장소에 올리지 않습니다
 PROJECT_SPEC_KO.md
+
+# Claude Code 로컬 설정 (배포·공개 제외)
+CLAUDE.md
+.ignore
+.claude/
