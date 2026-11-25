@@ -1,13 +1,14 @@
 // 관광 뉴스 데이터 — 2026-11-17 기준으로 정리. 새 소식은 이 배열 맨 앞에 추가하세요.
 // 외국인 여행자가 궁금해할 소식 위주로 골랐고, 요약은 기사 내용을 바탕으로 직접 작성했습니다.
 // type: entry(입국·비자) / benefit(쇼핑·혜택) / event(축제·체험) / trend(방한 동향)
+// images/n_ski.jpg: Yongpyong Resort ski slopes, 2013 (Kalatpadai, Wikimedia Commons, CC0 — 상업적 이용 가능)
 window.NEWS_UPDATED='2026년 11월 25일';
 window.NEWS=[
- {date:'2026.11.26 ~',cat:'축제·체험',catClass:'event',type:'event',thumb:'images/g_entry.jpg',
+ {date:'2026.11.26 ~',cat:'축제·체험',catClass:'event',type:'event',thumb:'images/n_ski.jpg',
   title:'겨울 스키 시즌 개막 — 휘닉스 11월 26일, 하이원 11월 27일 목표',
   summary:'강원도 스키장들이 2026~2027시즌 개장을 서두르고 있습니다. 평창 휘닉스 스노우파크는 11월 26일(목) 조기 개장을 목표로 우선 2개 슬로프만 열 예정이고, 정선 하이원 리조트는 11월 27일(금) 개장을 목표로 제설 작업을 진행 중이며 기상 상황이 좋으면 더 빨라질 수 있습니다. 모나용평도 10월 말부터 제설기를 돌리며 준비해 왔습니다. 초반에는 일부 슬로프만 운영되니, 서울에서 당일치기나 1박으로 스키장을 찾는다면 개장 직후보다 12월 중순 이후 전체 슬로프가 열렸을 때가 더 다양하게 즐길 수 있습니다. 정확한 개장일과 운영 슬로프는 각 리조트 공식 홈페이지에서 확인하세요.',
   sources:[['코리아중앙데일리','https://www.koreajoongangdaily.com/lifestyle/winter-is-coming-gangwon-ski-resorts-race-to-open/12970909']]},
- {date:'2026.11.08',cat:'방한 동향',catClass:'',type:'trend',thumb:'images/g_entry.jpg',
+ {date:'2026.11.08',cat:'방한 동향',catClass:'',type:'trend',thumb:'images/h_winter.jpg',
   title:'서울에 평년보다 12일 빠른 첫눈 — 16년 만에 가장 이른 기록',
   summary:'기상청은 11월 8일 오전 10시 서울 종로구 송월동 서울기상관측소에서 올해 첫눈을 관측했다고 밝혔습니다. 평년 첫눈 관측일(11월 20일)보다 12일, 지난해(12월 4일)보다는 26일 빠른 것으로, 1973년 전국 관측망 확충 이후 역대 6번째로 빠르고 2010년 이후 16년 만에 가장 이른 첫눈입니다. 다만 강수 강도가 약해 실제로 눈이 쌓이지는 않았습니다. 겨울 여행을 계획 중이라면 예년보다 추위와 눈 소식이 일찍 찾아올 수 있으니 방한 외투와 보온용품을 챙기는 것이 좋습니다.',
   sources:[['헤럴드경제','https://biz.heraldcorp.com/article/10929615'],['코리아타임스','https://www.koreatimes.co.kr/southkorea/society/20261108/1st-snow-arrives-early-in-seoul-but-warmer-wetter-winter-expected']]},
